@@ -132,8 +132,8 @@ img{
  padding: 5px;  
 }
 .menubar a{
-    border-left:  1px solid #DADADA;
-    padding-left: 5px;
+border-left:  1px solid #DADADA;
+padding-left: 5px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -141,9 +141,9 @@ width: 30%;
 height: 50px;
 color: #404040;
 background: #FAFAFA;
-border-radius: 5px 0px 0px 5px;
 font-size: 13px;
 text-decoration: none;
+margin-left:2px;
 
 }
 
@@ -176,6 +176,49 @@ text-decoration: none;
 .main-kataqoriya span:last-child {
     border-right: none;
 }
+.silder {
+  position: relative;
+  height: 100%;
+  margin: auto;
+
+}
+.block{
+    margin: 10px;
+}
+.swiper {
+  width: 100%;
+  height: 80%;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: #fff;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+ .swiper-wrapper{
+    width: 100%;
+} 
+
+.silder-img img{
+    
+    width: 100%;
+    height:120px;
+    object-fit: cover;
+}
+
+
+.swiper-pagination span{
+   background:#fff;
+    border-radius: 20px;
+    width: 30px;
+    height: 5px;
+}
+
 @media only screen and (min-width: 768px){
     .header-top{
         display: flex;
@@ -303,5 +346,38 @@ text-decoration: none;
      
             object-fit: cover;
         }
+        
+        .swiper {
+            margin-top: 40px;
+              width: 50%;
+              height:50%;
+            }
+            
+            .swiper-slide {
+              
+              text-align: center;
+              font-size: #fff;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+         
+            .silder-img{
+            height: 100%;
+            height: auto;
+            }
+            .silder-img img{
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+            }
+            .swiper-pagination span{
+                background:#3C1E6E;
+                 border-radius: 20px;
+                 width: 50px;
+                 height: 5px;
+             }
+        
         }
     }

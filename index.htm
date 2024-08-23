@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/stylee.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -217,9 +218,49 @@
                   Qazçıxma Sistemi
                 </span>
             </div>
+            <div class="silder">
+                 <!-- Swiper -->
+
+  <div class="block"> 
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="silder-img">
+              <img src="img/silder1.png" alt="">
+              
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="silder-img">
+              <img src="img/silder2.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="silder-img">
+              <img src="img/silder3.png" alt="">
+          </div>
+        </div>
+      
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+            </div>
         </div>
     </main>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+</script>
 </body>
 
 </html>
