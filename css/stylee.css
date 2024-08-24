@@ -282,8 +282,8 @@ option {
 }
 
 .info-head {
-margin: 20px!important;
- 
+    margin: 20px!important;
+    line-height: 25px!important;
     color: #ffdf40 !important;
     font-weight: 700!important;
     font-size: 30px!important;
