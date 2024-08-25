@@ -93,7 +93,7 @@ body {
 .header-filtr select,
 option {
     width: 90%;
-    height: 25px;
+    height: 30px;
     border: 1px solid #DADADA;
     border-radius: 3px;
     margin: 5px;
@@ -306,7 +306,9 @@ padding-right: 5px;
     text-align: left;
     z-index: 2; 
 }
-
+.teklif-blcoks{
+    padding: 5px;
+}
 .teklif{
     width: 100%;
     display: flex;
