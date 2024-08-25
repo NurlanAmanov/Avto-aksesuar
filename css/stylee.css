@@ -465,8 +465,66 @@ font-weight: 500;
 font-size: 16px;
 line-height: 20px;
 color: #333333;
+}
+.service-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-card1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+padding: 5px!important;
+}
+.service-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    flex-direction: column;
+    width: 100%;
+    height:max-content;
+    background: #FAFAFA;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.service-main h5{
+font-weight: 560;
+font-size: 17px;
+color: #333333;
+margin-top: 10px;
+}
+.service-main p{
+font-size: 16px;
+font-weight: 450;
+color: #333333;
 
 
+}
+@media (min-width: 800px) {
+    .service {
+        width: 100%;
+    }
+
+    .service-card {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .service-main {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .service-card1 {
+        padding-right: 16px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .header-top {
@@ -650,7 +708,7 @@ color: #333333;
     .main-kataqoriya span:hover {
         background: #DF2127;
         border-radius: 10px 10px 0px 0px;
-        font-size: 20px;
+        font-size: 17px;
         color: #fff;
 
         
@@ -897,5 +955,63 @@ color: #333333;
     
     
     }
-
+    .service {
+        position: relative;
+        width: 80%;
+    }
+    
+    .service-card {
+        position: absolute;
+        top: 500px;
+        left: 80px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .service-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        flex-direction: row;
+        width: 60%;
+        height: 200px;
+        background: #FAFAFA;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .service-card1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-right: 1px solid #DADADA;
+        padding-right: 10px;
+    }
+    
+    /* .service-mesafe {
+        border: none;
+        background-color: #DADADA;
+        height: 2px;
+        width: 60.6px;
+        transform: rotate(90deg);
+        margin: 0;
+    } */
+    
+    .service-main h5 {
+        font-weight: 560;
+        font-size: 17px;
+        color: #333333;
+    }
+    
+    .service-main p {
+        font-size: 16px;
+        font-weight: 450;
+        color: #333333;
+    }
 }
