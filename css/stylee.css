@@ -333,14 +333,15 @@ padding-right: 5px;
     margin: 5px;
     
     width: 80%;
+    
     }
     .saat{
     text-align: center;
     font-weight: 550;
     margin: 0 5px;
-    font-size: 14px;
+    font-size: 13px;
     padding: 5px;
-    width: 48px;
+    width: 45px;
     height: 39px;
     background: #F4F4F4;
     border-radius: 3px;
@@ -355,11 +356,23 @@ padding-right: 5px;
     flex-direction: row;
 
 }
+.teklif-text h3{
+font-style: normal;
+font-weight: 600;
+font-size: 15px;
+line-height: 19px;
+text-align: center;
+color: #000000;
+
+
+}
 .teklif-img{
     width: 40%;
     margin: auto;
+    text-align: center;
 }
 .teklif-img img{
+    text-align: center;
     width: 50%;
     object-fit: cover;
     margin: 10px ;
@@ -368,7 +381,7 @@ padding-right: 5px;
     width: 60%;
     padding: 5px;
 
-    h4{
+h4{
 font-weight: 900;
 font-size: 18px;
 
