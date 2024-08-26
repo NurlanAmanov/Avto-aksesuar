@@ -132,3 +132,8 @@ for (let i = 0; i < mehsul.length; i++) {
             <button class="sebetat2"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
           </div>
         </div>`}
+
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-bars");
+            menu.classList.toggle("open");
+        }
