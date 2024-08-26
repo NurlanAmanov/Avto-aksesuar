@@ -467,6 +467,7 @@ line-height: 20px;
 color: #333333;
 }
 .service-card{
+    margin: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -505,6 +506,93 @@ color: #333333;
 
 
 }
+.onecixan{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:5px;
+}
+.onecixan-blcok{
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    
+}
+.onecixan-blcok2{
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    
+}
+.onecixan-content{
+    border-radius: 5px;
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.onecixan-content{
+    border-radius: 5px;
+    background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
+    width: 100%;
+
+}
+.onecixan-content2{
+    border-radius: 5px;
+    background: url(../img/silder2.png)center/cover;
+    width: 100%;
+
+
+}
+.one-cixanmain{
+    overflow: hidden;
+background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+height: 200px;
+width: 100%;
+}
+.one-text{
+    width: 100%;
+}
+.one-text h3{
+margin: 25px;
+font-weight: 600;
+font-size: 20px;
+color: #FFFFFF;
+
+}
+.one-cixanmain p{
+font-size: 15px;
+line-height: 19px;
+color: #FFFFFF;
+margin: 25px;
+}
+.one-cixanmain a{
+     margin: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+height: 40px;
+background: #000000;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+
+}
 @media (min-width: 800px) {
     .service {
         width: 100%;
@@ -527,6 +615,7 @@ color: #333333;
     }
 }
 @media only screen and (min-width: 768px) {
+   
     .header-top {
         display: flex;
         align-items: center;
@@ -655,7 +744,7 @@ color: #333333;
         margin: 0 5px;
         color: #404040;
 
-        font-size: 14px;
+        font-size: 20px;
 
         i {
             margin-right: 5px;
@@ -684,21 +773,23 @@ color: #333333;
     }
 
     .main-kataqoriya {
+        text-align: center;
         margin: 10px;
         width: 50%;
+       
         overflow-y: hidden;
         scrollbar-width: none;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
         border-radius: 10px;
+        transform: translateY(35px);
 
     }
-
-   
-
+    .main-kataqoriya svg{
+        width: 25px!important;
+    }
     .list {
         border-top: none !important;
 
@@ -707,24 +798,28 @@ color: #333333;
 
     .main-kataqoriya span:hover {
         background: #DF2127;
-        border-radius: 10px 10px 0px 0px;
-        font-size: 17px;
         color: #fff;
+       scale: 1.1;
 
         
     }
 
 
     .main-kataqoriya span {
+        
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
         transition: .2s ease;
         width: 100%;
-        font-size: 12px;
+        font-size: 15px;
         font-family: Arial, Helvetica, sans-serif;
         margin: 5px;
         border-top: 1px solid #DADADA;
         padding-top: 10px;
         border-right: none;
         text-align: left;
+        height: 35px;
 
         svg {
             margin: 0 5px;
@@ -740,12 +835,14 @@ color: #333333;
     }
 
     .silder {
-        position: relative;
-        height: 20%;
-        width: 50%;
-        top: -255px;
-        left: -20px;
-        margin: auto;
+        
+            position: relative;
+            height: 520px; /* Hündürlüyü 520px olaraq dəyişdirdik */
+            width: 50%;
+            top: -140px;
+            left: -20px;
+            margin: auto;
+        
     }
 
     .block {
@@ -957,14 +1054,14 @@ color: #333333;
     }
     .service {
         position: relative;
-        width: 80%;
+        width: 100%;
     }
     
     .service-card {
         position: absolute;
-        top: 500px;
-        left: 80px;
-        width: 70%;
+        top: 590px;
+        left: 164px;
+        width:60%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -977,8 +1074,8 @@ color: #333333;
         justify-content: center;
         margin: 5px;
         flex-direction: row;
-        width: 60%;
-        height: 200px;
+        width: 75%;
+        height: 150px;
         background: #FAFAFA;
         text-align: center;
         border-radius: 10px;
@@ -986,6 +1083,7 @@ color: #333333;
     }
     
     .service-card1 {
+        width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1002,16 +1100,104 @@ color: #333333;
         transform: rotate(90deg);
         margin: 0;
     } */
-    
+    .card1son{
+        border-right: none;
+    }
     .service-main h5 {
         font-weight: 560;
-        font-size: 17px;
+        font-size: 15px;
         color: #333333;
     }
     
     .service-main p {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 450;
         color: #333333;
     }
+    .onecixan {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row; 
+        padding: 5px;
+    }
+    
+    .onecixan-blcok, .onecixan-blcok2 {
+        border-radius: 5px;
+        padding: 10px;
+        width: 399px;
+        height: 200px;
+        top: -340px;
+        left: -15px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+        position: relative; 
+    }
+    
+    .onecixan-content, .onecixan-content2 {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .onecixan-content {
+        background-image: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png);
+    }
+    
+    .onecixan-content2 {
+        background-image: url(../img/silder2.png);
+    }
+    
+    .one-cixanmain {
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+        height: 180px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    
+    .one-text {
+        width: 100%;
+    }
+    
+    .one-text h3 {
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+    
+    .one-cixanmain p {
+        font-size: 15px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    
+    .one-cixanmain a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 40px;
+        background: #000000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    
 }
