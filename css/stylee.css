@@ -16,6 +16,7 @@ html, body {
     padding: 10px;
     width: 100%;
     display: flex;
+
 }
 .mobilefiltir{
     display: none!important;
@@ -24,14 +25,14 @@ html, body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
 
 }
 
 .header-text i {
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     margin-right: 4px !important;
 }
 
@@ -39,7 +40,14 @@ html, body {
     display: inline-block;
 
 }
-
+#lang{
+ 
+outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    padding: 5px;
+}
 .header-text {
     display: flex;
     align-items: center;
@@ -47,33 +55,45 @@ html, body {
     width: 100%;
 
 }
+.mobile-axtaris{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 15px 0;
+    width: 70%;
+}
 
 .header-axtaris input {
     width: 100%;
-    height: 20px;
+    height: 100%;
     border-radius: 30px;
-    padding: 10px;
+    padding: 10px 40px;
     font-size: 13px;
     outline: none;
 }
-
+.axtar-icon{
+position: absolute;
+left: 15px;
+top: 30%;
+}
 .header-text span {
     color: #fff;
 
-    font: 13px arial, sans-serif;
+    font: 16px arial, sans-serif;
     border-right: 1px solid #DADADA;
     padding-right: 8px;
 }
 
 .header-text p {
-    font: 12px arial, sans-serif;
+    font: 16px arial, sans-serif;
     color: #fff;
 
 }
 
 .header-text img {
     margin: 0 10px;
-    width: 10%;
+    width: 5%;
     height: 20px;
     object-fit: cover;
 }
@@ -92,7 +112,7 @@ html, body {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: px;
+    padding: 15px;
 }
 
 .header-filtr select,
@@ -146,7 +166,7 @@ option {
    
 }
 .menu-bars {
-transition: .3s ease;
+transition: .3s ease6ğ-;
     position: absolute;
     width: 100%;
     display: flex;
@@ -167,6 +187,9 @@ transition: .3s ease;
 .menu-bars.open {
 
     right: 0;
+}
+.desc-axtaris{
+    display: none;
 }
 .header-text2 span {
 
@@ -650,108 +673,117 @@ border-radius: 5px;
 }
 
 
-#mehsular{
+#mehsular {
     padding: 15px;
-    
 }
-.mehsular-head{
 
-width: 100%;
-text-align: left;
-h1{
-font-weight: 500;
-font-size: 30px;
-color: #333333;
-
-
+.mehsular-head {
+    width: 100%;
+    text-align: left;
 }
+
+.mehsular-head h1 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #333333;
 }
-#mehsularcontainer{
+
+#mehsularcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px; /* Kartlar arasında boşluq */
 }
-.mehsulcard{
+
+.mehsulcard {
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-direction: column;
     border-radius: 10px;
-    border:  1px solid #DFDFDF;
+    border: 1px solid #DFDFDF;
+    width: calc(50% - 20px); /* Kartların genişliyini 50% edirik ki, yan-yana dursun */
+    box-sizing: border-box; /* Genişlik hesablanarkən padding daxil edilməsin */
 }
 
-.mehsul-img{
+.mehsul-img {
     margin: 10px;
     width: 128px;
     height: 100px;
     text-align: center;
-    img{
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        margin: auto;
-    }
 }
-.mehsular-text{
+
+.mehsul-img img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.mehsular-text {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
     padding: 5px;
     margin: 10px;
-    h6{
-font-weight: 300;
-font-size: 13px;
-color: #C4C4C4;
-    }
-    h4{
-font-size: 16px;
-font-weight: 500;
-text-align: left;
+}
 
-    }
-    p{
-margin: 10px 0;
-font-size: 20px;
-font-weight: 500;
-line-height: 25px;
+.mehsular-text h6 {
+    font-weight: 300;
+    font-size: 13px;
+    color: #C4C4C4;
+}
 
-    }
-.stok{
+.mehsular-text h4 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.mehsular-text p {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.stok {
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-border-radius: 10px;
-   padding: 5px;
-border: 1px solid #5BC904;
-font-size: 15px;
-color: #5BC904;
-
-    i{
-       color: #5BC904;
-    }
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #5BC904;
+    font-size: 15px;
+    color: #5BC904;
 }
-.sebetat2{
-width: 100%;
-height: 40px;
-padding: 5px;
-background: transparent;
-border: 1px solid #FF0000;
-color: #FF0000;
-border-radius: 5px;
-font-size: 16px;
-font-weight: 500;
-i{
+
+.stok i {
+    color: #5BC904;
+}
+
+.sebetat2 {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sebetat2 i {
     margin-right: 10px;
 }
-}
-}
+
 @media (min-width: 800px) {
     .service {
         width: 100%;
@@ -773,6 +805,18 @@ i{
         padding-right: 16px;
     }
 }
+@media (max-width: 650px) {
+    .mehsulcard {
+        width: calc(50% - 20px); }
+}
+
+@media (max-width: 350px) {
+    .mehsulcard {
+        width: 100%; 
+    }
+}
+
+
 @media only screen and (min-width: 768px) {
    
     .header-top {
@@ -800,13 +844,30 @@ i{
     .header-top-content i {
         color: #fff;
         font-size: 13px;
+       
     }
 
     .header-top-content input {
-        width: 85%;
+        width: 85%!important;
         height: 30px;
         border-radius: 30px;
     }
+    
+    .desc-axtaris {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 5px 0;
+    }
+    
+    .axtar-icon {
+        position: absolute;
+        left: 55px; 
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+
 
     .header-text {
         display: flex;
@@ -819,8 +880,11 @@ i{
         font: 14px arial, sans-serif;
         border-right: 1px solid #DADADA;
         padding-right: 8px;
+        margin-left: 10px;
     }
-
+.desc-axtaris{
+    display: flex;
+}
     .header-text p {
         font: 14px arial, sans-serif;
         color: #fff;
@@ -933,7 +997,7 @@ i{
         border-left: none !important;
     }
     .container{
-        max-width: 1200px;
+        max-width: 1400px;
         margin: auto;
     }
 
@@ -1010,7 +1074,7 @@ i{
             height: 520px; /* Hündürlüyü 520px olaraq dəyişdirdik */
             width: 50%;
             top: -140px;
-            left: -20px;
+            left: -10px;
             margin: auto;
         
     }
@@ -1020,8 +1084,8 @@ i{
     }
 
     .swiper {
-        width: 95%;
-        height: 100%;
+        width: 90%;
+        height: 350px;
     }
 
     .swiper-slide {
@@ -1039,7 +1103,7 @@ i{
 
     .silder-img {
         width: 100%;
-        height: 250px;
+        height: 350px;
     }
 
     br {
@@ -1066,8 +1130,8 @@ i{
 .teklif {
     position: absolute;
     top: -380px;
-    right:25px;
-    width: 100%;
+    right:5px;
+    width: 85%;
     height: max-content;
     display: flex;
     align-items: center;
@@ -1088,8 +1152,8 @@ i{
     align-items: center;
     justify-content: space-around;
     margin: 5px;
-    
-    width: 80%;
+
+    width: 100%;
     }
     .saat{
     text-align: center;
@@ -1229,7 +1293,7 @@ i{
     
     .service-card {
         position: absolute;
-        top:320px;
+        top:370px;
         width:100%;
         display: flex;
         align-items: center;
@@ -1291,8 +1355,8 @@ i{
         justify-content: center;
         flex-direction: row; 
         padding: 5px;
-        top: 750px;
-        left: 165px;
+        top: 790px;
+        left: 100px;
         right: 0;
     }
     .onecixan-mob{
@@ -1303,7 +1367,7 @@ i{
         justify-content: center;
         flex-direction: row; 
         padding: 5px;
-        top: 750px;
+        top: 70px;
         left: 165px;
         right: 0;
     }
@@ -1386,7 +1450,7 @@ i{
 
 #mehsular{
     padding: 15px;
- max-width: 1200px;
+ max-width: 1400px;
  margin: auto;
 }
 .mehsular-head{
@@ -1410,11 +1474,13 @@ color: #333333;
     flex-wrap: wrap;
 }
 .mehsulcard{
-    margin: 10px;
+  
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 209px;
+    width: 42%;
+    height: 300px;
+    min-height: 350px;
     flex-direction: column;
     border-radius: 10px;
     border:  1px solid #DFDFDF;
@@ -1433,11 +1499,12 @@ color: #333333;
     }
 }
 .mehsulcard h6{
-font-size: 16px;
+font-size: 15px;
 font-weight: 500;
 color: #C4C4C4;            
 }
 .mehsular-text{
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -1445,7 +1512,8 @@ color: #C4C4C4;
     padding: 5px;
    
     h4{
-font-size: 19px;
+
+font-size: 14px;
 font-weight:550;
 color: #000;  
 
@@ -1484,8 +1552,8 @@ background:#FF0000;;
 transition: .2s ease;
 color: #fff;
 border-radius: 5px;
-font-size: 16px;
-font-weight: 500;
+font-size: 14px;
+font-weight: 450;
 i{
     margin-right: 10px;
 }
@@ -1496,11 +1564,28 @@ i{
     border-color: 1px solid #DF2127;
     color: #000;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   
     .onecixan {
         width: 70%;
-        left: 185px;
+        left: 195px;
     }
 }
+@media screen and (max-width: 800px) {
+    .header-top-content input {
+        width: 100%!important;
+    }
 
+    .axtar-icon {
+        left: 20px; 
+    }
+}
+@media screen and (max-width: 1000px) {
+    .header-top-content input {
+        width: 100%!important;
+    }
+
+    .axtar-icon {
+        left: 15px; 
+    }
+}

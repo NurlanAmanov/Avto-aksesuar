@@ -127,11 +127,13 @@ for (let i = 0; i < mehsul.length; i++) {
           <div class="mehsular-text">
             <h6>${mehsul[i].model}</h6>
             <h4>${mehsul[i].name}</h4>
-            <div class="stok">${stockIcon} ${mehsul[i].stock}</div>
+            <div class="stok ">${stockIcon} <span style="color: ${mehsul[i].stock === "Stokda var" ?"#5BC904" : "#FF0000"}">${mehsul[i].stock}</span></div>
             <p>${mehsul[i].price} ${mehsul[i].currency}</p>
             <button class="sebetat2"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
           </div>
-        </div>`}
+        </div>`
+    
+    }
 
         function toggleMenu() {
             const menu = document.querySelector(".menu-bars");
