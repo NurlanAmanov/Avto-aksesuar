@@ -6,11 +6,14 @@
 
 body {
     background: #fff;
-  
+
 }
-html, body {
+
+html,
+body {
     overflow-x: hidden;
 }
+
 .header-top {
     background: #000;
     padding: 10px;
@@ -18,9 +21,11 @@ html, body {
     display: flex;
 
 }
-.mobilefiltir{
-    display: none!important;
+
+.mobilefiltir {
+    display: none !important;
 }
+
 .header-top-content {
     width: 100%;
     display: flex;
@@ -40,14 +45,16 @@ html, body {
     display: inline-block;
 
 }
-#lang{
- 
-outline: none;
+
+#lang {
+
+    outline: none;
     border: none;
     background: transparent;
     color: #fff;
     padding: 5px;
 }
+
 .header-text {
     display: flex;
     align-items: center;
@@ -55,7 +62,8 @@ outline: none;
     width: 100%;
 
 }
-.mobile-axtaris{
+
+.mobile-axtaris {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,11 +80,13 @@ outline: none;
     font-size: 13px;
     outline: none;
 }
-.axtar-icon{
-position: absolute;
-left: 15px;
-top: 30%;
+
+.axtar-icon {
+    position: absolute;
+    left: 15px;
+    top: 30%;
 }
+
 .header-text span {
     color: #fff;
 
@@ -135,11 +145,13 @@ option {
     color: #fff;
 
 }
-#menu-bars{
+
+#menu-bars {
     font-size: 25px;
     margin-right: 10px;
 }
-.bagla{
+
+.bagla {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -148,10 +160,12 @@ option {
     margin: 25px auto;
     width: 90%;
 }
-.menu-mobil{
+
+.menu-mobil {
     position: relative;
     overflow-x: hidden;
 }
+
 .header-text2 {
 
     display: flex;
@@ -160,37 +174,42 @@ option {
     padding: 5px;
 
 }
-.mobil-menu{
 
-   position: relative;
-   
+.mobil-menu {
+
+    position: relative;
+
 }
+
 .menu-bars {
-transition: .3s ease6ğ-;
+    transition: .3s ease6ğ-;
     position: absolute;
     width: 100%;
     display: flex;
-   padding: 10px;
-   align-items: center;
+    padding: 10px;
+    align-items: center;
     flex-direction: column;
     right: -100%;
     height: 100vh;
     background: #fff;
     z-index: 99999;
     transition: right 0.3s ease;
-    
+
 }
-.mobilekataq{
-    display: none!important;
+
+.mobilekataq {
+    display: none !important;
 }
 
 .menu-bars.open {
 
     right: 0;
 }
-.desc-axtaris{
+
+.desc-axtaris {
     display: none;
 }
+
 .header-text2 span {
 
     margin: 0 5px;
@@ -214,9 +233,11 @@ transition: .3s ease6ğ-;
         object-fit: cover;
     }
 }
-.aramesafe{
+
+.aramesafe {
     display: none;
 }
+
 .menubar {
     display: flex;
     align-items: center;
@@ -228,7 +249,7 @@ transition: .3s ease6ğ-;
     border-left: 1px solid #DADADA;
     padding-left: 5px;
     display: flex;
-padding-right: 5px;
+    padding-right: 5px;
     align-items: center;
     justify-content: center;
     width: 30%;
@@ -237,11 +258,13 @@ padding-right: 5px;
     background: #FAFAFA;
     font-size: 13px;
     text-decoration: none;
-  
+
 }
+
 .menu1 {
     border-left: none !important;
 }
+
 .main-top {
     padding: 5px;
     width: 100%;
@@ -325,15 +348,16 @@ padding-right: 5px;
     width: 30px;
     height: 5px;
 }
+
 .silder-info {
-   
+
     position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100vh; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background: linear-gradient(-180deg, rgba(0, 0, 0, 0.66) 20.83%, rgba(196, 196, 196, 0) 100%);
-    z-index: 1; 
+    z-index: 1;
 }
 
 .alisveris a {
@@ -357,16 +381,16 @@ padding-right: 5px;
 }
 
 .info-head {
-    margin: 20px!important;
-    line-height: 25px!important;
+    margin: 20px !important;
+    line-height: 25px !important;
     color: #ffdf40 !important;
-    font-weight: 700!important;
-    font-size: 30px!important;
-    z-index: 2; 
+    font-weight: 700 !important;
+    font-size: 30px !important;
+    z-index: 2;
 }
 
 .silder-info p {
-    margin: 20px!important;
+    margin: 20px !important;
 
     color: #fff;
     font-family: 'TT Interfaces';
@@ -375,12 +399,14 @@ padding-right: 5px;
     line-height: 22px;
     width: 60%;
     text-align: left;
-    z-index: 2; 
+    z-index: 2;
 }
-.teklif-blcoks{
+
+.teklif-blcoks {
     padding: 5px;
 }
-.teklif{
+
+.teklif {
     width: 100%;
     display: flex;
     align-items: center;
@@ -388,25 +414,28 @@ padding-right: 5px;
     flex-direction: column;
     border-radius: 10px;
     border: 1px solid #DADADA;
-   
+
 }
-.teklif-main{
+
+.teklif-main {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
 }
-.teklif-text{
+
+.teklif-text {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 5px;
-    
+
     width: 80%;
-    
-    }
-    .saat{
+
+}
+
+.saat {
     text-align: center;
     font-weight: 550;
     margin: 0 5px;
@@ -416,10 +445,10 @@ padding-right: 5px;
     height: 39px;
     background: #F4F4F4;
     border-radius: 3px;
-   
-    }
 
-.teklif-desc{
+}
+
+.teklif-desc {
     width: 100%;
     display: flex;
     align-items: center;
@@ -427,173 +456,193 @@ padding-right: 5px;
     flex-direction: row;
 
 }
-.teklif-text h3{
-font-style: normal;
-font-weight: 600;
-font-size: 15px;
-line-height: 19px;
-text-align: center;
-color: #000000;
+
+.teklif-text h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
 
 
 }
-.teklif-img{
+
+.teklif-img {
     width: 40%;
     margin: auto;
     text-align: center;
 }
-.teklif-img img{
+
+.teklif-img img {
     text-align: center;
     width: 50%;
     object-fit: cover;
-    margin: 10px ;
+    margin: 10px;
 }
-.teklif-desctext{
+
+.teklif-desctext {
     width: 60%;
     padding: 5px;
 
-h4{
-font-weight: 900;
-font-size: 18px;
+    h4 {
+        font-weight: 900;
+        font-size: 18px;
 
-color: #000000;
+        color: #000000;
     }
-    .div1{
 
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 5px;
-margin-top: 15px;
-width: 100%;
-height: 30px;
-border: 0.8px solid #00A1FC;
-border-radius: 3px;
-font-size: 18px;
-color: #00A1FC;
+    .div1 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-top: 15px;
+        width: 100%;
+        height: 30px;
+        border: 0.8px solid #00A1FC;
+        border-radius: 3px;
+        font-size: 18px;
+        color: #00A1FC;
     }
-    .div2{
 
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 5px;
-margin-top: 15px;
-width: 100%;
-height: 30px;
-border: 0.8px solid #0000FF ;
-border-radius: 3px;
-font-size: 18px;
-color: #0000FF;
+    .div2 {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-top: 15px;
+        width: 100%;
+        height: 30px;
+        border: 0.8px solid #0000FF;
+        border-radius: 3px;
+        font-size: 18px;
+        color: #0000FF;
     }
 }
-.qiymetler{
+
+.qiymetler {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     padding: 5px;
 }
-.qiymet1{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 25px;
-color: #FF0000;
-margin-right: 10px;
-}
-.qiymet2{
-    text-decoration: line-through;
-font-size: 16px;
-color: #333333;
-}
-.sebetat{
-    margin: 10px 0;
-width: 100%;
-height: 40px;
-background: #FF0000;
-border-radius: 5px;
-border: none;
-color: #fff;
-font-weight: 500;
-font-size: 16px;
-i{
+
+.qiymet1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FF0000;
     margin-right: 10px;
 }
+
+.qiymet2 {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #333333;
 }
-.teklifgor{
-display: flex;
-align-items: center;
-justify-content: center;
-text-decoration: none;
-width: 100%;
-height: 50px;
-background: #DADADA;
-border-radius: 0px 0px 10px 10px;
-font-family: 'TT Interfaces';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-color: #333333;
+
+.sebetat {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    background: #FF0000;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+
+    i {
+        margin-right: 10px;
+    }
 }
-.service-card{
+
+.teklifgor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    background: #DADADA;
+    border-radius: 0px 0px 10px 10px;
+    font-family: 'TT Interfaces';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.service-card {
     margin: auto;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.service-card1{
+
+.service-card1 {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-padding: 5px!important;
+    padding: 5px !important;
 }
-.service-main{
+
+.service-main {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5px;
     flex-direction: column;
     width: 100%;
-    height:max-content;
+    height: max-content;
     background: #FAFAFA;
     text-align: center;
     border-radius: 10px;
-    
+
 }
-.service-main h5{
-font-weight: 560;
-font-size: 17px;
-color: #333333;
-margin-top: 10px;
+
+.service-main h5 {
+    font-weight: 560;
+    font-size: 17px;
+    color: #333333;
+    margin-top: 10px;
 }
-.service-main p{
-font-size: 16px;
-font-weight: 450;
-color: #333333;
+
+.service-main p {
+    font-size: 16px;
+    font-weight: 450;
+    color: #333333;
 
 
 }
-.onecixan-mob{
+
+.onecixan-mob {
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    padding:5px;
+    padding: 5px;
 }
-.onecixan{
+
+.onecixan {
     width: 100%;
     display: none;
     align-content: center;
     justify-content: center;
     flex-direction: column;
-    padding:5px;
+    padding: 5px;
 }
-.onecixan-blcok{
+
+.onecixan-blcok {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
@@ -602,9 +651,10 @@ color: #333333;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-    
+
 }
-.onecixan-blcok2{
+
+.onecixan-blcok2 {
     border-radius: 5px;
     padding: 10px;
     width: 100%;
@@ -613,9 +663,10 @@ color: #333333;
     align-items: center;
     justify-content: center;
     margin: 10px 0;
-    
+
 }
-.onecixan-content{
+
+.onecixan-content {
     border-radius: 5px;
     width: 30%;
     display: flex;
@@ -623,69 +674,78 @@ color: #333333;
     justify-content: center;
     border-radius: 10px;
 }
-.onecixan-content{
+
+.onecixan-content {
     border-radius: 5px;
     background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
     width: 100%;
 
 }
-.onecixan-content2{
+
+.onecixan-content2 {
     border-radius: 5px;
     background: url(../img/silder2.png)center/cover;
     width: 100%;
 
 
 }
-.one-cixanmain{
+
+.one-cixanmain {
     overflow: hidden;
-background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
-height: 200px;
-width: 100%;
-}
-.one-text{
+    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+    height: 200px;
     width: 100%;
 }
-.one-text h3{
-margin: 25px;
-font-weight: 600;
-font-size: 20px;
-color: #FFFFFF;
+
+.one-text {
+    width: 100%;
+}
+
+.one-text h3 {
+    margin: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
 
 }
-.one-cixanmain p{
-font-size: 15px;
-line-height: 19px;
-color: #FFFFFF;
-margin: 25px;
+
+.one-cixanmain p {
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 25px;
 }
-.one-cixanmain a{
-     margin: 25px;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 50%;
-height: 40px;
-background: #000000;
-color: #fff;
-text-decoration: none;
-border-radius: 5px;
+
+.one-cixanmain a {
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 
 }
 
 
 #mehsular {
     padding: 15px;
+
 }
 
 .mehsular-head {
     width: 100%;
-    text-align: left;
+
 }
 
 .mehsular-head h1 {
     font-weight: 500;
     font-size: 30px;
     color: #333333;
+    margin: 15px;
 }
 
 #mehsularcontainer {
@@ -695,7 +755,8 @@ border-radius: 5px;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px; /* Kartlar arasında boşluq */
+    padding: 10px;
+
 }
 
 .mehsulcard {
@@ -703,18 +764,13 @@ border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
+    width: 40%;
+    max-width: 209px;
+    max-height: 380px;
+    height: 380px;
     border: 1px solid #DFDFDF;
-    width: calc(50% - 20px); /* Kartların genişliyini 50% edirik ki, yan-yana dursun */
-    box-sizing: border-box; /* Genişlik hesablanarkən padding daxil edilməsin */
-}
-
-.mehsul-img {
-    margin: 10px;
-    width: 128px;
-    height: 100px;
-    text-align: center;
+    border-radius: 10px;
+    flex-direction: column;
 }
 
 .mehsul-img img {
@@ -722,6 +778,13 @@ border-radius: 5px;
     height: 100%;
     object-fit: cover;
     margin: auto;
+}
+
+.mehsul-img {
+    margin: 10px;
+    width: 128px;
+    height: 100px;
+    text-align: center;
 }
 
 .mehsular-text {
@@ -735,21 +798,20 @@ border-radius: 5px;
 
 .mehsular-text h6 {
     font-weight: 300;
-    font-size: 13px;
+    font-size: 12px;
     color: #C4C4C4;
 }
 
-.mehsular-text h4 {
-    font-size: 16px;
+.mehsular-text h5 {
+    font-size: 13px;
     font-weight: 500;
     text-align: left;
 }
 
 .mehsular-text p {
     margin: 10px 0;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 500;
-    line-height: 25px;
 }
 
 .stok {
@@ -760,7 +822,6 @@ border-radius: 5px;
     border-radius: 10px;
     padding: 5px;
     border: 1px solid #5BC904;
-    font-size: 15px;
     color: #5BC904;
 }
 
@@ -776,13 +837,24 @@ border-radius: 5px;
     border: 1px solid #FF0000;
     color: #FF0000;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
 }
 
 .sebetat2 i {
     margin-right: 10px;
 }
+
+.like-block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+}
+
+
 
 @media (min-width: 800px) {
     .service {
@@ -805,20 +877,30 @@ border-radius: 5px;
         padding-right: 16px;
     }
 }
-@media (max-width: 650px) {
-    .mehsulcard {
-        width: calc(50% - 20px); }
+@media (min-width: 300px) {
+    .like {
+        transform: translateY(15px)!important;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: center;
+            width: 35px;
+            height: 35px;
+            padding: 5px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+            border-radius: 50%;
+        
+            i {
+                font-size: 1.5em;
+            }
+        }
 }
 
-@media (max-width: 350px) {
-    .mehsulcard {
-        width: 100%; 
-    }
-}
 
 
 @media only screen and (min-width: 768px) {
-   
+
     .header-top {
         display: flex;
         align-items: center;
@@ -844,15 +926,15 @@ border-radius: 5px;
     .header-top-content i {
         color: #fff;
         font-size: 13px;
-       
+
     }
 
     .header-top-content input {
-        width: 85%!important;
+        width: 85% !important;
         height: 30px;
         border-radius: 30px;
     }
-    
+
     .desc-axtaris {
         display: flex;
         align-items: center;
@@ -860,12 +942,12 @@ border-radius: 5px;
         position: relative;
         margin: 5px 0;
     }
-    
+
     .axtar-icon {
         position: absolute;
-        left: 55px; 
+        left: 55px;
         top: 50%;
-        transform: translateY(-50%); 
+        transform: translateY(-50%);
     }
 
 
@@ -882,9 +964,11 @@ border-radius: 5px;
         padding-right: 8px;
         margin-left: 10px;
     }
-.desc-axtaris{
-    display: flex;
-}
+
+    .desc-axtaris {
+        display: flex;
+    }
+
     .header-text p {
         font: 14px arial, sans-serif;
         color: #fff;
@@ -931,9 +1015,11 @@ border-radius: 5px;
         margin-left: 15px;
         font-size: 14px;
     }
-.mobilefiltir{
-    display: flex!important;
-}
+
+    .mobilefiltir {
+        display: flex !important;
+    }
+
     .header-filtr button {
         margin-left: 15px;
         width: 10%;
@@ -996,7 +1082,8 @@ border-radius: 5px;
     .menu1 {
         border-left: none !important;
     }
-    .container{
+
+    .container {
         max-width: 1400px;
         margin: auto;
     }
@@ -1005,7 +1092,7 @@ border-radius: 5px;
         text-align: center;
         margin: 10px;
         width: 50%;
-       
+
         overflow-y: hidden;
         scrollbar-width: none;
         display: flex;
@@ -1016,9 +1103,11 @@ border-radius: 5px;
         transform: translateY(35px);
 
     }
-    .main-kataqoriya svg{
-        width: 25px!important;
+
+    .main-kataqoriya svg {
+        width: 25px !important;
     }
+
     .list {
         border-top: none !important;
 
@@ -1028,18 +1117,21 @@ border-radius: 5px;
     .main-kataqoriya span:hover {
         background: #DF2127;
         color: #fff;
-       scale: 1.1;
+        scale: 1.1;
 
-        
+
     }
-#menu-bars{
-    display: none;
-}
-    .mobilekataq{
+
+    #menu-bars {
         display: none;
     }
+
+    .mobilekataq {
+        display: none;
+    }
+
     .main-kataqoriya span {
-        
+
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
@@ -1069,14 +1161,15 @@ border-radius: 5px;
     }
 
     .silder {
-        
-            position: relative;
-            height: 520px; /* Hündürlüyü 520px olaraq dəyişdirdik */
-            width: 50%;
-            top: -140px;
-            left: -10px;
-            margin: auto;
-        
+
+        position: relative;
+        height: 520px;
+        /* Hündürlüyü 520px olaraq dəyişdirdik */
+        width: 50%;
+        top: -140px;
+        left: -10px;
+        margin: auto;
+
     }
 
     .block {
@@ -1122,185 +1215,203 @@ border-radius: 5px;
         width: 30px;
         height: 5px;
     }
-    .teklif-blcoks{
+
+    .teklif-blcoks {
         position: relative;
         width: 100%;
-       
+
     }
-.teklif {
-    position: absolute;
-    top: -380px;
-    right:5px;
-    width: 85%;
-    height: max-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-    border: 1px solid #DADADA;
-}
-    .teklif-main{
+
+    .teklif {
+        position: absolute;
+        top: -380px;
+        right: 5px;
+        width: 85%;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+        border: 1px solid #DADADA;
+    }
+
+    .teklif-main {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
     }
-    .teklif-text{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5px;
 
-    width: 100%;
+    .teklif-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 5px;
+
+        width: 100%;
     }
-    .saat{
-    text-align: center;
-    font-weight: 550;
-    margin: 0 5px;
-    font-size: 14px;
-    padding: 5px;
-    width: 48px;
-    height: 39px;
-    background: #F4F4F4;
-    border-radius: 3px;
-   
+
+    .saat {
+        text-align: center;
+        font-weight: 550;
+        margin: 0 5px;
+        font-size: 14px;
+        padding: 5px;
+        width: 48px;
+        height: 39px;
+        background: #F4F4F4;
+        border-radius: 3px;
+
     }
-    
-    .teklif-desc{
+
+    .teklif-desc {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    
+
     }
-    .teklif-img{
+
+    .teklif-img {
         text-align: center;
-        width:50%;
+        width: 50%;
         margin: auto;
     }
-    .teklif-img img{
+
+    .teklif-img img {
         width: 60%;
         object-fit: cover;
-      
+
     }
-    .div-des{
+
+    .div-des {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
     }
-    .teklif-desctext{
+
+    .teklif-desctext {
         display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     width: 100%;
-    padding: 5px;
-    
-        h4{
-    font-weight: 900;
-    font-size: 18px;
-    
-    color: #000000;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+
+        h4 {
+            font-weight: 900;
+            font-size: 18px;
+
+            color: #000000;
         }
-        .div1{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    margin-right: 15px;
-    width: 100%;
-    height: 35px;
-    border: 0.8px solid #00A1FC;
-    border-radius: 3px;
-    font-size: 15px;
-    color: #00A1FC;
+
+        .div1 {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            margin-right: 15px;
+            width: 100%;
+            height: 35px;
+            border: 0.8px solid #00A1FC;
+            border-radius: 3px;
+            font-size: 15px;
+            color: #00A1FC;
         }
-        .div2{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    margin-top: 15px;
-    width: 50%;
-    height: 30px;
-    border: 0.8px solid #0000FF ;
-    border-radius: 3px;
-    font-size: 18px;
-    color: #0000FF;
+
+        .div2 {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            margin-top: 15px;
+            width: 50%;
+            height: 30px;
+            border: 0.8px solid #0000FF;
+            border-radius: 3px;
+            font-size: 18px;
+            color: #0000FF;
         }
     }
-    .qiymetler{
+
+    .qiymetler {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
         padding: 5px;
     }
-    .qiymet1{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 25px;
-    color: #FF0000;
-    margin-right: 10px;
-    }
-    .qiymet2{
-        text-decoration: line-through;
-    font-size: 16px;
-    color: #333333;
-    }
-    .sebetat{
-        margin: 10px 0;
-    width: 100%;
-    height: 40px;
-    background: #FF0000;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    i{
+
+    .qiymet1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #FF0000;
         margin-right: 10px;
     }
+
+    .qiymet2 {
+        text-decoration: line-through;
+        font-size: 16px;
+        color: #333333;
     }
-    .teklifgor{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 100%;
-    height:40px;
-    background: #DADADA;
-    border-radius: 0px 0px 10px 10px;
-    font-family: 'TT Interfaces';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: #333333;
-    
-    
+
+    .sebetat {
+        margin: 10px 0;
+        width: 100%;
+        height: 40px;
+        background: #FF0000;
+        border-radius: 5px;
+        border: none;
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+
+        i {
+            margin-right: 10px;
+        }
     }
+
+    .teklifgor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 100%;
+        height: 40px;
+        background: #DADADA;
+        border-radius: 0px 0px 10px 10px;
+        font-family: 'TT Interfaces';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        color: #333333;
+
+
+    }
+
     .service {
         position: relative;
         width: 100%;
     }
-    
+
     .service-card {
         position: absolute;
-        top:370px;
-        width:100%;
+        top: 370px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: auto;
     }
-    
+
     .service-main {
         display: flex;
         align-items: center;
@@ -1314,7 +1425,7 @@ border-radius: 5px;
         border-radius: 10px;
         padding: 10px;
     }
-    
+
     .service-card1 {
         width: 80%;
         display: flex;
@@ -1324,7 +1435,7 @@ border-radius: 5px;
         border-right: 1px solid #DADADA;
         padding-right: 10px;
     }
-    
+
     /* .service-mesafe {
         border: none;
         background-color: #DADADA;
@@ -1333,46 +1444,50 @@ border-radius: 5px;
         transform: rotate(90deg);
         margin: 0;
     } */
-    .card1son{
+    .card1son {
         border-right: none;
     }
+
     .service-main h5 {
         font-weight: 560;
         font-size: 15px;
         color: #333333;
     }
-    
+
     .service-main p {
         font-size: 12px;
         font-weight: 450;
         color: #333333;
     }
+
     .onecixan {
         position: absolute;
         width: 80%;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: row; 
+        flex-direction: row;
         padding: 5px;
         top: 790px;
         left: 100px;
         right: 0;
     }
-    .onecixan-mob{
+
+    .onecixan-mob {
         position: absolute;
         width: 80%;
-        display: none!important;
+        display: none !important;
         align-items: center;
         justify-content: center;
-        flex-direction: row; 
+        flex-direction: row;
         padding: 5px;
         top: 70px;
         left: 165px;
         right: 0;
     }
-    
-    .onecixan-blcok, .onecixan-blcok2 {
+
+    .onecixan-blcok,
+    .onecixan-blcok2 {
         border-radius: 5px;
         padding: 10px;
         width: 399px;
@@ -1381,26 +1496,27 @@ border-radius: 5px;
         align-items: center;
         justify-content: center;
         margin: 5px;
-     
+
     }
-    
-    .onecixan-content, .onecixan-content2 {
+
+    .onecixan-content,
+    .onecixan-content2 {
         border-radius: 5px;
         width: 100%;
         height: 100%;
-       
+
         background-size: cover;
         background-position: center;
     }
-    
+
     .onecixan-content {
         background-image: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png);
     }
-    
+
     .onecixan-content2 {
         background-image: url(../img/silder2.png);
     }
-    
+
     .one-cixanmain {
         overflow: hidden;
         background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
@@ -1414,25 +1530,25 @@ border-radius: 5px;
         box-sizing: border-box;
         border-radius: 5px;
     }
-    
+
     .one-text {
         width: 100%;
     }
-    
+
     .one-text h3 {
         font-weight: 600;
         font-size: 20px;
         color: #FFFFFF;
         margin-bottom: 10px;
     }
-    
+
     .one-cixanmain p {
         font-size: 15px;
         line-height: 19px;
         color: #FFFFFF;
         margin-bottom: 20px;
     }
-    
+
     .one-cixanmain a {
         display: flex;
         align-items: center;
@@ -1444,28 +1560,31 @@ border-radius: 5px;
         text-decoration: none;
         border-radius: 5px;
     }
-    
+
 }
 
 
-#mehsular{
+#mehsular {
     padding: 15px;
- max-width: 1400px;
- margin: auto;
+    max-width: 1400px;
+    margin: auto;
 }
-.mehsular-head{
-margin-top: 30px;
-width: 100%;
-text-align: left;
-h1{
-font-weight: 550;
-font-size: 30px;
-color: #333333;
+
+.mehsular-head {
+    margin-top: 30px;
+    width: 100%;
+    text-align: left;
+
+    h1 {
+        font-weight: 550;
+        font-size: 30px;
+        color: #333333;
 
 
+    }
 }
-}
-#mehsularcontainer{
+
+#mehsularcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1473,119 +1592,147 @@ color: #333333;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.mehsulcard{
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 42%;
-    height: 300px;
-    min-height: 350px;
-    flex-direction: column;
-    border-radius: 10px;
-    border:  1px solid #DFDFDF;
-}
 
-.mehsul-img{
+
+.mehsul-img {
     margin: 10px;
     width: 128px;
     height: 100px;
     text-align: center;
-    img{
+
+    img {
         width: 50%;
         height: 100%;
         object-fit: cover;
         margin: auto;
     }
 }
-.mehsulcard h6{
-font-size: 15px;
-font-weight: 500;
-color: #C4C4C4;            
+
+.mehsulcard h6 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #C4C4C4;
 }
-.mehsular-text{
+
+.mehsular-text {
+    margin-left: 8px;
     width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 5px;
+
+
+    h5 {
+        width: 100%;
+        text-wrap: wrap;
+        font-size: 15px !important;
+        font-weight: 550;
+        color: #000;
+
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 20px !important;
+        ;
+        font-weight: 560;
+        color: #333333;
+
+    }
+
+    .stok {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 5px;
+        border: 1px solid #5BC904;
+    
+        color: #5BC904;
+
+        i {
+            margin-right: 10px;
+            color: #5BC904;
+        }
+
+        .stokyox {
+            color: #FF0000;
+        }
+        span{
+            font-size: 13px;
+        }
+    }
+
+    .sebetat2 {
+        min-width: 100%;
+        max-width: 100%;
+        height: 40px;
+        padding: 5px;
+        background: #FF0000;
+        ;
+        transition: .2s ease;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 14px !important;
+        ;
+        font-weight: 500;
+
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+.like {
    
-    h4{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+    
+        i {
+            font-size: 1.5em;
+            color: #DFDFDF;
 
-font-size: 14px;
-font-weight:550;
-color: #000;  
-
+        }
     }
-    p{
-margin: 10px 0;
-font-size: 20px;
-font-weight: 560;
-color: #333333;
-
-    }
-.stok{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-border-radius: 10px;
-   padding: 5px;
-border: 1px solid #5BC904;
-font-size: 15px;
-color: #5BC904;
-
-    i{
-        margin-right:10px ;
-       color: #5BC904;
-    }
-    .stokyox{
-        color: #FF0000;
-    }
-}
-.sebetat2{
-width: 100%;
-height: 40px;
-padding: 5px;
-background:#FF0000;;
-transition: .2s ease;
-color: #fff;
-border-radius: 5px;
-font-size: 14px;
-font-weight: 450;
-i{
-    margin-right: 10px;
-}
-}
-}
-.sebetat2:hover{
+.sebetat2:hover {
     background: transparent;
     border-color: 1px solid #DF2127;
-    color: #000;
+    color: #DF2127;
 }
+
 @media (max-width: 1250px) {
-  
+
     .onecixan {
         width: 70%;
         left: 195px;
     }
 }
+
 @media screen and (max-width: 800px) {
     .header-top-content input {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .axtar-icon {
-        left: 20px; 
+        left: 20px;
     }
 }
+
 @media screen and (max-width: 1000px) {
     .header-top-content input {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .axtar-icon {
-        left: 15px; 
+        left: 15px;
     }
 }
