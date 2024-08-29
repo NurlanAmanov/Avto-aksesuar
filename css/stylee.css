@@ -760,30 +760,29 @@ option {
 }
 
 .mehsulcard {
-    margin: 10px;
+    margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 39%;
     max-width: 209px;
-    max-height: 380px;
-    height: 380px;
+    height: 350px;
+    max-height: 330px;
     border: 1px solid #DFDFDF;
     border-radius: 10px;
     flex-direction: column;
+    
 }
 
 .mehsul-img img {
     width: 50%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     margin: auto;
 }
 
 .mehsul-img {
     margin: 10px;
-    width: 128px;
-    height: 100px;
+    width: 98px;
     text-align: center;
 }
 
@@ -794,27 +793,32 @@ option {
     flex-direction: column;
     padding: 5px;
     margin: 10px;
+    width: 100%;
 }
 
-.mehsular-text h6 {
-    font-weight: 300;
-    font-size: 12px;
+.mehsulcard h6 {
+    display: none!important;
+    font-weight: 500;
+    font-size: 18px;
     color: #C4C4C4;
 }
 
-.mehsular-text h5 {
-    font-size: 13px;
-    font-weight: 500;
+.mehsulcard h5 {
+    font-size: 18px;
+    font-weight: 520;
     text-align: left;
 }
 
-.mehsular-text p {
+.mehsulcard p {
     margin: 10px 0;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 500;
+    color: #333333;
+    ;
 }
 
 .stok {
+   
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -827,19 +831,23 @@ option {
 
 .stok i {
     color: #5BC904;
+    margin-right: 10px;
 }
 
-.sebetat2 {
+.sebetat2mobile { 
     width: 100%;
-    height: 40px;
+    height: 43px;
     padding: 5px;
     background: transparent;
     border: 1px solid #FF0000;
-    color: #FF0000;
+    color: #ffff;
+    background: #FF0000;
     border-radius: 5px;
     font-size: 15px;
     font-weight: 500;
+
 }
+
 
 .sebetat2 i {
     margin-right: 10px;
@@ -877,29 +885,7 @@ option {
         padding-right: 16px;
     }
 }
-@media (min-width: 300px) {
-    .like {
-        transform: translateY(15px)!important;
-            display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            text-align: center;
-            width: 35px;
-            height: 35px;
-            padding: 5px;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
-            border-radius: 50%;
-        
-            i {
-                font-size: 1.5em;
-            }
-        }
-}
-
-
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 
     .header-top {
         display: flex;
@@ -1566,14 +1552,18 @@ option {
 
 #mehsular {
     padding: 15px;
-    max-width: 1400px;
+  
     margin: auto;
 }
 
 .mehsular-head {
     margin-top: 30px;
+    margin-left: 45px;
     width: 100%;
     text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 
     h1 {
         font-weight: 550;
@@ -1583,7 +1573,9 @@ option {
 
     }
 }
-
+.mehsulcard h6{
+    display: flex;
+}
 #mehsularcontainer {
     display: flex;
     align-items: center;
@@ -1593,117 +1585,31 @@ option {
     flex-wrap: wrap;
 }
 
+.sebetat2deskt{
 
-.mehsul-img {
-    margin: 10px;
-    width: 128px;
-    height: 100px;
-    text-align: center;
-
-    img {
-        width: 50%;
-        height: 100%;
-        object-fit: cover;
-        margin: auto;
-    }
-}
-
-.mehsulcard h6 {
-    font-size: 15px;
-    font-weight: 500;
-    color: #C4C4C4;
-}
-
-.mehsular-text {
-    margin-left: 8px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-
-
-    h5 {
+ 
         width: 100%;
-        text-wrap: wrap;
-        font-size: 15px !important;
-        font-weight: 550;
-        color: #000;
-
-    }
-
-    p {
-        margin: 10px 0;
-        font-size: 20px !important;
-        ;
-        font-weight: 560;
-        color: #333333;
-
-    }
-
-    .stok {
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
+        height: 43px;
         padding: 5px;
-        border: 1px solid #5BC904;
-    
-        color: #5BC904;
-
-        i {
-            margin-right: 10px;
-            color: #5BC904;
-        }
-
-        .stokyox {
-            color: #FF0000;
-        }
-        span{
-            font-size: 13px;
-        }
-    }
-
-    .sebetat2 {
-        min-width: 100%;
-        max-width: 100%;
-        height: 40px;
-        padding: 5px;
+        background: transparent;
+        border: 1px solid #FF0000;
+        color: #ffff;
         background: #FF0000;
-        ;
-        transition: .2s ease;
-        color: #fff;
         border-radius: 5px;
-        font-size: 14px !important;
-        ;
+        font-size: 15px;
         font-weight: 500;
-
-        i {
-            margin-right: 10px;
-        }
-    }
-}
-.like {
-   
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        text-align: center;
-        width: 35px;
-        height: 35px;
-        padding: 5px;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
-        border-radius: 50%;
     
-        i {
-            font-size: 1.5em;
-            color: #DFDFDF;
-
-        }
-    }
-.sebetat2:hover {
+        
+}
+.sebetat2deskt i {
+    margin-right: 10px;
+}
+.sebetat2deskt:hover {
+    background: transparent;
+    border-color: 1px solid #DF2127;
+    color: #DF2127;
+}
+.sebetat2mobile:hover {
     background: transparent;
     border-color: 1px solid #DF2127;
     color: #DF2127;
@@ -1715,6 +1621,7 @@ option {
         width: 70%;
         left: 195px;
     }
+    
 }
 
 @media screen and (max-width: 800px) {
@@ -1725,14 +1632,80 @@ option {
     .axtar-icon {
         left: 20px;
     }
+    
 }
+@media screen and (min-width: 650px){
+    .mobilekataq{
+        display: flex;
+    }
 
+
+}
 @media screen and (max-width: 1000px) {
+   
     .header-top-content input {
         width: 100% !important;
     }
 
     .axtar-icon {
         left: 15px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .sebetat2mobile {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .sebetat2deskt {
+        display: none !important;
+    }
+    
+}
+@media screen and (max-width: 300px) {
+    .mehsulcard {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 330px) {
+    .mehsulcard {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 331px) and (max-width: 480px) {
+    .mehsulcard {
+        width: 45%;
+        max-width: 209px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 450px) {
+    .mehsulcard {
+        width: 40%;
+        max-width: 209px;
+    }
+}
+
+@media screen and (min-width: 451px) {
+    .mehsulcard {
+        width: 40%;
+        max-width: 209px;
+    }
+}
+
+@media screen and (min-width: 424px) {
+    
+    .sebetat2mobile {
+        display: none !important;
+    }
+    .sebetat2deskt {
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        text-align: center;
     }
 }
