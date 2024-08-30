@@ -3,193 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Like Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-      .one-cixanmain {
-    overflow: hidden;
-    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
-    height: 200px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px; /* Daha geniş padding əlavə etmək üçün */
-    box-sizing: border-box;
-    border-radius: 10px; /* Daha yumşaq kənarlar */
-}
-
-    .onecixan {
-    position: relative; /* Daha uyğun bir yerləşmə üçün */
-    width: 100%; /* Genişlik tam olaraq */
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Blokların arasını açmaq üçün */
-    flex-direction: row; 
-    padding: 20px; /* Yuxarı-aşağı boşluq əlavə etmək üçün */
-}
-
-.onecixan-blcok, .onecixan-blcok2 {
-    border-radius: 10px; /* Kənarların daha yumşaq görünməsi üçün */
-    padding: 20px;
-    width: 48%; /* Blokların genişliyini daha uyğun etmək üçün */
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Kölgə effekti əlavə etmək üçün */
-}
-
-.silder {
-    position: relative;
-    width: 70%; /* Daha genişlik üçün */
-    height: 400px; /* Hündürlüyü uyğunlaşdırın */
-    margin: auto;
-    top: 0; /* Default olaraq top'u silmək */
-    left: 0; /* Default olaraq left'i silmək */
-}
-
-/* Günün təklifi bölməsini düzəltmək */
-.teklif {
-    position: absolute;
-    top: 20px; /* Daha aşağı çəkmək üçün */
-    right: 0;
-    width: 25%; /* Daha uyğun genişlik */
-}
-
-/* Hər maşın üçün bəzi hissələri */
-.service-card {
-    position: relative;
-    top: 0; /* Default olaraq top'u silmək */
-    margin-top: 20px; /* Daha uyğun margin */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-    
+        .like-content {
+            background-color: #DFDFDF;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-  <div class="main-top">
-    <div class="silder">
-      <div class="block">
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="silder-img">
-                <div class="silder-info">
-                  <p class="info-head">MOTOR YAĞLARI</p>
-                  <p>Lorem ipsum dolor sit amet consectetur
-                    adipiscing elit nunc eget.</p>
 
-                </div>
-                <div class="alisveris">
-                  <a href="#">İndi alış-veriş edin
-                  </a>
-                </div>
-                <img src="img/silder1.png" alt="">
-
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="silder-img">
-                <img src="img/silder2.png" alt="">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="silder-img">
-                <img src="img/silder3.png" alt="">
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
+    <div class="like">
+        <div onclick="likeet()" >
+            <i id="like" class="fa-solid fa-heart like-content"></i>
         </div>
-      </div>
     </div>
-    
-    <div class="teklif">
-      <div class="teklif-blcoks">
-        <div class="teklif">
-          <div class="teklif-main">
-            <div class="teklif-text">
-              <h3>Günün təklifi
 
+    <script>
+        function likeet() {
+            let likeContent = document.querySelector('.like-content');
+            let currentColor = likeContent.style.backgroundColor;
 
-              </h3> <span class="saat">14 saat</span>
-              <span class="saat">23 Dəqiqə</span>
-              <span class="saat">43 saniyə</span>
-            </div>
-            <div class="teklif-desc">
-              <div class="teklif-img">
-                <img src="img/mehsul1.png" alt="">
-              </div>
-              <div class="teklif-desctext">
-                <h4>Mercedes üçün alışdırma şamları</h4>
-                <div class="div-des">
-                  <div class="div1">Səbətdə 30% endirim</div>
-                  <div class="div2">Komissiyasız</div>
-                </div>
-                <div class="qiymetler">
-                  <p class="qiymet1">279.29 AZN</p>
-                  <p class="qiymet2">299.99 AZN</p>
-                </div>
-
-                <button class="sebetat"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
-
-              </div>
-
-            </div>
-          </div>
-          <a class="teklifgor" href="">Bütün təklifləri gör</a>
-        </div>
-
-
-      </div>
-    </div>
-</div>
-
-<div class="service-card">
-    <div class="service-main">
-      <div class="serivce">
-        <div class="service-card">
-          <div class="service-main">
-            <div class="service-card1">
-              <svg width="19" height="22" viewBox="0 0 19 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M9.5 0L0 4V10C0 15.55 4.05333 20.74 9.5 22C14.9467 20.74 19 15.55 19 10V4L9.5 0ZM9.5 10.99H16.8889C16.3294 15.11 13.4267 18.78 9.5 19.93V11H2.11111V5.3L9.5 2.19V10.99Z"
-                  fill="#DF2127" />
-              </svg>
-              <h5>100% Təhlükəsizlik</h5>
-              <p>Yalnız təhlükəsiz ödəniş</p>
-            </div>
-            <hr class="service-mesafe">
-            <div class="service-card1">
-              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M20.7778 15.2778C19.25 15.2778 17.7833 15.0333 16.4144 14.5811C15.9867 14.4467 15.51 14.5444 15.1678 14.8744L12.4789 17.5633C9.02 15.8033 6.18444 12.98 4.42444 9.50889L7.11333 6.80778C7.45555 6.49 7.55333 6.01333 7.41889 5.58556C6.96667 4.21667 6.72222 2.75 6.72222 1.22222C6.72222 0.55 6.17222 0 5.5 0H1.22222C0.55 0 0 0.55 0 1.22222C0 12.6989 9.30111 22 20.7778 22C21.45 22 22 21.45 22 20.7778V16.5C22 15.8278 21.45 15.2778 20.7778 15.2778ZM19.5556 11H22C22 4.92556 17.0744 0 11 0V2.44444C15.73 2.44444 19.5556 6.27 19.5556 11ZM14.6667 11H17.1111C17.1111 7.62667 14.3733 4.88889 11 4.88889V7.33333C13.0289 7.33333 14.6667 8.97111 14.6667 11Z"
-                  fill="#DF2127" />
-              </svg>
-              <h5>24/7 dəstək</h5>
-              <p>İstənilən vaxt bizə zəng edin</p>
-            </div>
-
-            <div class="service-card1 card1son">
-              <svg width="31" height="22" viewBox="0 0 31 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M26.7727 5.5H22.5455V0H2.81818C1.26818 0 0 1.2375 0 2.75V17.875H2.81818C2.81818 20.1575 4.70636 22 7.04545 22C9.38455 22 11.2727 20.1575 11.2727 17.875H19.7273C19.7273 20.1575 21.6155 22 23.9545 22C26.2936 22 28.1818 20.1575 28.1818 17.875H31V11L26.7727 5.5ZM7.04545 19.9375C5.87591 19.9375 4.93182 19.0163 4.93182 17.875C4.93182 16.7337 5.87591 15.8125 7.04545 15.8125C8.215 15.8125 9.15909 16.7337 9.15909 17.875C9.15909 19.0163 8.215 19.9375 7.04545 19.9375ZM26.0682 7.5625L28.83 11H22.5455V7.5625H26.0682ZM23.9545 19.9375C22.785 19.9375 21.8409 19.0163 21.8409 17.875C21.8409 16.7337 22.785 15.8125 23.9545 15.8125C25.1241 15.8125 26.0682 16.7337 26.0682 17.875C26.0682 19.0163 25.1241 19.9375 23.9545 19.9375Z"
-                  fill="#DF2127" />
-              </svg>
-              <h5>Pulsuz çatdırılma</h5>
-              <p>50 dollardan başlayan
-                sifarişlər üçün</p>
-            </div>
-
-          </div
-    </div>
-</div>
+            // Rəngi qırmızıya dəyişdiririk, əgər default rəngdirsə
+            if (currentColor === 'rgb(223, 223, 223)' || currentColor === '') {
+                likeContent.style.color = '#FF0000';
+            } else {
+                // Əgər rəng artıq qırmızıdırsa, yenidən default rəngə dəyişdiririk
+                likeContent.style.color = '#DFDFDF';
+            }
+        }
+    </script>
 
 </body>
 </html>

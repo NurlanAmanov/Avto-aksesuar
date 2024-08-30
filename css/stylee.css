@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "TT Interfaces bold";
 }
 
 body {
@@ -731,6 +732,105 @@ option {
 }
 
 
+/* one cixan 3 */
+.onecixan2 {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.onecixan-blcok2 {
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+.onecixan-blcok3{
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+.onecixan-content2 {
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.onecixan-content2 {
+    border-radius: 5px;
+    background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
+    width: 100%;
+
+}
+
+.onecixan-content3 {
+    border-radius: 5px;
+    background: url(../img/silder2.png)center/cover;
+    width: 100%;
+
+
+}
+
+.one-cixanmain2 {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+    height: 200px;
+    width: 100%;
+}
+
+.one-text2 {
+    width: 100%;
+}
+
+.one-text2 h3 {
+    margin: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
+
+.one-cixanmain2 p {
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 25px;
+}
+
+.one-cixanmain2 a {
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+
 #mehsular {
     padding: 15px;
 
@@ -796,12 +896,7 @@ option {
     width: 100%;
 }
 
-.mehsulcard h6 {
-    display: none!important;
-    font-weight: 500;
-    font-size: 18px;
-    color: #C4C4C4;
-}
+
 
 .mehsulcard h5 {
     font-size: 18px;
@@ -853,13 +948,21 @@ option {
     margin-right: 10px;
 }
 
-.like-block {
+.like {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
-    padding: 10px;
+transform: translate(-5px,-15px);
     margin: auto;
+    like.content{
+        width: 100%;
+    }
+    
+    i{
+        color: #C4C4C4;
+        font-size: 20px;
+    }
 }
 
 
@@ -973,7 +1076,8 @@ option {
     }
 
     .header-main {
-        width: 90%;
+        max-width: 1440px;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1069,10 +1173,10 @@ option {
         border-left: none !important;
     }
 
-    .container {
+    /* .container {
         max-width: 1400px;
         margin: auto;
-    }
+    } */
 
     .main-kataqoriya {
         text-align: center;
@@ -1548,11 +1652,106 @@ option {
     }
 
 }
+/* one cixan 3 */
+.onecixan2 {
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.onecixan-blcok3 {
+    border-radius: 5px;
+    padding: 10px;
+    width: 540px;
+    height: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+.onecixan-blcok4{
+    border-radius: 5px;
+    padding: 10px;
+    width: 540px;
+    height: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+.onecixan-content2 {
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.onecixan-content2 {
+    border-radius: 5px;
+    background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
+    width: 100%;
+
+}
+
+.onecixan-content3 {
+    border-radius: 5px;
+    background: url(../img/silder2.png)center/cover;
+    width: 100%;
 
 
+}
+
+.one-cixanmain2 {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+
+    width: 100%;
+}
+
+.one-text2 {
+    width: 100%;
+}
+
+.one-text2 h3 {
+    margin: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+
+}
+
+.one-cixanmain2 p {
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 25px;
+}
+
+.one-cixanmain2 a {
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
 #mehsular {
     padding: 15px;
-  
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -1573,9 +1772,7 @@ option {
 
     }
 }
-.mehsulcard h6{
-    display: flex;
-}
+
 #mehsularcontainer {
     display: flex;
     align-items: center;
@@ -1600,6 +1797,15 @@ option {
         font-weight: 500;
     
         
+}
+.mehsul-img {
+    width: 128px;
+    height: 100px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 .sebetat2deskt i {
     margin-right: 10px;
@@ -1667,6 +1873,8 @@ option {
         width: 100%;
         max-width: 100%;
     }
+   
+  
 }
 
 @media screen and (min-width: 301px) and (max-width: 330px) {
@@ -1674,12 +1882,46 @@ option {
         width: 100%;
         max-width: 100%;
     }
+    .mehsular-head {
+        margin-top: 30px;
+        margin-left: 5px;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
 }
 
 @media screen and (min-width: 331px) and (max-width: 480px) {
     .mehsulcard {
         width: 45%;
         max-width: 209px;
+    }
+    .mehsular-head {
+        margin-top: 30px;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .like {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+    transform: translate(-15px,5px);
+        margin: auto;
+        like.content{
+            width: 100%;
+        }
+        
+        i{
+            color: #C4C4C4;
+            font-size: 20px;
+        }
     }
 }
 
@@ -1709,3 +1951,72 @@ option {
         text-align: center;
     }
 }
+@media screen and (max-width: 767px) {
+    .mehsulcard h6 {
+        display: none !important;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+  
+    .mehsulcard h6 {
+        display: flex !important;
+        font-weight: 500;
+        font-size: 18px;
+        color: #C4C4C4;
+    }
+}
+@media screen and (min-width: 700px) {
+    .like {
+        transform: translate(40px,5px);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px;
+        border-radius: 50%;
+        margin: -5px auto;
+        
+       i{
+  
+            color: #C4C4C4;
+            font-size: 20px;
+        }
+    }
+    
+    .mehsulcard {
+        width: 209px;
+        height: 423px;
+    }
+
+    .mehsul-img img {
+        width: 80%; }
+
+    .mehsul-img {
+        width: 120px; 
+    }
+
+    .mehsular-text {
+        padding: 10px; 
+    }
+
+    .mehsulcard h5 {
+        font-size: 20px; 
+    }
+
+    .mehsulcard p {
+        font-size: 22px; 
+    }
+
+    .stok {
+        padding: 10px; 
+    }
+
+    .sebetat2mobile {
+        height: 50px;
+        font-size: 17px; 
+    }
+}
+
+    
