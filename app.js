@@ -175,20 +175,26 @@ const mehsularcontainer = document.getElementById('mehsularcontainer');
 let mehsulcard = document.querySelector(".mehsulcard")
 let like=document.getElementById("like")
 const markalar=document.getElementById("markalar")
+const markalar2=document.getElementById("markalar2")
 
 const markaad= new Set()
+const markaad2= new Set()
 
 for(let j=0;j<marka.length;j++){
     markaad.add(marka[j].modeller)
+    markaad2.add(marka[j].modeller)
 }
 
 const elavemarka=Array.from(markaad)
 
 function markaadd(){
  markalar.innerHTML=''
+ markalar2.innerHTML=''
     for (let j = 0; j < elavemarka.length; j++){
        
-        markalar.innerHTML+=`<option>${elavemarka[j]}</option>`}
+        markalar.innerHTML+=`<option>${elavemarka[j]}</option>`
+        markalar2.innerHTML+=`<option>${elavemarka[j]}</option>`
+    }
 }
 markaadd()
 
