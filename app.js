@@ -197,6 +197,8 @@ const mehsul = [
 
 const mehsularcontainer = document.getElementById('mehsularcontainer');
 let mehsulcard = document.querySelector(".mehsulcard")
+const mehsularcontainer2 = document.getElementById('mehsularcontainer2');
+let mehsulcard2 = document.querySelector(".mehsulcard2")
 let like=document.getElementById("like")
 const markalar=document.getElementById("markalar")
 const markalar2=document.getElementById("markalar2")
@@ -232,6 +234,25 @@ for (let i = 0; i < mehsul.length  ; i++) {
         : '<i class="fa-solid fa-circle-xmark stokyox"></i>';
 
     mehsularcontainer.innerHTML += `
+        <div class="mehsulcard">
+          <div class="mehsul-img">
+            <div class="like">
+              <div class="like-content">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+            </div>
+            <img src="${mehsul[i].images[0]}" alt="mehsul">
+          </div>
+          <div class="mehsular-text">
+            <h6>${mehsul[i].model}</h6>
+            <h5>${mehsul[i].name}</h5>
+            <div class="stok">${stockIcon} <span style="color: ${borderrengim}">${mehsul[i].stock}</span></div>
+            <p>${mehsul[i].price} ${mehsul[i].currency}</p>
+            <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
+            <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+        </div>`;
+    mehsularcontainer2.innerHTML += `
         <div class="mehsulcard">
           <div class="mehsul-img">
             <div class="like">
