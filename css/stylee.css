@@ -199,7 +199,7 @@ margin: 10px;
     align-items: center;
     flex-direction: column;
     right: -100%;
-    height: 100vh;
+    height: 100vh; 
     background: #fff;
     z-index: 99999;
     transition: right 0.3s ease;
@@ -263,7 +263,6 @@ text-align: center;
     justify-content: center;
     width: 100%;
     flex-direction: row;
-
     padding: 10px; }
 
 #menu {
@@ -793,8 +792,9 @@ text-align: center;
 }
 
 .mehsular-head h1 {
-    font-weight: 500;
+    font-weight: bold;
     font-size: 30px;
+    font-family:"TT Interfaces bold";
     color: #333333;
     margin: 15px;
 }
@@ -876,6 +876,7 @@ text-align: center;
     padding: 5px;
     border: 1px solid #5BC904;
     color: #5BC904;
+    
     
 }
 .stok span{
@@ -1141,7 +1142,7 @@ transform: translate(-5px,-15px);
     }
 
     .main-kataqoriya svg {
-        width: 25px !important;
+        width: 30px!important;
     }
 
     .list {
@@ -1150,9 +1151,11 @@ transform: translate(-5px,-15px);
 
     }
     .main-kataqoriya span{
-        font-size: 15px;
+        font-size: 20px;
     }
     .main-kataqoriya span:hover {
+        border-top-left-radius:5px;
+        border-top-right-radius: 5px;
         background: #DF2127;
         color: #fff;
         scale: 1.1;
@@ -1177,7 +1180,7 @@ transform: translate(-5px,-15px);
         justify-content: flex-start;
         transition: .2s ease;
         width: 100%;
-        font-size: 15px;
+     
         font-family: Arial, Helvetica, sans-serif;
         margin: 5px;
         border-top: 1px solid #DADADA;
@@ -1295,7 +1298,6 @@ transform: translate(-5px,-15px);
     }
 
     .teklif {
-       
         width: 85%;
         height: max-content;
         display: flex;
@@ -1305,65 +1307,70 @@ transform: translate(-5px,-15px);
         border-radius: 10px;
         border: 1px solid #DADADA;
     }
-
+    
     .teklif-main {
         width: 100%;
+        height: 585px; 
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+        overflow: hidden; 
     }
-
+    
     .teklif-text {
         display: flex;
         align-items: center;
         justify-content: space-around;
         margin: 5px;
-
         width: 100%;
+        transform:translateY(-35px);
     }
-
+    .teklif-text h3{
+        font-size: 17px;
+        font-family:"TT Interfaces 2";
+    }
     .saat {
-        text-align: center;
-        font-weight: 550;
-        margin: 0 5px;
-        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 20px;
         padding: 5px;
-        width: 48px;
-        height: 39px;
+        width: 70px;
+        height: 60px;
         background: #F4F4F4;
         border-radius: 3px;
-
     }
-
+    
+    
     .teklif-desc {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
     }
-
+    
     .teklif-img {
         text-align: center;
         width: 50%;
         margin: auto;
     }
-
+    
     .teklif-img img {
         width: 60%;
-        object-fit: cover;
-
+        max-height: 100%; 
+        object-fit: cover; 
     }
-
+    
     .div-des {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
     }
-
+    
     .teklif-desctext {
         display: flex;
         align-items: center;
@@ -1371,45 +1378,42 @@ transform: translate(-5px,-15px);
         flex-direction: column;
         width: 100%;
         padding: 5px;
-
-        h4 {
-            font-weight: 900;
-            font-size: 18px;
-
-            color: #000000;
-        }
-
-        .div1 {
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2px;
-            margin-right: 15px;
-            width: 100%;
-            height: 35px;
-            border: 0.8px solid #00A1FC;
-            border-radius: 3px;
-            font-size: 15px;
-            color: #00A1FC;
-        }
-
-        .div2 {
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px;
-            margin-top: 15px;
-            width: 50%;
-            height: 30px;
-            border: 0.8px solid #0000FF;
-            border-radius: 3px;
-            font-size: 18px;
-            color: #0000FF;
-        }
     }
-
+    
+    .teklif-desctext h4 {
+        font-weight: 900;
+        font-size: 22px;
+        color: #000000;
+    }
+    
+    .teklif-desctext .div1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        margin-right: 15px;
+        width: 100%;
+        height: 30px; 
+        border: 0.8px solid #00A1FC;
+        border-radius: 3px;
+        font-size: 20px;
+        color: #00A1FC;
+    }
+    
+    .teklif-desctext .div2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin-top: 15px;
+        width: 50%;
+        height: 30px;
+        border: 0.8px solid #0000FF;
+        border-radius: 3px;
+        font-size: 20px;
+        color: #0000FF;
+    }
+    
     .qiymetler {
         display: flex;
         align-items: center;
@@ -1417,55 +1421,56 @@ transform: translate(-5px,-15px);
         flex-direction: row;
         padding: 5px;
     }
-
+    
     .qiymet1 {
         font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 25px;
+        font-family:"TT Interfaces 2";
+        font-weight: 600;
+        font-size: 25px;
         color: #FF0000;
         margin-right: 10px;
     }
-
+    
     .qiymet2 {
         text-decoration: line-through;
-        font-size: 16px;
+        font-family:"TT Interfaces 2";
+        font-family: 580;
+        font-size: 20px;
         color: #333333;
     }
-
+    
     .sebetat {
-        margin: 10px 0;
+        margin: 5px 0; 
         width: 100%;
-        height: 40px;
+        height: 50px; 
         background: #FF0000;
         border-radius: 5px;
         border: none;
         color: #fff;
         font-weight: 500;
-        font-size: 16px;
-
-        i {
-            margin-right: 10px;
-        }
+        font-size: 25px; 
     }
-
+    
+    .sebetat i {
+        margin-right: 10px;
+    }
+    
     .teklifgor {
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
         width: 100%;
-        height: 40px;
+        height: 55px; 
         background: #DADADA;
         border-radius: 0px 0px 10px 10px;
         font-family: 'TT Interfaces';
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 25px; 
         color: #333333;
-
-
     }
+    
 
     .service {
         position: relative;
@@ -1528,14 +1533,7 @@ transform: translate(-5px,-15px);
       .one-cixan { grid-area: one-cixan; }
       
       
-    /* .service-mesafe {
-        border: none;
-        background-color: #DADADA;
-        height: 2px;
-        width: 60.6px;
-        transform: rotate(90deg);
-        margin: 0;
-    } */
+    
     .card1son {
         border-right: none;
     }
@@ -1577,7 +1575,7 @@ transform: translate(-5px,-15px);
     .onecixan-blcok2 {
         border-radius: 5px;
         padding: 10px;
-        width: 399px;
+        width: 40%;
         height: 200px;
         display: flex;
         align-items: center;
@@ -1748,7 +1746,7 @@ transform: translate(-5px,-15px);
 }
 #mehsular {
     padding: 15px;
-    max-width: 1400px;
+    width: 100%;
     margin: auto;
 }
 
@@ -1761,13 +1759,7 @@ transform: translate(-5px,-15px);
     align-items: flex-start;
     justify-content: flex-start;
 
-    h1 {
-        font-weight: 550;
-        font-size: 30px;
-        color: #333333;
-
-
-    }
+ 
 }
 
 #mehsularcontainer {
@@ -1795,6 +1787,24 @@ transform: translate(-5px,-15px);
     
         
 }
+.stok span{
+    font-size: 18px;
+    font-weight: 500;
+}
+.stok {
+    width: 90%;
+    min-width: 50%;
+    font-family: "TT Interfaces 2";
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #5BC904;
+    color: #5BC904;
+    
+    
+}
 .mehsul-img {
     width: 128px;
     height: 100px;
@@ -1817,11 +1827,35 @@ transform: translate(-5px,-15px);
     border-color: 1px solid #DF2127;
     color: #DF2127;
 }
+
+.mehsular-text h5{
+    font-weight: 650;
+    font-family:"TT Interfaces bold";
+}
+.mehsular-text p{
+    font-size: 18px;
+    font-weight: 650;
+    font-family:"TT Interfaces bold";
+}
+.sebetat2deskt{
+    font-size: 20px;
+    font-weight: 550;
+    font-family:"TT Interfaces bold";
+}
 .onecixan{
     flex-direction: row;
     justify-content: flex-start;
 }
-
+.onecixan-container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.one-cixanmain2 .onecixan-blcok{
+    width: 100%;
+}
+  
 @media (max-width: 1250px) {
 
     .onecixan {
@@ -1952,11 +1986,20 @@ transform: translate(-5px,-15px);
         justify-content: center;
         display: flex !important;
         text-align: center;
+        height: 55px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 767px) {
     .mehsulcard h6 {
         display: none !important;
+    }
+    .mehsular-text h5{
+        text-align: center;
+    }
+    .stok span {
+        font-size: 15px;
+        margin: 0 10px;
     }
     
 }
@@ -1969,6 +2012,7 @@ transform: translate(-5px,-15px);
         font-size: 18px;
         color: #C4C4C4;
     }
+   
 }
 @media screen and (min-width: 700px) {
     .like {
@@ -2012,9 +2056,6 @@ transform: translate(-5px,-15px);
         font-size: 22px; 
     }
 
-    .stok {
-        padding: 10px; 
-    }
 
     .sebetat2mobile {
         height: 50px;

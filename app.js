@@ -164,6 +164,30 @@ const mehsul = [
         ],
         model: "SKU: 61346969134",
         name: "Cigarette Lighter",
+        price: 18.29,
+        currency: "AZN",
+        stock: "Stokda yoxdu",
+        stock: "Yoldadır" 
+    },
+    {
+        images: [
+            "img/mehsul1.png",
+            "img/mehsul2.png",
+        ],
+        model: "SKU: 61346969134",
+        name: "Cigarette Lighter",
+        price: 18.29,
+        currency: "AZN",
+        stock: "Stokda yoxdu",
+        stock: "Yoldadır" 
+    },
+    {
+        images: [
+            "img/mehsul1.png",
+            "img/mehsul2.png",
+        ],
+        model: "SKU: 61346969134",
+        name: "Cigarette Lighter",
         price: 279.29 ,
         currency: "AZN",
         stock: "Stokda var",
@@ -243,3 +267,23 @@ likeIcons.forEach(icon => {
             menu.classList.toggle("open");
         }
     
+        function startCountdown(duration) {
+            let timer = duration, hours, minutes, seconds;
+        
+            setInterval(function () {
+                hours = Math.floor(timer / 3600);
+                minutes = Math.floor((timer % 3600) / 60);
+                seconds = Math.floor(timer % 60);
+        
+                document.getElementById('hours').textContent = hours + " saat";
+                document.getElementById('minutes').textContent = minutes + " Dəqiqə";
+                document.getElementById('seconds').textContent = seconds + " Saniyə";
+        
+                if (--timer < 0) {
+                    timer = duration; 
+                }
+            }, 1000);
+        }
+        
+        startCountdown(10800);
+        
