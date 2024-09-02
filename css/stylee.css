@@ -472,11 +472,14 @@ text-align: center;
     margin: 0 5px;
     font-size: 13px;
     padding: 5px;
-    width: 45px;
+    width: 50px;
     height: 39px;
     background: #F4F4F4;
     border-radius: 3px;
 
+}
+#minutes{
+    text-align: center;
 }
 
 .teklif-desc {
@@ -609,7 +612,9 @@ text-align: center;
     line-height: 20px;
     color: #333333;
 }
-
+.service{
+    margin-bottom: 15px;
+}
 .service-card {
     margin: auto;
     width: 100%;
@@ -654,7 +659,10 @@ text-align: center;
 
 
 }
-
+.onecixan-container2{
+    margin: 10px;
+    gap: 10px;
+}
 .onecixan-mob {
     width: 100%;
     display: flex;
@@ -689,7 +697,7 @@ text-align: center;
     border-radius: 5px;
     padding: 10px;
     width: 100%;
-    height: 200px;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -724,7 +732,13 @@ text-align: center;
 .one-cixanmain {
     overflow: hidden;
     background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
-    height: 200px;
+    height: 240px;
+    width: 100%;
+}
+.one-cixanmain3 {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+    height: 240px;
     width: 100%;
 }
 
@@ -788,7 +802,10 @@ text-align: center;
 
 .mehsular-head {
     width: 100%;
-
+ display: flex;
+ align-items: center;
+ justify-content: center;
+margin: 10px;
 }
 
 .mehsular-head h1 {
@@ -1625,7 +1642,32 @@ transform: translate(-5px,-15px);
         box-sizing: border-box;
         border-radius: 5px;
     }
-
+    .one-cixanmain4 {
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+        height: 660px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .one-cixanmain4 {
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+        height: 240px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
     .one-text {
         width: 100%;
     }
@@ -1704,6 +1746,7 @@ transform: translate(-5px,-15px);
     border-radius: 5px;
     background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
     width: 100%;
+    height: 30vh;
 
 }
 
@@ -1711,11 +1754,21 @@ transform: translate(-5px,-15px);
     border-radius: 5px;
     background: url(../img/silder2.png)center/cover;
     width: 100%;
-
-
+}
+.onecixan-content4{
+    border-radius: 5px;
+    background: url(../img/silder2.png)center/cover;
+    width: 100%;
+    height: 30vh;
 }
 
 .one-cixanmain2 {
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+
+    width: 100%;
+}
+.one-cixanmain4 {
     overflow: hidden;
     background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
 
@@ -1762,7 +1815,7 @@ transform: translate(-5px,-15px);
 
 .mehsular-head {
     margin-top: 30px;
-    margin-left: 45px;
+    
     width: 100%;
     text-align: left;
     display: flex;
@@ -2007,7 +2060,7 @@ transform: translate(-5px,-15px);
         justify-content: center;
         display: flex !important;
         text-align: center;
-        height: 55px;
+        height: 45px;
         width: 100%;
     }
 }

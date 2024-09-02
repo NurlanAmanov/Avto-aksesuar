@@ -195,6 +195,8 @@ const mehsul = [
     }
 ];
 
+
+
 const mehsularcontainer = document.getElementById('mehsularcontainer');
 let mehsulcard = document.querySelector(".mehsulcard")
 const mehsularcontainer2 = document.getElementById('mehsularcontainer2');
@@ -234,7 +236,7 @@ for (let i = 0; i < mehsul.length  ; i++) {
         : '<i class="fa-solid fa-circle-xmark stokyox"></i>';
 
     mehsularcontainer.innerHTML += `
-        <div class="mehsulcard">
+        <div data-aos="fade-right"    class="mehsulcard">
           <div class="mehsul-img">
             <div class="like">
               <div class="like-content">
@@ -253,7 +255,7 @@ for (let i = 0; i < mehsul.length  ; i++) {
           </div>
         </div>`;
     mehsularcontainer2.innerHTML += `
-        <div class="mehsulcard">
+        <div  data-aos="fade-right" class="mehsulcard">
           <div class="mehsul-img">
             <div class="like">
               <div class="like-content">
