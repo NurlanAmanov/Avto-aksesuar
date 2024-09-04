@@ -952,6 +952,20 @@ transform: translate(-5px,-15px);
     }
 }
 /* Markalar */
+
+.marka-head{
+    margin: 15px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.marka-head h1{
+font-family: "TT Interfaces bold";
+font-size: 30px;
+
+
+}
 .desktop-marka{
     display: none;
 }
@@ -980,7 +994,117 @@ transform: translate(-5px,-15px);
     height: 30%;
     object-fit: contain;
 }
+.footer-container{
+    background: #000;
+    border-top: 10px solid #FF0000;
+}
+.footer-content{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+flex-direction: column;
+}
+.footer-left-content{
+    gap: 5px;
+    margin:5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+    color: #fff;
 
+}
+.footer-rght{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform:translateX(-10px);
+}
+.footer-logo{
+
+    width: 80%;
+    margin:  10px auto;
+    img{
+        width: 80%;
+        object-fit: cover;
+    }
+}
+.footer-text h2{
+color: #fff;
+font-family: "TT Interfaces bold";
+font-size: 20px;
+font-weight: 600;
+}
+.footer-text p{
+    margin-top: 10px;
+font-family: "TT Interfaces bold";
+font-size: 18px;
+font-weight: 500;
+line-height: 17.5px;
+text-align: left;
+
+}
+.footer-contat{
+gap: 5px;
+}
+.footer-contat .p1{
+font-family: "TT Interfaces bold";
+font-size: 19px;
+text-align: left;
+color: #FFFFFF80;
+}
+.footer-contat p{
+margin: 10px 0;
+font-family: "TT Interfaces bold";
+font-size: 19px;
+font-weight: 500;
+text-align: left;
+line-height: 22px;
+
+}
+.footer-rght .footer-contat{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer-rght .footer-contat i{
+font-size: 20px;
+    color: #fff;
+}
+
+.footer-copy {
+    margin: 15px;
+    width: 100%;
+}
+.copy-img{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.copy-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+.copy-text p{
+font-size: 18px;
+font-weight: 500;
+
+}
 @media only screen and (min-width: 760px) {
  
     .header-top {
@@ -1674,7 +1798,7 @@ transform: translate(-5px,-15px);
         overflow: hidden;
         background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
         height: 660px;
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -1687,7 +1811,7 @@ transform: translate(-5px,-15px);
         overflow: hidden;
         background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
         height: 240px;
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -1741,7 +1865,7 @@ transform: translate(-5px,-15px);
 .onecixan-blcok3 {
     border-radius: 5px;
     padding: 10px;
-    width: 540px;
+    width: 50%;
     height: 216px;
     display: flex;
     align-items: center;
@@ -1753,7 +1877,7 @@ transform: translate(-5px,-15px);
 .onecixan-blcok4{
     border-radius: 5px;
     padding: 10px;
-    width: 540px;
+    width: 50%;
     height: 216px;
     display: flex;
     align-items: center;
@@ -1787,10 +1911,12 @@ transform: translate(-5px,-15px);
 .onecixan-content4{
     border-radius: 5px;
     background: url(../img/silder2.png)center/cover;
-    width: 100%;
+    width: 95%;
     height: 30vh;
 }
-
+.olcu{
+    width: 95%;
+}
 .one-cixanmain2 {
     overflow: hidden;
     background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
@@ -1844,11 +1970,11 @@ transform: translate(-5px,-15px);
 
 .mehsular-head {
     margin-top: 30px;
-    
+   
     width: 100%;
     text-align: left;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
 
  
@@ -1939,6 +2065,7 @@ transform: translate(-5px,-15px);
     justify-content: flex-start;
 }
 .onecixan-container2{
+margin: 10px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1958,8 +2085,18 @@ transform: translate(-5px,-15px);
 
 }
 /* Markalar */
+.marka-head{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.marka-head h1{
+font-family: "TT Interfaces bold";
+font-size: 30px;
 
 
+}
 .desktop-marka{
     display: flex;
     align-items: center;
@@ -1973,18 +2110,19 @@ transform: translate(-5px,-15px);
     justify-content: center;
     padding: 10px;
     width: 100%;
+    border-radius: 3px;
 }
 .desktop-marka img{
+    border-radius: 3px;
     padding: 10px;
-    width: 175px;
-    height:65px;
+    width: 45%;
+    height:85px;
     object-fit: contain;
     margin: 15px;
     border: 1px solid #DFDFDF
 }
 
 
-  
 @media (max-width: 1250px) {
 
     .onecixan {
@@ -2223,5 +2361,108 @@ transform: translate(-5px,-15px);
     .desktop-marka{
         display: flex !important;
     }
+    .mehsular-head {
+        transform: translateX(45px);
+    }
+    .marka-head{
+        transform: translateX(50px);
+    }
+    .footer-content{
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    flex-direction: row;
+    }
+    .footer-left-content{
+        gap: 5px;
+        margin:5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+       
+        color: #fff;
+    
+    }
+    .footer-rght{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-logo{
+    
+        width: 40%;
+        margin:  10px auto;
+        img{
+            width: 20%;
+            object-fit: cover;
+        }
+    }
+    .footer-text h2{
+    color: #fff;
+    font-family: "TT Interfaces bold";
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .footer-text p{
+        margin-top: 10px;
+    font-family: "TT Interfaces bold";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 17.5px;
+    text-align: left;
+    
+    }
+    .footer-contat{
+    gap: 5px;
+    }
+    .footer-contat .p1{
+    font-family: "TT Interfaces bold";
+    font-size: 19px;
+    text-align: left;
+    color: #FFFFFF80;
+    }
+    .footer-contat p{
+    margin: 10px 0;
+    font-family: "TT Interfaces bold";
+    font-size: 19px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 22px;
+    
+    }
+
+    .footer-copy {
+        display: flex;
+        align-items: center;
+        margin: 15px;
+        width: 100%;
+    }
+    .copy-img{
+        width: 20%;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .copy-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        gap: 5px;
+    }
+    .copy-text p{
+    font-size: 18px;
+    font-weight: 500;
+    
+    }
+      
 }
     
