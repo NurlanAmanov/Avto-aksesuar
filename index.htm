@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/stylee.css">
   <link rel="stylesheet" href="font/font.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -46,28 +47,7 @@
         <div class="bagla">
           <i onclick="toggleMenu()" class="fa-solid fa-x "></i>
         </div>
-        <div class="menumobil">
-          <ul id="menu">
-            <li><a href="#" class="menu1">HAQQIMIZDA</a> </li>
-            <li> <a href="#">MAĞAZALAR</a></li>
-            <li><a href="#">ŞƏRTLƏRİMİZ</a></li>
-            <li><a href="#">ƏLAQƏ</a></li>
-
-          </ul>
-        </div>
-        <div class="header-filtr">
-
-          <select id="markalar">
-            <option>Marka seçin</option>
-          </select>
-          <select>
-            <option>Model seçin</option>
-          </select>
-          <select>
-            <option>Mühərriki seçin</option>
-          </select>
-          <button>Axtar</button>
-        </div>
+    
         <div class="header-text2">
           <span><i class="fa-solid fa-car"></i>Maşınım</span>
           <hr class="aramesafe">
@@ -85,7 +65,28 @@
           </svg>
 
         </div>
+        <div class="header-filtr">
 
+          <select id="markalar">
+            <option>Marka seçin</option>
+          </select>
+          <select>
+            <option>Model seçin</option>
+          </select>
+          <select>
+            <option>Mühərriki seçin</option>
+          </select>
+          <button>Axtar</button>
+        </div>
+        <div class="menumobil">
+          <ul id="menu">
+            <li><a href="#" class="menu1">HAQQIMIZDA</a> </li>
+            <li> <a href="#">MAĞAZALAR</a></li>
+            <li><a href="#">ŞƏRTLƏRİMİZ</a></li>
+            <li><a href="#">ƏLAQƏ</a></li>
+
+          </ul>
+        </div>
       </div>
 
       <div class="header-main">
@@ -1077,6 +1078,9 @@
     </section>
 
   </main>
+
+
+
   <footer>
 <div class="footer-container">
   <div class="footer-content">
@@ -1091,12 +1095,18 @@
           <p>Lorem ipsum dolor sit amet consectetur adipiscing  elit, curabitur suspendisse
             faucibus consequat.</p>
             <div class="footer-contat">
-              <p class="p1">Telefon nömrəsi</p>
+              <div class="cont1">
+                <p class="p1">Telefon nömrəsi</p>
               <p>+99455 255 9650</p>
-              <p class="p1">E-poçt ünvanı</p>
+              </div>
+              <div class="cont2">
+                <p class="p1">E-poçt ünvanı</p>
               <p>example@gmail.com</p>
+              </div>
+            </div>
+            <div class="cont3">
               <p class="p1">Məkanımız</p>
-              <p>Yasamal,A,M,Şərifzadə  239,AZ1138</p>
+            <p>Yasamal,A,M,Şərifzadə  239,AZ1138</p>
             </div>
         </div>
       </div>

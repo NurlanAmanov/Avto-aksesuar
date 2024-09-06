@@ -1024,7 +1024,7 @@ flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transform:translateX(-10px);
+    transform:translateX(-30px);
 }
 .footer-logo{
 
@@ -1035,6 +1035,7 @@ flex-direction: column;
         object-fit: cover;
     }
 }
+
 .footer-text h2{
 color: #fff;
 font-family: "TT Interfaces bold";
@@ -1050,6 +1051,8 @@ line-height: 17.5px;
 text-align: left;
 
 }
+
+
 .footer-contat{
 gap: 5px;
 }
@@ -1068,16 +1071,16 @@ text-align: left;
 line-height: 22px;
 
 }
+.footer-contat p i{
+    font-size: 25px;
+    color: #fff;
+}
 .footer-rght .footer-contat{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
     gap: 10px;
-}
-.footer-rght .footer-contat i{
-font-size: 20px;
-    color: #fff;
 }
 
 .footer-copy {
@@ -1911,7 +1914,7 @@ font-weight: 500;
 .onecixan-content4{
     border-radius: 5px;
     background: url(../img/silder2.png)center/cover;
-    width: 95%;
+    width: 100%;
     height: 30vh;
 }
 .olcu{
@@ -2367,7 +2370,10 @@ font-size: 30px;
     .marka-head{
         transform: translateX(50px);
     }
+  
     .footer-content{
+        gap: 15px;
+        margin-top: 15px;
         width: 100%;
         padding: 15px;
         display: flex;
@@ -2388,28 +2394,53 @@ font-size: 30px;
     
     }
     .footer-rght{
+        transform: translateY(-70px);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        
     }
+
     .footer-logo{
     
-        width: 40%;
-        margin:  10px auto;
+        width: 80%;
+        margin:  10px ;
         img{
-            width: 20%;
+            width: 50%;
             object-fit: cover;
         }
     }
+    .footer-contat { 
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    .footer-contat p i{
+        font-size: 35px !important;
+    }
+    .footer-contat p i:hover{
+        color: #DF2127;
+    }
+    .cont1,.cont2,.cont3{
+        
+
+        margin: 0 5px;
+    }
+    .cont3 .p1{
+        color: #FFFFFF80;
+    }
     .footer-text h2{
+        margin: 0 5px;
     color: #fff;
     font-family: "TT Interfaces bold";
     font-size: 20px;
     font-weight: 600;
     }
     .footer-text p{
-        margin-top: 10px;
+    margin: 5px;
     font-family: "TT Interfaces bold";
     font-size: 18px;
     font-weight: 500;
