@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "TT Interfaces bold";
     list-style: none;
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 body {
@@ -1100,6 +1100,12 @@ line-height: 22px;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    svg{
+        margin: 10px 0;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
 }
 .copy-text{
     display: flex;
