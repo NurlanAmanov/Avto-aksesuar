@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "TT Interfaces bold";
     list-style: none;
-    text-decoration: none!important;
+    
 }
 
 body {
@@ -2370,7 +2370,7 @@ font-size: 30px;
         display: block !important;
     }
     .mobile-main {
-        display: flex !important;
+        display: none !important;
     }
     .desktop-silder{
         display: none!important;
