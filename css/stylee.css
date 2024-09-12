@@ -2069,19 +2069,23 @@ font-weight: 500;
     font-weight: 500;
 }
 .stok {
-    width: 90%;
-    min-width: 50%;
-    font-family: "TT Interfaces 2";
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 1px solid #5BC904;
-    color: #5BC904;
+    
+        display: flex;               
+        flex-wrap: nowrap;          
+        min-width: 80%;              
+        margin-top: 10px;           
+        align-items: center;         
+        border-radius: 10px;         
+        border: 1px solid #5BC904;   
+        color: #5BC904;              
+        padding: 10px;              
+        font-family: "TT Interfaces 2"; 
+        box-sizing: border-box;      
+    }
     
     
-}
+    
+
 .mehsul-img {
     width: 128px;
     height: 100px;
