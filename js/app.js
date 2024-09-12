@@ -235,8 +235,7 @@ for (let i = 0; i < mehsul.length  ; i++) {
         : '<i class="fa-solid fa-circle-xmark stokyox"></i>';
 
     mehsularcontainer.innerHTML += `
-         <a href="page/single.htm">
-         <div data-aos="fade-right"    class="mehsulcard">
+         <div  onclick="gopage()" href="page/single.htm" data-aos="fade-right" class="mehsulcard">
           <div class="mehsul-img">
             <div class="like">
               <div class="like-content">
@@ -253,9 +252,9 @@ for (let i = 0; i < mehsul.length  ; i++) {
             <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
             <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
           </div>
-        </div></a>`;
+        </div>`;
     mehsularcontainer2.innerHTML += `
-        <div  data-aos="fade-right" class="mehsulcard">
+        <div onclick="gopage()"   data-aos="fade-right" class="mehsulcard">
           <div class="mehsul-img">
             <div class="like ">
               <div class="like-content">
@@ -309,4 +308,6 @@ likeIcons.forEach(icon => {
         }
         
         startCountdown(10800);
-        
+        function gopage(){
+            window.location.href='../page/single.htm'
+        }
