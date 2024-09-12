@@ -1021,10 +1021,10 @@ flex-direction: column;
 .footer-rght{
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: start;
     flex-direction: column;
-    transform:translateX(-60px);
+   
 }
 .footer-logo{
 
@@ -2408,7 +2408,7 @@ font-size: 30px;
     
     }
     .footer-rght{
-        transform: translateY(-70px);
+    transform: translateY(-60px);
         display: flex;
         align-items: center;
         justify-content: center;
