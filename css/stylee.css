@@ -915,7 +915,14 @@ margin: 10px;
     color: #5BC904;
     margin-right: 10px;
 }
-
+.stok-yoxdur{
+    
+    border: 1px  solid  #FF0000;
+    color: #DF2127;
+    i {
+        color: #DF2127;
+    }
+}
 .sebetat2mobile { 
     width: 100%;
     height: 43px;
@@ -952,6 +959,36 @@ transform: translate(-5px,-15px);
     }
 }
 /* Markalar */
+.silder-main {
+        
+    width: 1110px;             
+    margin: 0 auto;            
+    display: flex;            
+    gap: 5px;                 
+    overflow-x: auto;         
+    white-space: nowrap;       
+}
+.silders-content {
+    display: flex;          
+    gap: 3px;         
+    width: 100%;             
+    border: 1px solid #ccc;    
+    overflow-x: auto;          
+    padding: 2px;             
+    scrollbar-width: none;   
+}
+
+.silders-content::-webkit-scrollbar {
+    display: none;           }
+
+.silder-mains {
+    display: flex;
+    align-items: center;
+    justify-content: center;      
+    padding: 0 10px;  
+    border-left: 1px solid #DADADA;
+ 
+}
 
 .marka-head{
     margin: 15px;
@@ -1118,6 +1155,16 @@ font-weight: 500;
  .menubar{
     display: flex;
  }
+ .silder-mains {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;         
+    padding: 0 10px;  
+
+
+ 
+}
 
     .header-top {
         display: flex;

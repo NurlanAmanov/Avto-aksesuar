@@ -199,6 +199,7 @@ const mehsul = [
 
 
 const mehsularcontainer = document.getElementById('mehsularcontainer');
+const mehsularcontainer2 = document.getElementById('mehsularcontainer2');
 let mehsulcard = document.querySelector(".mehsulcard")
 let mehsulcard2 = document.querySelector(".mehsulcard2")
 let like=document.getElementById("like")
@@ -228,12 +229,11 @@ markaadd()
 
 
 for (let i = 0; i < mehsul.length  ; i++) {
-
-    const borderrengim = mehsul[i].stock === "Stokda var" ? "#5BC904" : "#FF0000";
-    const stockcolor = mehsul[i].stock === "Yoldadır" ? "#FFA115" : "#5BC904";
+    const borderrengim = mehsul[i].stock === "Stokda var" ? "#5BC904" :'#DF2127';
+    const stockcolor = mehsul[i].stock === "Yoldadır" ? "#FFA115" : "#DF2127";
     const stockIcon = mehsul[i].stock === "Stokda var" 
         ? '<i class="fa-solid fa-circle-check"></i>'
-        : '<i class="fa-solid fa-circle-xmark stokyox"></i>';
+        : '<i style="color:#DF2127" class="fa-solid fa-circle-xmark stokyox"></i>';
 
     mehsularcontainer.innerHTML += `
          <div  onclick="gopage()" href="page/single.htm" data-aos="fade-right" class="mehsulcard">
