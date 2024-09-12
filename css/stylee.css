@@ -250,13 +250,7 @@ text-align: center;
     padding: 5px;
     width: 100%;
 }
-.menubar {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    width: 100%;
-}
+
 
 .menumobil {
     display: flex;
@@ -1121,7 +1115,10 @@ font-weight: 500;
 
 }
 @media only screen and (min-width: 760px) {
- 
+ .menubar{
+    display: flex;
+ }
+
     .header-top {
         display: flex;
         align-items: center;
@@ -2137,7 +2134,12 @@ font-size: 30px;
     border: 1px solid #DFDFDF
 }
 
-
+.border-radius {
+    border-top-left-radius: 5px;  
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+} 
 @media (max-width: 1250px) {
 
     .onecixan {
@@ -2231,7 +2233,7 @@ font-size: 30px;
         align-items: flex-end;
         justify-content: flex-end;
         width: 100%;
-    transform: translate(-15px,5px);
+    transform: translate(-5px,5px);
         margin: auto;
         like.content{
             width: 100%;
@@ -2298,7 +2300,7 @@ font-size: 30px;
 }
 @media screen and (min-width: 700px) {
     .like {
-        transform: translate(40px,5px);
+        transform: translate(40px,25px);
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
@@ -2368,7 +2370,7 @@ font-size: 30px;
         display: block !important;
     }
     .mobile-main {
-        display: none !important;
+        display: flex !important;
     }
     .desktop-silder{
         display: none!important;
