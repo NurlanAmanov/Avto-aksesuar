@@ -206,11 +206,14 @@
                 <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 mb-8">E-poçt ünvanı
                     <input class="border w-[100%]  lg:w-[420px]  h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email">
                 </label>
-                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 mb-8">Şifrə
-                    <input class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email">
-                </label>
-                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 mb-3">Şifrəni təkrarlayın
-                    <input class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email">
+                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 relative mb-8">
+                    Şifrə
+                    <input id="pass" class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password">
+                    <img onclick="showpas()" id="hideshow" class="w-[20px] absolute left-[90%] top-[60%] cursor-pointer" src="../img/password-hide.svg" alt="Gizle/Göster">
+                  </label>
+                <label for="" class="flex flex-col text-[#404040]  relative text-[18px] gap-2 mb-3">Şifrəni təkrarlayın
+                    <input id="passagn"  class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password">
+                    <img onclick="showpas2()" id="agnshodimg" class="w-[20px] absolute left-[90%] top-[60%]" src="../img/password-hide.svg" alt="">
                 </label>
               </div>
               <div class="regstrbtns flex flex-col gap-5  jusity-center lg:flex-row items-center lg:justify-start w-[100%] p-3 py-5">
@@ -281,6 +284,7 @@
     </footer>
 
     <script src="../js/app.js"></script>
+    <script src="../js/register.js"></script>
     <script src="../js/singlead.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
