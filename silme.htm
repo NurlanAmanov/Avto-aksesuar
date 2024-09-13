@@ -1,170 +1,152 @@
-<div class="mehsullarim">
-    <div class="singli-mehsul p-4 flex flex-col lg:flex-row justify-evenly w-full">
-        <div
-            class="singli-block flex rounded-md lg:h-[349px] h-[100%] justify-start lg:w-[800px] sm:w-[100%] flex-col lg:flex-row border border-[rgba(0, 0, 0, 0.25)]">
-            <div class="single-img w-[90%] lg:w-[50%] mx-2">
-                <img src="../img/mehsul1.png" class="lg:w-[50%] w-[50%] mx-auto object-cover" alt="">
-                <div class="img-little gap-3 flex flex-row justify-center w-[100%] p-2 my-3 mx-auto">
-                    <img src="../img/mehsul1.png"
-                        class="w-[20%] p-2 border border-[rgba(218, 218, 218, 1)] object-cover" alt="">
-                    <img src="../img/mehsul1.png"
-                        class="w-[20%] p-2 border border-[rgba(218, 218, 218, 1)] object-cover" alt="">
-                    <img src="../img/mehsul1.png"
-                        class="w-[20%] p-2 border border-[rgba(218, 218, 218, 1)] object-cover" alt="">
-                </div>
-            </div>
-            <div class="single-content p-3 mx-1 my-3 w-[100%] lg:w-[80%]">
-                <h2 class="text-xl font-bold my-3">Cigarette Lighter</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit eleifend imperdiet, facilisi litora
-                    himenaeos habitant odio aliquet eu est, dis aptent urna metus mi iaculis convallis cursus. Est
-                    dictum parturient augue sociosqu nibh rutrum felis duis, eleifend.</p>
-                <p class="font-bold text-xl my-2">Əsas Xüsusiyyətlər:
-                <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Lorem Ipsum</li>
-                    <li>Lorem Ipsum</li>
-                </ul>
-                </p>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stylee.css">
+    <style>
+        .slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-item {
+  min-width: 100%;
+}
+
+.slider-item img {
+  width: 100%;
+  display: block;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  transform: translateY(-50%);
+}
+
+.slider-arrow-prev, .slider-arrow-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <div class="slider-container" id="sample-slider">
+        <div class="slides-wrapper">
+          <div class="slides-container">
+            <ul class="slider-list">
+              <li class="slider-item">
+               a
+               
+              </li>
+              <li class="slider-item">
+               a
+               
+              </li>
+              <li class="slider-item">
+               a
+               
+              </li>
+              <li class="slider-item">
+               a
+               
+              </li>
+              <li class="slider-item">
+               a
+               
+              </li>
+              <li class="slider-item">
+               a
+               
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-</div>
+        <div class="slider-arrows">
+          <button type="button" class="slider-arrow-prev">Prev</button>
+          <button type="button" class="slider-arrow-next">Next</button>
+        </div>
+      </div>
+      <script>
+        const sliderContainer = document.querySelector('.slides-wrapper');
+const sliderItems = document.querySelectorAll('.slider-item');
+const prevButton = document.querySelector('.slider-arrow-prev');
+const nextButton = document.querySelector('.slider-arrow-next');
 
+let currentIndex = 0;
 
+function updateSliderPosition() {
+  const slideWidth = sliderItems[0].clientWidth;
+  sliderContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+}
 
-<div
-                    class="mehsul-infocard border mx-auto border-[rgba(0, 0, 0, 0.25)] lg:w-[385px] mt-5 lg:mt-0 w-[90%] lg:w-[479px] h-full rounded-md">
-                    <div class="incfocard-content p-3 flex flex-col text-center lg:flex-row justify-between">
-                        <p class="text-[25px] text-[red] font-bold">279.29 AZN</p>
-                        <p class="text-[25px] text-[#000] font-bold line-through">299.99 AZN</p>
-                    </div>
-                    <div
-                        class="stocks lg:w-[40%] w-[60%] border border-[#FFA115] rounded-md my-4 flex mx-4 gap-3 items-center justify-start">
-                        <div class="stoksimg">
-                            <svg width="25px" height="20" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.3636 2.25H8.72727V0H1.09091C0.490909 0 0 0.50625 0 1.125V7.3125H1.09091C1.09091 8.24625 1.82182 9 2.72727 9C3.63273 9 4.36364 8.24625 4.36364 7.3125H7.63636C7.63636 8.24625 8.36727 9 9.27273 9C10.1782 9 10.9091 8.24625 10.9091 7.3125H12V4.5L10.3636 2.25ZM2.72727 8.15625C2.27455 8.15625 1.90909 7.77938 1.90909 7.3125C1.90909 6.84562 2.27455 6.46875 2.72727 6.46875C3.18 6.46875 3.54545 6.84562 3.54545 7.3125C3.54545 7.77938 3.18 8.15625 2.72727 8.15625ZM10.0909 3.09375L11.16 4.5H8.72727V3.09375H10.0909ZM9.27273 8.15625C8.82 8.15625 8.45455 7.77938 8.45455 7.3125C8.45455 6.84562 8.82 6.46875 9.27273 6.46875C9.72546 6.46875 10.0909 6.84562 10.0909 7.3125C10.0909 7.77938 9.72546 8.15625 9.27273 8.15625Z"
-                                    fill="#FFA115" />
-                            </svg>
-                        </div>
-                        <p class="text-[20px] font-bold text-[#FFA115]">Yoldadır</p>
-                    </div>
-                    <div
-                        class="mehsul-info-text flex flex-row pb-2 border border-t-[none] items-center border-b-[#DADADA] pb-2 justify-between p-2">
-                        <p class="text-[20px] font-bold">SKU</p>
-                        <p class="text-[20px] font-bold">61346969134</p>
-                    </div>
-                    <div
-                        class="mehsul-info-text flex flex-row pb-2 border items-center border-b-[#DADADA] pb-2 justify-between p-2">
-                        <p class="text-[20px] font-[600]">Brend</p>
-                        <p class="text-[red] font-[600]">Tac Pro</p>
-                    </div>
-                    <div
-                        class="mehsul-info-text flex flex-row pb-2 border items-center border-b-[#DADADA] pb-2 justify-between p-2">
-                        <p class="text-[20px] font-[600]">Ölkə</p>
-                        <p class="text-[20px] font-[600]">Azərbaycan</p>
-                    </div>
-                    <div
-                        class="mehsul-info-text flex flex-row pb-2 border items-center border-b-[#DADADA] pb-2 justify-between p-2">
-                        <p class="text-[20px] font-[600]">Çatdırılma</p>
-                        <p class="text-[20px] font-[600]">Var</p>
-                    </div>
-                    <div
-                        class="mehsul-info-text flex flex-row pb-2 border items-center border-b-[#DADADA] pb-2 justify-between p-2">
-                        <p class="text-[20px] font-[600]">Yeni</p>
-                        <p class="text-[20px] font-[600]">Bəli</p>
-                    </div>
-                    <div class="single-contact-head flex w-full flex-col p-2 bg-[#FAFAFA]">
-                        <h1 class="text-[20px] font-bold mx-4">Alasgar:</h1>
-                        <div class="single-contact flex w-full items-start justify-start">
-                            <div
-                                class="flex items-center flex-col text-center lg:flex-row w-[100%] py-3 text-[20px] single-contact-buttons">
-                                <button
-                                    class="bg-[#556CF9] text-center text-white my-5 lg:mx-3 h-[33px] rounded-[20px] w-[100%] text-[20px]">
-                                    <i class="fa-solid fa-phone text-white text-[20px]"></i> Zəng
-                                </button>
-                                <button
-                                    class="bg-[#7BD66E] text-center text-white h-[33px] rounded-[20px] w-[100%]">
-                                    <i class="fa-solid fa-phone text-white"></i> Whatsapp
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="single-sebet flex-col lg:flex-row gap-9 w-full flex items-center py-3 justify-evenly text-center">
-                        <div class="elaveett bg-[#F4F4F4] h-[40px] gap-3 w-[80%] lg:w-[30%] lg:py-2">
-                            <button class="w-[10%] text-[20px] h-[20px]">+</button>
-                            <span class="w-2 mx-2 text-[20px]">10 Qutu</span>
-                            <button class="text-[20px] w-[10%] h-[20px]">-</button>
-                        </div>
-                        <button class="bg-[#FF0000] py-1 w-[80%] lg:w-[50%] text-center text-[20px] rounded-[3px] text-white h-[40px]">
-                            <i class="fa-solid fa-cart-shopping"></i> Səbət əlave et
-                        </button>
-                    </div>
-                    <div class="single-btm flex items-center p-2 gap-2">
-                        <p><i class="fa-solid fa-heart text-[#EBEBEB] text-[20px]"></i></p>
-                        <p class="text-[#A8A8A8] text-[15px]">İstək siyahısına əlavə edin</p>
-                    </div>
-  </div>
+nextButton.addEventListener('click', () => {
+  if (currentIndex < sliderItems.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0; // Son slayta gelince başa döner.
+  }
+  updateSliderPosition();
+});
 
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = sliderItems.length - 1; // Başa gelince sona döner.
+  }
+  updateSliderPosition();
+});
 
-                <div class="video">
-                    <div class="video-contentn mx-5 flex items-center border border-[#DADADA] lg:w-[735px] lg:h[341px] rounded-[1px]">
-                        <div class="video-main flex items-center w-full flex-col gap-4">
-                            <div
-                                class="video-text py-3 flex items-center gap-3 border border-[#DADADA] text-center rounded-md w-[100%] justify-center">
-                                <span class="text-[18px] font-bold">Təsvir</span>
-                                <span class="text-[18px] font-bold">Spesifikasiya</span>
-                                <span class="text-[18px] font-bold">Məhsul videosu</span>
-                            </div>
-                            <div class="video-show w-full p-4">
-                                <iframe width="100%" height="350px"
-                                    src="https://www.youtube.com/embed/DKF5dKo_r_Y?si=kVcAN9RgA5xdLrxO"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+window.addEventListener('resize', updateSliderPosition); // Pencere boyutu değişirse slider güncellenir.
+let autoSlide = setInterval(() => {
+  if (currentIndex < sliderItems.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateSliderPosition();
+}, 3000); // Her 3 saniyede bir geçiş yapar
 
+sliderContainer.addEventListener('mouseenter', () => {
+  clearInterval(autoSlide); // Fare ile üzerine gelindiğinde otomatik kaydırmayı durdurur
+});
 
-                <div class="serivce-single mt-3 mx-auto rounded-md w-[90%] border border-[box-shadow: 0px 0px 4px 0px #00000040;] lg:w-[355px] h-[211px]">
-                    <div class="servicesingle-container flex p-1">
-                        <div class="content-row flex flex-col gap-2">
-                            <div class="text-contet-img flex flex-row mx-3 gap-1 items-center">
-                                <svg class="w-[25px]" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M13.8875 0L0 5.96818V14.9205C0 23.2013 5.92533 30.945 13.8875 32.825C21.8497 30.945 27.775 23.2013 27.775 14.9205V5.96818L13.8875 0ZM13.8875 16.3976H24.6889C23.8711 22.5448 19.6277 28.0206 13.8875 29.7365V16.4125H3.08611V7.90784L13.8875 3.26758V16.3976Z"
-                                        fill="#DF2127" />
-                                </svg>
-                                <div class="text-serv flex flex-col">
-                                    <p class="#000000 text-[20px]">100% Təhlükəsizlik</p>
-                                    <p class="#A8A8A8 text-[16px]">Yalnız təhlükəsiz ödəniş</p>
-                                </div>
-                            </div>
-                            <div class="text-contet-img flex flex-row mx-3 items-center gap-1">
-                                <svg class="w-[25px]" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M26.2319 19.2881C24.3031 19.2881 22.4515 18.9795 20.7232 18.4086C20.1832 18.2389 19.5814 18.3623 19.1493 18.7789L15.7546 22.1736C11.3877 19.9517 7.80786 16.3872 5.58586 12.0049L8.98058 8.5948C9.41264 8.1936 9.53608 7.59181 9.36635 7.05174C8.79542 5.32353 8.4868 3.47187 8.4868 1.54305C8.4868 0.694373 7.79243 0 6.94375 0H1.54306C0.694375 0 0 0.694373 0 1.54305C0 16.0323 11.7427 27.7749 26.2319 27.7749C27.0806 27.7749 27.775 27.0805 27.775 26.2319V20.8312C27.775 19.9825 27.0806 19.2881 26.2319 19.2881ZM24.6889 13.8875H27.775C27.775 6.2185 21.5565 0 13.8875 0V3.0861C19.8591 3.0861 24.6889 7.91585 24.6889 13.8875ZM18.5167 13.8875H21.6028C21.6028 9.62864 18.1463 6.1722 13.8875 6.1722V9.25831C16.449 9.25831 18.5167 11.326 18.5167 13.8875Z"
-                                        fill="#DF2127" />
-                                </svg>
-                                <div class="text-serv flex flex-col">
-                                    <p class="#000000 text-[20px]">24/7 dəstək</p>
-                                    <p class="#A8A8A8 text-[16px]">İstənilən vaxt bizə zəng edin</p>
-                                </div>
-                            </div>
-                            <div class="text-contet-img flex flex-row mx-3 items-center justify-center gap-1">
-                                <svg class="w-[25px]" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M30.5295 6.3125H25.7091V0H3.21364C1.44614 0 0 1.42031 0 3.15625V20.5156H3.21364C3.21364 23.1353 5.36677 25.25 8.03409 25.25C10.7014 25.25 12.8545 23.1353 12.8545 20.5156H22.4955C22.4955 23.1353 24.6486 25.25 27.3159 25.25C29.9832 25.25 32.1364 23.1353 32.1364 20.5156H35.35V12.625L30.5295 6.3125ZM8.03409 22.8828C6.70043 22.8828 5.62386 21.8255 5.62386 20.5156C5.62386 19.2058 6.70043 18.1484 8.03409 18.1484C9.36775 18.1484 10.4443 19.2058 10.4443 20.5156C10.4443 21.8255 9.36775 22.8828 8.03409 22.8828ZM29.7261 8.67969L32.8755 12.625H25.7091V8.67969H29.7261ZM27.3159 22.8828C25.9822 22.8828 24.9057 21.8255 24.9057 20.5156C24.9057 19.2058 25.9822 18.1484 27.3159 18.1484C28.6496 18.1484 29.7261 19.2058 29.7261 20.5156C29.7261 21.8255 28.6496 22.8828 27.3159 22.8828Z"
-                                        fill="#DF2127" />
-                                </svg>
-                                <div class="text-serv flex flex-col">
-                                    <p class="#000000 text-[20px]">Pulsuz çatdırılma</p>
-                                    <p class="#A8A8A8 text-[16px]">50 dollardan başlayan sifarişlər</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+sliderContainer.addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => {
+    if (currentIndex < sliderItems.length - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    updateSliderPosition();
+  }, 3000);
+});
+
+      </script>
+</body>
+</html>

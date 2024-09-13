@@ -249,7 +249,7 @@ for (let i = 0; i < mehsul.length  ; i++) {
             <h6>${mehsul[i].model}</h6>
             <h5>${mehsul[i].name}</h5>
             <div class="stok">${stockIcon} <span style="color: ${borderrengim}">${mehsul[i].stock}</span></div>
-            <p class="line-through">${mehsul[i].price} ${mehsul[i].currency}  <span  style="text-decoration: line-through; font-size:15px;">${mehsul[i].price} ${mehsul[i].currency}</span></p>
+            <p class="line-through">${mehsul[i].price} ${mehsul[i].currency}  </p>
             <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
             <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
           </div>
@@ -268,7 +268,7 @@ for (let i = 0; i < mehsul.length  ; i++) {
             <h6>${mehsul[i].model}</h6>
             <h5>${mehsul[i].name}</h5>
             <div class="stok">${stockIcon} <span style="color: ${borderrengim}">${mehsul[i].stock}</span></div>
-            <p class="line-through">${mehsul[i].price} ${mehsul[i].currency}  <span  style="text-decoration: line-through; font-size:15px;">${mehsul[i].price} ${mehsul[i].currency}</span></p>
+            <p class="line-through">${mehsul[i].price} ${mehsul[i].currency} </p>
             <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
             <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
           </div>

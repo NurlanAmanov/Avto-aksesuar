@@ -563,6 +563,7 @@ text-align: center;
     justify-content: center;
     flex-direction: row;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 .qiymet1 {
@@ -844,9 +845,9 @@ margin: 10px;
     align-items: center;
     justify-content: center;
     width: 39%;
-    max-width: 209px;
-    height: 350px;
-    max-height: 330px;
+    max-width: 309px;
+    height: 360px;
+    max-height: 340px;
     border: 1px solid #DFDFDF;
     border-radius: 10px;
     flex-direction: column;
@@ -892,16 +893,16 @@ margin: 10px;
 }
 
 .stok {
-    width: 100%;
-    min-width: 50%;
+
+    height: 30px;
+    min-width: 40%;
     font-family: "TT Interfaces 2";
     margin-top: 10px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; 
     border-radius: 10px;
-    padding: 5px;
     border: 1px solid #5BC904;
     color: #5BC904;
     
@@ -913,7 +914,8 @@ margin: 10px;
 }
 .stok i {
     color: #5BC904;
-    margin-right: 10px;
+
+    font-size: 13px;
 }
 .stok-yoxdur{
     
@@ -958,6 +960,7 @@ transform: translate(-5px,-15px);
         font-size: 20px;
     }
 }
+
 /* Markalar */
 .silder-main {
         
@@ -1073,7 +1076,7 @@ flex-direction: column;
     }
 }
 
-.footer-text h2{
+.footer-text p{
 color: #fff;
 font-family: "TT Interfaces bold";
 font-size: 20px;
@@ -1121,11 +1124,14 @@ line-height: 22px;
 }
 
 .footer-copy {
+    display: flex;
+flex-direction:column-reverse;
+
     margin: 15px;
     width: 100%;
 }
 .copy-img{
-    width: 100%;
+    width: 90%;
     margin: 10px;
     display: flex;
     align-items: center;
@@ -1152,8 +1158,58 @@ font-weight: 500;
 
 }
 @media only screen and (min-width: 760px) {
+
+    .slider-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+      }
+      
+      .slides-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      
+      .slider-list {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .slider-item {
+        min-width: 100%;
+      }
+      
+      .slider-item img {
+        width: 100%;
+        display: block;
+      }
+      
+      .slider-arrows {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        transform: translateY(-50%);
+      }
+      
+      .slider-arrow-prev, .slider-arrow-next {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+        
  .menubar{
     display: flex;
+    margin: 10px;
+    
  }
  .silder-mains {
     display: flex;
@@ -1352,7 +1408,8 @@ font-weight: 500;
     }
 
     .menubar {
-        margin: 0 15px;
+        margin:  15px auto;
+        width: 95%;
     }
 
     .menu1 {
@@ -1699,7 +1756,7 @@ font-weight: 500;
         justify-content: center;
         text-decoration: none;
         width: 100%;
-        height: 55px; 
+        height: 65px; 
         background: #DADADA;
         border-radius: 0px 0px 10px 10px;
         font-family: 'TT Interfaces';
@@ -2065,20 +2122,21 @@ font-weight: 500;
         
 }
 .stok span{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
 }
 .stok {
     
         display: flex;               
         flex-wrap: nowrap;          
-        min-width: 80%;              
+        min-width: 60%; 
+        padding: 0 5px;             
         margin-top: 10px;           
-        align-items: center;         
+        align-items: center;
+        justify-content: center;     
         border-radius: 10px;         
         border: 1px solid #5BC904;   
-        color: #5BC904;              
-        padding: 10px;              
+        color: #5BC904;                         
         font-family: "TT Interfaces 2"; 
         box-sizing: border-box;      
     }
@@ -2114,8 +2172,9 @@ font-weight: 500;
     font-family:"TT Interfaces bold";
 }
 .mehsular-text p{
-    font-size: 18px;
-    font-weight: 650;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
     font-family:"TT Interfaces bold";
 }
 .sebetat2deskt{
@@ -2279,6 +2338,7 @@ font-size: 30px;
         align-items: flex-start;
         justify-content: flex-start;
     }
+
     .like {
         display: flex;
         align-items: flex-end;
@@ -2314,12 +2374,12 @@ font-size: 30px;
 @media screen and (min-width: 424px) {
     
     .sebetat2mobile {
-        display: none !important;
+        display: block !important;
     }
     .sebetat2deskt {
         align-items: center;
         justify-content: center;
-        display: flex !important;
+        display: none !important;
         text-align: center;
         height: 45px;
         width: 100%;
@@ -2333,8 +2393,8 @@ font-size: 30px;
         text-align: center;
     }
     .stok span {
-        font-size: 15px;
-        margin: 0 10px;
+        font-size: 13px;
+   
     }
     
 }
@@ -2348,6 +2408,26 @@ font-size: 30px;
         color: #C4C4C4;
     }
    
+}
+@media screen and (min-width: 761px) {
+  
+    .mehsulcard h6 {
+        display: flex !important;
+        font-weight: 500;
+        font-size: 18px;
+        color: #C4C4C4;
+    }
+    .sebetat2mobile {
+        display: none !important;
+    }
+    .sebetat2deskt {
+        align-items: center;
+        justify-content: center;
+        display: flex !important;
+        text-align: center;
+        height: 45px;
+        width: 100%;
+    }
 }
 @media screen and (min-width: 700px) {
     .like {
@@ -2368,8 +2448,8 @@ font-size: 30px;
     }
     
     .mehsulcard {
-        width: 209px;
-        height: 423px;
+        width: 269px;
+        height: 500px;
     }
 
     .mehsul-img img {
@@ -2535,6 +2615,7 @@ font-size: 30px;
     .footer-copy {
         display: flex;
         align-items: center;
+        flex-direction: row;
         margin: 15px;
         width: 100%;
     }
