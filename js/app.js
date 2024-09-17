@@ -326,8 +326,8 @@ function gopage() {
     window.location.href = '../page/single.htm'
 }
 
-function kaibnget(){
-    window.location.href="page/login.htm"
+function dblgo(){
+    window.location.href="../page/login.htm"
     let colorkabinet=document.getElementById('colorkabinet')
     let colorkabicon=document.getElementById('colorkabicon')
 
@@ -336,5 +336,12 @@ function kaibnget(){
 
 }
 function kabinetimgo(){
+    window.location.href="../page/login.htm"
+}
+
+function regstrgo(){
+ window.location.href = "../page/register.htm";
+}
+function loginkabinet(){
     window.location.href="../page/sexsikabinet.htm"
 }

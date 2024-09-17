@@ -119,10 +119,11 @@ const data = [
       
     }
 ];
-const mehsularcontainersilder = document.getElementById('mehsularcontainersilder');
+
 
 
 function mehsuladd() {
+    const mehsularcontainersilder = document.getElementById('mehsularcontainersilder');
     data.map(item => {
         const borderrengim = item.stock === "Stokda var" ? "#5BC904" : "#FF0000";
         const stockIcon = item.stock === "Stokda var"
