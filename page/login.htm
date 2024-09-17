@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/stylee.css">
     <link rel="stylesheet" href="../font/font.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../js/login.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -198,31 +199,35 @@
     <div class="qeydiyyat-content w-[90%]  lg:w-[480px] mx-auto  flex flex-col  border  rounded-md border-[ rgba(0, 0, 0, 0.25);]">
         <div class="qeydiyyat-head w-[100%] lg:w-[480px]   flex-col  justify-start flex p-4">
             <p class="text-[#404040] text-[22px] font-[600] py-4 border-b border-[#DADADA]">Daxil ol</p>
-            <form action="" class="p-2">
+            <form id="loginForm" class="p-2">
 
-               
-                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 mb-8">E-poçt ünvanı
-                    <input id="regstrusermail" class="border w-[100%]  lg:w-[420px]  h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email">
+                <label for="mail" class="flex flex-col text-[#404040]  text-[18px] gap-2 mb-8">
+                    E-poçt ünvanı
+                    <input id="mail" class="border w-[100%]  lg:w-[420px]  h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email" required>
                 </label>
-                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 relative mb-8">
+
+                <label for="pass" class="flex flex-col text-[#404040]  text-[18px] gap-2 relative mb-8">
                     Şifrə
-                    <input id="pass" class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password">
-                    <img onclick="showpas()" id="hideshow" class="w-[20px] absolute left-[90%] top-[60%] cursor-pointer" src="../img/password-hide.svg" alt="Gizle/Göster">
-                  </label>
-                  <label for="" class="flex flex-col lg:flex-row w-full items-center justify-center lg:justify-between text-[#404040] text-[18px] gap-2 relative mb-8">
-                    <span class="flex items-center justify-center w-full lg:w-auto flex-row">
-                      <input id="pass" class="border mx-2 w-[18px] h-[18px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="checkbox">
+                    <input id="pass" class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password" required>
+                </label>
+
+                <label for="remember-me" class="flex flex-col   lg:flex-row w-full items-center justify-center lg:justify-between text-[#404040] text-[18px] gap-2 relative mb-8">
+                    <img onclick="passshows()" id="hideshow2" class="w-[20px] absolute left-[90%] top-[-65px] cursor-pointer" src="../img/password-hide.svg" alt="Gizle/Göster">
+                    <span class="flex items-center justify-center relative w-full lg:w-auto flex-row">
+
+                      <input class="border mx-2 w-[18px] h-[18px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="checkbox">
+                     
                       Məni xatırla
                     </span>
-                    <a class="text-[#0000FF] text-sm mt-2 lg:mt-0 lg:ml-auto">Şifrəni unutmusunuz?</a>
-                  </label>
-                  
-                  
-              </div>
-              <div class="regstrbtns flex flex-col gap-5  jusity-center lg:flex-row items-center lg:justify-start w-[100%] p-3 py-5">
-                <button onclick="loginkabinet(event)" class="bg-[#FF0000] text-white rounded-md  w-[100%] h-[40px] lg:w-[100px] lg:h-[40px] mx-3 text-[16px] font-[600]">Daxil ol</button>
-                <a href="../page/register.htm"  class="bg-[#DADADA] flex items-center justify-center text-white rounded-md  w-[100%] h-[40px] w-[100%] lg:w-[182px] lg:h-[40px] text-[16px] font-[600]">Qeydiyyatdan keçin</a>
-              </div>
+                    <a href="#" class="text-[#0000FF] text-sm mt-2 lg:mt-0 lg:ml-auto">Şifrəni unutmusunuz?</a>
+                </label>
+
+                <div class="regstrbtns flex flex-col gap-5 jusity-center lg:flex-row items-center lg:justify-start w-[100%] p-3 py-5">
+                    <button id="button2" class="bg-[#FF0000] text-white rounded-md  w-[100%] h-[40px] lg:w-[100px] lg:h-[40px] mx-3 text-[16px] font-[600]">Daxil ol</button>
+                    <a href="../page/register.htm" class="bg-[#DADADA] flex items-center justify-center text-white rounded-md w-[100%] h-[40px] lg:w-[182px] lg:h-[40px] text-[16px] font-[600]">Qeydiyyatdan keçin</a>
+                </div>
+
+                <div id="notification"></div> <!-- Bildiriş konteyneri -->
             </form>
         </div>
     </div>
@@ -287,7 +292,7 @@
     </footer>
 
     <script src="../js/function.js"></script>
-    <script src="../js/register.js"></script>
+   
     <!-- <script src="../js/singlead.js"></script> --> 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

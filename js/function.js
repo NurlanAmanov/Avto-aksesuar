@@ -83,7 +83,18 @@ function kaibnget(){
 
 }
 function loginkabinet(event) {
-    event.preventDefault();  // Formanın avtomatik yenilənməsini dayandırır
-    console.log("Funksiya çağrıldı");  // Yoxlama üçün
-    window.location.href = "../page/sexsikabinet.htm";  // Yönləndirmə
+    event.preventDefault(); 
+    console.log("Funksiya çağrıldı");  
+    window.location.href = "../page/sexsikabinet.htm";  
+}function passshows() {  
+    const pass = document.getElementById('pass'); 
+    const hideshow2 = document.getElementById('hideshow2');
+
+    if (pass.type === 'password') {
+        pass.type = 'text';  
+        hideshow2.src = "../img/password-show.svg";  
+    } else {
+        pass.type = 'password'; 
+        hideshow2.src = "../img/password-hide.svg";  
+    }
 }

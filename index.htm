@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/stylee.css">
   <link rel="stylesheet" href="font/font.css">
+  <script type="module" src="js/poplog.js"></script>
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -45,12 +46,13 @@
     <div id="kabinet" style="display: none;" class="login-kabinet">
       <div class="login-content">
         <div class="login-main">
+          <div id="notification"></div>
           <p>Hesabınıza Daxil Olun</p>
-          <input type="text" >
-          <input type="password">
+          <input id="mail" class="border w-[100%]  lg:w-[420px]  h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email" required>
+          <input id="pass" class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password" required>
           <div class="loginbtn">
             <a href="#" id="passreset">Unutdun ?</a>
-            <button onclick="kabinetimgo()" type="submit">Daxil ol</button>
+            <button id="button2" class="bg-[#FF0000] text-white rounded-md  w-[100%] h-[40px] lg:w-[100px] lg:h-[40px] mx-3 text-[16px] font-[600]">Daxil ol</button>
             <a href="page/register.htm">Hesab yarat</a>
           </div>
         </div>
@@ -995,6 +997,7 @@
 
   </footer>
   <script src="js/app.js"></script>
+  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>

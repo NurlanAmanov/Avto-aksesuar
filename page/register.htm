@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/stylee.css">
     <link rel="stylesheet" href="../font/font.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../js/regstrdb.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -194,35 +195,41 @@
             </div>
     </header>
     <main>
-<div class="qeydiyyat-container lg:p-8 m-auto">
-    <div class="qeydiyyat-content w-[90%]  lg:w-[480px] mx-auto  flex flex-col  border  rounded-md border-[ rgba(0, 0, 0, 0.25);]">
-        <div class="qeydiyyat-head w-[100%] lg:w-[480px]   flex-col  justify-start flex p-4">
-            <p class="text-[#404040] text-[22px] font-[600] py-4 border-b border-[#DADADA]">Qeydiyyatdan keçin</p>
-            <form action="" class="p-2">
-
-                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 mb-8 ">Telefon
-                    <input class="border w-[100%] lg:lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="number">
-                </label>
-                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 mb-8">E-poçt ünvanı
-                    <input id="regstrusermail" class="border w-[100%]  lg:w-[420px]  h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email">
-                </label>
-                <label for="" class="flex flex-col text-[#404040]  text-[18px] gap-2 relative mb-8">
-                    Şifrə
-                    <input id="pass" class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password">
-                    <img onclick="showpas()" id="hideshow" class="w-[20px] absolute left-[90%] top-[60%] cursor-pointer" src="../img/password-hide.svg" alt="Gizle/Göster">
-                  </label>
-                <label for="" class="flex flex-col text-[#404040]  relative text-[18px] gap-2 mb-3">Şifrəni təkrarlayın
-                    <input id="passagn"  class="border w-[100%]  lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password">
-                    <img onclick="showpas2()" id="agnshodimg" class="w-[20px] absolute left-[90%] top-[60%]" src="../img/password-hide.svg" alt="">
-                </label>
-              </div>
-              <div class="regstrbtns flex flex-col gap-5  jusity-center lg:flex-row items-center lg:justify-start w-[100%] p-3 py-5">
-                <button class="bg-[#FF0000] text-white rounded-md  w-[100%] h-[40px] lg:w-[195px] lg:h-[40px] mx-3 text-[16px] font-[600]">Qeydiyyatdan keçin</button>
-                <a href="login.htm" class="bg-[#DADADA] flex items-center justify-center text-white rounded-md  w-[100%] h-[40px] w-[100%] lg:w-[90px] lg:h-[40px] text-[16px] font-[600]">Daxil ol</a>
-              </div>
-            </form>
+        <div class="qeydiyyat-container lg:p-8 m-auto">
+            <div class="qeydiyyat-content w-[90%] lg:w-[480px] mx-auto flex flex-col border rounded-md border-[rgba(0, 0, 0, 0.25);]">
+                <div class="qeydiyyat-head w-[100%] lg:w-[480px] flex-col justify-start flex p-4">
+                    <p class="text-[#404040] text-[22px] font-[600] py-4 border-b border-[#DADADA]">Qeydiyyatdan keçin</p>
+                    <form id="registerForm" class="p-2">
+        
+                        <label for="regstrusermail" class="flex flex-col text-[#404040] text-[18px] gap-2 mb-8">
+                            E-poçt ünvanı
+                            <input id="regstrusermail" class="border w-[100%] lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="email" required>
+                        </label>
+        
+                        <label for="pass" class="flex flex-col relative   text-[#404040] text-[18px] gap-2 mb-8">
+                            Şifrə
+                            <input id="pass" class="border w-[100%] lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password" required>
+                            <img onclick="showpas()" id="hideshow" class="w-[20px] absolute left-[90%] top-[60%] cursor-pointer" src="../img/password-hide.svg" alt="Gizle/Göster">
+                        </label>
+        
+                        <label for="passagn"  class="flex flex-col relative text-[#404040] text-[18px] gap-2 mb-8">
+                            Şifrəni təkrarlayın
+                            <input id="passagn" class="border w-[100%] lg:w-[420px] h-[40px] lg:h-[50px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]" type="password" required>
+                            <img onclick="showpas2()" id="hideshow2" class="w-[20px] absolute left-[90%] top-[60%] cursor-pointer" src="../img/password-hide.svg" alt="Gizle/Göster">
+                        </label>
+        
+                        <p class="error" id="error-message"></p>
+        
+                        <div class="regstrbtns flex flex-col gap-5 jusity-center lg:flex-row items-center lg:justify-start w-[100%] p-3 py-5">
+                            <button type="submit" class="bg-[#FF0000] text-white rounded-md  w-[100%] h-[40px] lg:w-[195px] lg:h-[40px] mx-3 text-[16px] font-[600]">Qeydiyyatdan keçin</button>
+                            <a href="login.htm" class="bg-[#DADADA] flex items-center justify-center text-white rounded-md  w-[100%] h-[40px] w-[100%] lg:w-[90px] lg:h-[40px] text-[16px] font-[600]">Daxil ol</a>
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+        
 </div>
     </main>
     <footer>
