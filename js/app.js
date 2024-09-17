@@ -335,3 +335,6 @@ function kaibnget(){
     colorkabicon.style.color='#FF0000'
 
 }
+function kabinetimgo(){
+    window.location.href="../page/sexsikabinet.htm"
+}
