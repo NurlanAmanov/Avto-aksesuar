@@ -11,7 +11,16 @@ body {
     background: #fff;
 
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 html,
 body {
     overflow-x: hidden;
@@ -119,8 +128,11 @@ text-decoration: none;
     flex-direction: row;
 
 }
+.kabinet{
+    text-decoration: none;
+}
 
-.header-text i {
+.header-text a i {
     color: #fff;
     font-size: 17px;
     margin-right: 4px !important;
@@ -174,7 +186,7 @@ text-decoration: none;
     top: 30%;
 }
 
-.header-text span {
+.header-text a {
     color: #fff;
 
     font: 17px arial, sans-serif;
@@ -619,7 +631,7 @@ text-align: center;
         height: 30px;
         border: 0.8px solid #00A1FC;
         border-radius: 3px;
-        font-size: 18px;
+        font-size: 14px;
         color: #00A1FC;
     }
 
@@ -634,7 +646,7 @@ text-align: center;
         height: 30px;
         border: 0.8px solid #0000FF;
         border-radius: 3px;
-        font-size: 18px;
+        font-size: 14px;
         color: #0000FF;
     }
 }
@@ -1858,7 +1870,7 @@ text-decoration: none;
         height: 30px; 
         border: 0.8px solid #00A1FC;
         border-radius: 3px;
-        font-size: 20px;
+        font-size: 14px;
         color: #00A1FC;
     }
     
@@ -1872,7 +1884,7 @@ text-decoration: none;
         height: 30px;
         border: 0.8px solid #0000FF;
         border-radius: 3px;
-        font-size: 20px;
+        font-size: 15px;
         color: #0000FF;
     }
     

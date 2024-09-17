@@ -248,6 +248,7 @@ for (let i = 0; i < mehsul.length; i++) {
         : '<i style="color:#DF2127" class="fa-solid fa-circle-xmark stokyox"></i>';
 
     mehsularcontainer.innerHTML += `
+
          <div  data-aos="fade-right" class="mehsulcard">
           <div  class="mehsul-img">
             <div class="like">
@@ -325,4 +326,12 @@ function gopage() {
     window.location.href = '../page/single.htm'
 }
 
+function kaibnget(){
+    window.location.href="page/login.htm"
+    let colorkabinet=document.getElementById('colorkabinet')
+    let colorkabicon=document.getElementById('colorkabicon')
 
+    colorkabinet.style.color='#FF0000'
+    colorkabicon.style.color='#FF0000'
+
+}
