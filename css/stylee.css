@@ -1251,8 +1251,17 @@ font-size: 18px;
 font-weight: 500;
 
 }
+.borderim{
+    border-bottom: 1px solid #DFDFDF;
+  padding-bottom: 5px;
+  border-width: 100%;
+}
 @media only screen and (min-width: 760px) {
-
+.borderim{
+    border-bottom: 1px solid #DFDFDF;
+  padding-bottom: 5px;
+  border-width: 100%;
+}
     .slider-container {
         position: relative;
         width: 100%;

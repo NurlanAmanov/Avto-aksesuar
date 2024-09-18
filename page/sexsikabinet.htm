@@ -238,7 +238,7 @@
                 </div>
                 <div class="cabinet-right w-[100%] lg:w-auto">
                     <div class="right-main border border-[ #00000040;] w-[100%] lg:w-[793px] lg:h-[530px] h-full rounded-md">
-                        <div class="right-content ">
+                        <div class="right-content relative ">
                             <div class="rght-head p-5 border border-b-1 border-[##DADADA]">
                                 <h1 class="text-[20px] text-[#404040] font-[600]">Profilə düzəliş et</h1>
                             </div>
@@ -264,8 +264,35 @@
                                     </label>
                                 </div>
                                 <div class="kbnt-btns items-start gap-4 flex-col lg:flex-row flex lg:items-center lg:justify-between w-[95%] m-4">
-                                    <button class="bg-[#5BC904] w-[90%]   rounded-md lg:w-[135px] h-[40px] text-white">Şifrəni dəyiş</button>
-                                    <button class="bg-[#FF0000] w-[90%]  rounded-md lg:w-[135px] h-[40px] text-white"> Yadda saxla</button>
+                                    <button onclick="passresetgo()" class="bg-[#5BC904] w-[90%]   rounded-md lg:w-[135px] h-[40px] text-white">Şifrəni dəyiş</button>
+                                    <button  class="bg-[#FF0000] w-[90%]  rounded-md lg:w-[135px] h-[40px] text-white"> Yadda saxla</button>
+                                </div>
+                                <div  id="resetle" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 9998;"  class="reset">
+                                    <div  class="sifredeyis-content flex items-start rounded-md justify-start flex-col z-9999 bg-white lg:w-[25%]  left-[15%] top-[10%] lg:h-[full] lg:left-[40%] lg:top-[20%]  absolute">
+                                        <div class="sfiredeyis-head flex items-center borderim justify-between w-[90%] m-4">
+                                            <h1 class="mx-4 text-[20px] text-[#404040]">Parolun dəyişdirilməsi</h1>
+                                            <button onclick="closreset()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM15 13.59L13.59 15L10 11.41L6.41 15L5 13.59L8.59 10L5 6.41L6.41 5L10 8.59L13.59 5L15 6.41L11.41 10L15 13.59Z" fill="#404040"/>
+                                                </svg>
+                                                </button>
+
+                                        </div>
+                                        <label class="flex flex-col p-3 m-2 lg:W-auto w-full" for="">Hazırkı şifrə
+                                            <input class=" w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md border border-[#DADADA] outline-none"
+                                            type="password">
+                                        </label>
+                                        <label class="flex flex-col p-3 m-2 lg:W-auto w-full" for="" >Yeni şifrə
+                                            <input class=" w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md border border-[#DADADA] outline-none"
+                                            type="password">
+                                        </label>
+                                        <label class="flex flex-col p-3 m-2 lg:W-auto w-full" for=""> şifrə təkrarlayın 
+                                            <input class=" w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md border border-[#DADADA] outline-none"
+                                            type="password">
+                                        </label>
+                                        <div class="resepas flex items-center justify-center lg:items-end lg:justify-end mx-3 my-3 w-[90%] ">
+                                            <button class="bg-[#FF0000] w-[90%]  rounded-md lg:w-[135px] h-[40px] text-white text-[16px]">Dəyişmək</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -333,6 +360,7 @@
     </footer>
 
     <script src="../js/app.js"></script>
+    <script src="../js/kabinet.js"></script>
     <script src="../js/register.js"></script>
     <script src="../js/singlead.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

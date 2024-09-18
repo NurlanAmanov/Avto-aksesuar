@@ -345,3 +345,4 @@ function regstrgo(){
 function loginkabinet(){
     window.location.href="../page/sexsikabinet.htm"
 }
+
