@@ -20,7 +20,8 @@ onAuthStateChanged(auth, (user) => {
     if (user) {
         const storedEmail = localStorage.getItem('userEmail');
         if (storedEmail === user.email) {
-            window.location.href = "page/sexsikabinet.htm";
+            // İstifadəçi artıq giriş edibsə, yönləndirmə etmə
+            console.log("İstifadəçi artıq giriş edib.");
         }
     }
 });
