@@ -229,14 +229,14 @@
             <div class="cabinet-main w-full p-5 flex-col mx-auto lg:flex-row flex items-center justify-center  gap-10">
                 <div class="cabinet-left border border-[ #00000040;]  w-[100%] lg:w-[284px] h-[530px] rounded-md">
                     <div class="left-main m-6 gap-5 flex items-start justify-center flex-col ">
-                        <span class="text-[18px]">Profilə düzəliş et</span>
-                        <span class="text-[18px]">Ünvan kitabınız</span>
-                        <span class="text-[18px]">Qaraj</span>
-                        <span class="text-[18px] w-full border-b-4 border-[##DADADA]">Sifariş tarixçəsi</span>
-                        <span class="text-[18px] ">Çıxış</span>
+                        <span onclick="profduzelis()" class="text-[18px] leftborder ">Profilə düzəliş et</span>
+                        <span onclick="openumav()" class="text-[18px] leftborder">Ünvan kitabınız</span>
+                        <span class="text-[18px] leftborder">Qaraj</span>
+                        <span class="text-[18px] leftborder w-full border-b-4 border-[##DADADA]">Sifariş tarixçəsi</span>
+                        <span class="text-[18px]  leftborder">Çıxış</span>
                     </div>
                 </div>
-                <div class="cabinet-right w-[100%] lg:w-auto">
+                <div id="profiduzlt" style="display: flex;" class="cabinet-right w-[100%] lg:w-auto">
                     <div class="right-main border border-[ #00000040;] w-[100%] lg:w-[793px] lg:h-[530px] h-full rounded-md">
                         <div class="right-content relative ">
                             <div class="rght-head p-5 border border-b-1 border-[##DADADA]">
@@ -292,6 +292,76 @@
                                         <div class="resepas flex items-center justify-center lg:items-end lg:justify-end mx-3 my-3 w-[90%] ">
                                             <button class="bg-[#FF0000] w-[90%]  rounded-md lg:w-[135px] h-[40px] text-white text-[16px]">Dəyişmək</button>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="unvankitab" style="display: none;" class="unvan-kitab right-main border border-[ #00000040;] w-[100%] lg:w-[793px] lg:h-[530px] h-full rounded-md">
+                    <div class="kitabunvan">
+                        
+                        <div class="div-form flex items-start flex-col lg:flex-col lg:items-center">
+                            <div class="form-1 flex  sm:w-full lg:w-auto   flex-col lg:flex-row">
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">Ad
+                                    <input class="bg-[#FAFAFA] w-[100%]  lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="text">
+                                </label>
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">Soyad
+                                    <input class="bg-[#FAFAFA] w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="text">
+                                </label>
+                            </div>
+                            <div class="form-2 flex  sm:w-full lg:w-auto  flex-col lg:flex-row ">
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">Şirkət Adı (Optional)
+                                    <input class="bg-[#FAFAFA] w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="email">
+                                </label>
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">Küçə ünvanı
+                                    <input class="bg-[#FAFAFA] w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="text">
+                                </label>
+                            </div>
+                            <div class="form-2 flex  sm:w-full lg:w-auto  flex-col lg:flex-row ">
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">Şəhər
+                                    <input class="bg-[#FAFAFA] w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="email">
+                                </label>
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">Poçt indeksi
+                                    <input class="bg-[#FAFAFA] w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="text">
+                                </label>
+                            </div>
+                            <div class="form-2 flex  sm:w-full lg:w-auto  flex-col lg:flex-row ">
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">E-poçt ünvanı
+                                    <input class="bg-[#FAFAFA] w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="email">
+                                </label>
+                                <label class="flex flex-col w-full lg:w-auto p-2 items-start mx-5 text-[16px]">Telefon
+                                    <input class="bg-[#FAFAFA] w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md outline-none" type="number">
+                                </label>
+                            </div>
+                            <div class="standartlar flex items-center w-[95%] justify-start">
+                                 <input type="checkbox" class="mx-3"><h4>Mənim standart ünvanım kimi təyin edin</h4>
+                            </div>
+                            <div class="kbnt-btns items-start gap-4 flex-col lg:flex-row flex lg:items-end lg:justify-end w-[85%] m-4">
+                                <button onclick="passresetgo()" class="bg-[#fff] w-[90%]   rounded-md lg:w-[135px] h-[40px] text-[#404040] border">Ləğv et</button>
+                                <button class="bg-[#FF0000] w-[90%]  rounded-md lg:w-[135px] h-[40px] text-white"> Yadda saxla</button>
+                            </div>
+                            <div id="resetle" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 9998;" class="reset">
+                                <div class="sifredeyis-content flex items-start rounded-md justify-start flex-col z-9999 bg-white lg:w-[25%]  left-[15%] top-[10%] lg:h-[full] lg:left-[40%] lg:top-[20%]  absolute">
+                                    <div class="sfiredeyis-head flex items-center borderim justify-between w-[90%] m-4">
+                                        <h1 class="mx-4 text-[20px] text-[#404040]">Parolun dəyişdirilməsi</h1>
+                                        <button onclick="closreset()"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 0C4.47 0 0 4.47 0 10C0 15.53 4.47 20 10 20C15.53 20 20 15.53 20 10C20 4.47 15.53 0 10 0ZM15 13.59L13.59 15L10 11.41L6.41 15L5 13.59L8.59 10L5 6.41L6.41 5L10 8.59L13.59 5L15 6.41L11.41 10L15 13.59Z" fill="#404040"></path>
+                                            </svg>
+                                            </button>
+
+                                    </div>
+                                    <label class="flex flex-col p-3 m-2 lg:W-auto w-full" for="">Hazırkı şifrə
+                                        <input class=" w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md border border-[#DADADA] outline-none" type="password">
+                                    </label>
+                                    <label class="flex flex-col p-3 m-2 lg:W-auto w-full" for="">Yeni şifrə
+                                        <input class=" w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md border border-[#DADADA] outline-none" type="password">
+                                    </label>
+                                    <label class="flex flex-col p-3 m-2 lg:W-auto w-full" for=""> şifrə təkrarlayın 
+                                        <input class=" w-[90%] lg:w-[350px] h-[50px] my-2 rounded-md border border-[#DADADA] outline-none" type="password">
+                                    </label>
+                                    <div class="resepas flex items-center justify-center lg:items-end lg:justify-end mx-3 my-3 w-[90%] ">
+                                        <button class="bg-[#FF0000] w-[90%]  rounded-md lg:w-[135px] h-[40px] text-white text-[16px]">Dəyişmək</button>
                                     </div>
                                 </div>
                             </div>

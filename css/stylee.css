@@ -1262,6 +1262,11 @@ font-weight: 500;
   padding-bottom: 5px;
   border-width: 100%;
 }
+
+.leftborder:hover{
+border-left: 3px solid #DF2127;
+padding-left: 10px;
+}
     .slider-container {
         position: relative;
         width: 100%;
