@@ -1,32 +1,141 @@
+let isLoggedIn = false; 
+
 function passresetgo(){
-    const resetle=document.getElementById('resetle')
-    if(resetle.style.display==='none'||resetle.style.display===''){
-        resetle.style.display="block"
+    const resetle = document.getElementById('resetle');
+    if(resetle.style.display === 'none' || resetle.style.display === ''){
+        resetle.style.display = "block";
     } 
 }
+
 function closreset(){
-    const resetle=document.getElementById('resetle')
-    if(resetle.style.display==='block'){
-        resetle.style.display="none"
+    const resetle = document.getElementById('resetle');
+    if(resetle.style.display === 'block'){
+        resetle.style.display = "none";
     } 
-    
 }
 
-function profduzelis(){
+function profduzelis() {
     let profiduzlt = document.getElementById('profiduzlt');
-    let unvankitab = document.getElementById('unvankitab'); // unvankitab elementini əldə edirik
-    if(profiduzlt.style.display === 'flex'){
-        profiduzlt.style.display = 'none'; // Bağlayır
+    let unvankitab = document.getElementById('unvankitab');
+
+    if (profiduzlt.style.display === 'flex') {
+        profiduzlt.style.display = 'none';
     } else {
-        profiduzlt.style.display = 'flex'; // Açır
-        unvankitab.style.display = 'none'; // Digər elementi gizlədir
+        profiduzlt.style.display = 'flex'; 
+        unvankitab.style.display = 'none'; 
     }
 }
 
-function openumav(){
-    let unvankitab=document.getElementById('unvankitab')
-    if(unvankitab.style.display==='none'  || unvankitab.style.display===''){
-        unvankitab.style.display='flex' ,
-         profiduzlt.style.display='none'
+function openumav() {
+    let unvankitab = document.getElementById('unvankitab');
+    let profiduzlt = document.getElementById('profiduzlt');
+
+    if (unvankitab.style.display === 'none' || unvankitab.style.display === '') {
+        unvankitab.style.display = 'flex';
+        profiduzlt.style.display = 'none';
+    } else {
+        unvankitab.style.display = 'none';
     }
 }
+
+function dblgo(){
+    window.location.href = "../page/login.htm";
+    let colorkabinet = document.getElementById('colorkabinet');
+    let colorkabicon = document.getElementById('colorkabicon');
+
+    colorkabinet.style.color = '#FF0000';
+    colorkabicon.style.color = '#FF0000';
+}
+
+
+function kabinetgo() {
+    const storedEmail = localStorage.getItem('userEmail');
+    if (storedEmail) {
+      
+        window.location.href = "sexsikabinet.htm";
+    } else {
+      
+        window.location.href = "page/login.htm";
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const button2 = document.getElementById('button2');
+    const notification = document.getElementById('notification');
+
+    button2.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const mail = document.getElementById('mail').value;
+        const pass = document.getElementById('pass').value;
+
+        signInWithEmailAndPassword(auth, mail, pass)
+            .then((userCredential) => {
+                const user = userCredential.user;
+
+                localStorage.setItem('userEmail', user.email);
+
+                alert('Giriş uğurlu oldu! Yönləndirilir...');
+
+                setTimeout(() => {
+                    window.location.href = "../page/sexsikabinet.htm";
+                }, 1000);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+
+                notification.innerHTML = `
+                    <div class="alert alert-danger" role="alert">
+                        Xəta: ${errorMessage}
+                    </div>
+                `;
+            });
+
+    });
+
+   
+    const kabinetLink = document.getElementById('colorkabinet');
+    if (kabinetLink) {
+        kabinetLink.onclick = kabinetgo;
+    } else {
+        console.error("Element 'colorkabinet' tapılmadı.");
+    }
+});
+
+    button2.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const mail = document.getElementById('mail').value;
+        const pass = document.getElementById('pass').value;
+
+        signInWithEmailAndPassword(auth, mail, pass)
+            .then((userCredential) => {
+                const user = userCredential.user;
+
+                localStorage.setItem('userEmail', user.email);
+                isLoggedIn = true;
+
+                alert('Giriş uğurlu oldu! Yönləndirilir...');
+
+                setTimeout(() => {
+                    window.location.href = "../page/sexsikabinet.htm";
+                }, 1000);
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+
+                notification.innerHTML = `
+                    <div class="alert alert-danger" role="alert">
+                        Xəta: ${errorMessage}
+                    </div>
+                `;
+            });
+});
+
+
+document.getElementById('colorkabinet').onclick = function() {
+    if (!isLoggedIn) {
+        kabinetgo(); 
+    }
+};
