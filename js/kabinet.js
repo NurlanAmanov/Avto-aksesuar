@@ -1,4 +1,4 @@
-let isLoggedIn = false; 
+let isLoggedIn = false; // Girişin olub olmadığını izləyən bayraq
 
 function passresetgo(){
     const resetle = document.getElementById('resetle');
@@ -47,23 +47,24 @@ function dblgo(){
     colorkabicon.style.color = '#FF0000';
 }
 
-
+// Şəxsi kabinetə yönləndirmək üçün funksiya
 function kabinetgo() {
     const storedEmail = localStorage.getItem('userEmail');
     if (storedEmail) {
-      
-        window.location.href = "sexsikabinet.htm";
+        // İstifadçi artıq giriş edibsə kabinetə yönləndir
+        window.location.href = "page/sexsikabinet.htm";
     } else {
-      
+        // Əks halda giriş səhifəsinə yönləndir
         window.location.href = "page/login.htm";
     }
 }
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    const button2 = document.getElementById('button2');
+  
     const notification = document.getElementById('notification');
 
+   
     button2.addEventListener("click", function(event) {
         event.preventDefault();
 
@@ -79,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert('Giriş uğurlu oldu! Yönləndirilir...');
 
                 setTimeout(() => {
-                    window.location.href = "../page/sexsikabinet.htm";
+                    window.location.href = "page/sexsikabinet.htm";
                 }, 1000);
             })
             .catch((error) => {
@@ -94,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
 
-   
+    // HTML-dəki linkin onclick hadisəsinə kabinetgo funksiyasını əlavə edin
     const kabinetLink = document.getElementById('colorkabinet');
     if (kabinetLink) {
         kabinetLink.onclick = kabinetgo;
@@ -119,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert('Giriş uğurlu oldu! Yönləndirilir...');
 
                 setTimeout(() => {
-                    window.location.href = "../page/sexsikabinet.htm";
+                    window.location.href = "page/sexsikabinet.htm";
                 }, 1000);
             })
             .catch((error) => {

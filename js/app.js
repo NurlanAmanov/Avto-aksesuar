@@ -249,7 +249,7 @@ for (let i = 0; i < mehsul.length; i++) {
 
     mehsularcontainer.innerHTML += `
 
-         <div  data-aos="fade-right" class="mehsulcard">
+         <div  class="mehsulcard">
           <div  class="mehsul-img">
             <div class="like">
               <div class="like-content">
@@ -268,7 +268,7 @@ for (let i = 0; i < mehsul.length; i++) {
           </div>
         </div>`;
     mehsularcontainer2.innerHTML += `
-        <div onclick="gopage()"   data-aos="fade-right" class="mehsulcard">
+        <div onclick="gopage()"   class="mehsulcard">
           <div class="mehsul-img">
             <div class="like ">
               <div class="like-content">

@@ -397,9 +397,7 @@ text-align: center;
     
 
 }
-.main-kataqoriya{
-    display: none;
-}
+
 .menu1 {
     border-left: none !important;
 }
@@ -1534,13 +1532,12 @@ text-decoration: none;
 
     .header-filtr select,
     option {
-        width:17%;
+        width:20%;
         height: 45px;
         border: 1px solid #DADADA;
         border-radius: 3px;
         padding: 5px;
         margin-left: 15px;
- 
         font-size: 18px;
     }
 
@@ -1550,7 +1547,7 @@ text-decoration: none;
 
     .header-filtr button {
         margin-left: 15px;
-        width: 15%;
+        width: 20%;
         height: 45px;
         background: #DF2127;
         border-radius: 3px;
@@ -1616,21 +1613,22 @@ text-decoration: none;
   .katagroya{
     margin: 0 10px;
   }
-  .main-kataqoriya {
-    border: 1px solid #DADADA;
-    overflow: hidden;
-    text-align: center;
-    margin: auto 35px;
-    width: 95%;
-    scrollbar-width: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
 
+    .main-kataqoriya {
+        border: 1px solid #DADADA;
+        overflow: hidden;
+        text-align: center;
+        margin: 0 25px;
+        width: 90%;
+        scrollbar-width: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 10px;
+    
 
-}
+    }
 
     .main-kataqoriya svg {
         width: 30px!important;
@@ -1651,11 +1649,9 @@ text-decoration: none;
         color: #fff;
         width: 100%;
         font-size: 18px;
-        path{
-            fill: #fff;
-        }
+        
+
     }
-    
 
     #menu-bars {
         display: none;
@@ -1665,7 +1661,6 @@ text-decoration: none;
         display: none;
     }
 
-
     .main-kataqoriya span {
 
         display: flex;
@@ -1674,19 +1669,18 @@ text-decoration: none;
         transition: .2s ease;
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
-        margin: 0 5px;
-         gap: 13px;
+        margin: 5px;
         border-top: 1px solid #DADADA;
         padding-top: 10px;
         border-right: none;
         text-align: left;
-        height: 50px;
-  
+        height: 45px;
+
         svg {
-           margin-left: 10px;
+            margin: 0 20px;
         }
     }
-  
+
   
 
     .block {
@@ -1792,7 +1786,6 @@ text-decoration: none;
 
     .teklif {
         width: 85%;
-       
         height: max-content;
         display: flex;
         align-items: center;
@@ -1804,7 +1797,7 @@ text-decoration: none;
     
     .teklif-main {
         width: 100%;
-        height: 545px; 
+        height: 585px; 
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -1817,8 +1810,8 @@ text-decoration: none;
         align-items: center;
         justify-content: space-around;
         margin: 5px;
-        width: 90%;
-        
+        width: 100%;
+        transform:translateY(-35px);
     }
     .teklif-text h3{
         font-size: 17px;
@@ -1829,12 +1822,12 @@ text-decoration: none;
         align-items: center;
         justify-content: center;
         font-weight: 600;
-        font-size:16px;
+        font-size: 20px;
         padding: 5px;
-        width: 50px;
+        width: 70px;
         height: 60px;
         background: #F4F4F4;
-        border-radius: 5px;
+        border-radius: 3px;
     }
     
     
@@ -1851,9 +1844,9 @@ text-decoration: none;
         width: 50%;
         margin: auto;
     }
-  
+    
     .teklif-img img {
-        width: 70%;
+        width: 60%;
         max-height: 100%; 
         object-fit: cover; 
     }
@@ -1867,34 +1860,31 @@ text-decoration: none;
     
     .teklif-desctext {
         display: flex;
-        align-items: start;
-        justify-content: start;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         width: 100%;
         padding: 5px;
-        margin-left: 15px;
     }
     
     .teklif-desctext h4 {
-        font-weight: 600;
-        font-size: 18px;
+        font-weight: 900;
+        font-size: 22px;
         color: #000000;
-        line-height: 20px;
     }
     
     .teklif-desctext .div1 {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px;
+        padding: 2px;
         margin-right: 15px;
         width: 100%;
         height: 30px; 
         border: 0.8px solid #00A1FC;
         border-radius: 3px;
-        font-size: 15px;
+        font-size: 14px;
         color: #00A1FC;
-        font-weight: 700;
     }
     
     .teklif-desctext .div2 {
@@ -1907,18 +1897,16 @@ text-decoration: none;
         height: 30px;
         border: 0.8px solid #0000FF;
         border-radius: 3px;
-        font-size: 16px;
-        font-weight: 700;
+        font-size: 15px;
         color: #0000FF;
     }
     
     .qiymetler {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: row;
         padding: 5px;
-        width: 90%;
     }
     
     .qiymet1 {
@@ -1939,8 +1927,8 @@ text-decoration: none;
     }
     
     .sebetat {
-        margin: 5px 5px; 
-        width: 90%;
+        margin: 5px 0; 
+        width: 100%;
         height: 50px; 
         background: #FF0000;
         border-radius: 5px;
@@ -1960,7 +1948,7 @@ text-decoration: none;
         justify-content: center;
         text-decoration: none;
         width: 100%;
-        height: 50px; 
+        height: 65px; 
         background: #DADADA;
         border-radius: 0px 0px 10px 10px;
         font-family: 'TT Interfaces';
@@ -1969,7 +1957,6 @@ text-decoration: none;
         font-size: 25px; 
         color: #333333;
     }
-    
     
 
     .service {
@@ -2039,27 +2026,26 @@ text-decoration: none;
     }
 
     .service-main h5 {
-        font-weight: 700;
+        font-weight: 560;
         font-size: 15px;
         color: #333333;
     }
-  
+
     .service-main p {
-        font-size: 15px;
-   
+        font-size: 20px;
+        font-weight: 450;
         color: #333333;
     }
-  
+
     .onecixan {
    
-        width: 95%;
+        width: 100%;
         display: flex;
         align-items: center;
         padding: 5px;
-        margin: auto 25px;
+        margin: auto 20px;
        
     }
-  
 
     .onecixan-mob {
       
@@ -2076,213 +2062,212 @@ text-decoration: none;
     .onecixan-blcok2 {
         border-radius: 5px;
         padding: 10px;
-        width: 90%;
-        height: 216px;
+        width: 40%;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 5px;
-  
-  
+
     }
 
     .onecixan-content,
-  .onecixan-content2 {
-      border-radius: 5px;
-      width: 100%;
-      height: 100%;
+    .onecixan-content2 {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
 
-      background-size: cover;
-      background-position: center;
-  }
+        background-size: cover;
+        background-position: center;
+    }
 
-  .onecixan-content {
-      background-image: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png);
-  }
+    .onecixan-content {
+        background-image: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png);
+    }
 
-  .onecixan-content2 {
-      background-image: url(../img/silder2.png);
-  }
+    .onecixan-content2 {
+        background-image: url(../img/silder2.png);
+    }
 
-  .one-cixanmain {
-      overflow: hidden;
-      background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+    .one-cixanmain {
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+        height: 180px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .one-cixanmain4 {
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+        height: 660px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .one-cixanmain4 {
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+        height: 240px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .one-text {
+        width: 100%;
+    }
 
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 5px;
-      box-sizing: border-box;
-      border-radius: 5px;
-  }
-  .one-cixanmain4 {
-      overflow: hidden;
-      background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
-      height: 216px;
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 5px;
-      box-sizing: border-box;
-      border-radius: 5px;
-  }
-  .one-cixanmain4 {
-      overflow: hidden;
-      background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
-      height: 216px;
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 5px;
-      box-sizing: border-box;
-      border-radius: 5px;
-  }
-  .one-text {
-      width: 100%;
-  }
+    .one-text h3 {
+        font-weight: 600;
+        font-size: 20px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
 
-  .one-text h3 {
-      font-weight: 600;
-      font-size: 20px;
-      color: #FFFFFF;
-      margin-bottom: 10px;
-  }
+    .one-cixanmain p {
+        font-size: 25px;
+        line-height: 19px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
 
-  .one-cixanmain p {
-      font-size: 25px;
-      line-height: 19px;
-      color: #FFFFFF;
-      margin-bottom: 20px;
-  }
+    .one-cixanmain a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 45px;
+        background: #000000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 20px;
+    }
 
-  .one-cixanmain a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 35%;
-      height: 45px;
-      background: #000000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 20px;
-  }
-
-
+}
 /* one cixan 3 */
 .onecixan2 {
-  width: 90%;
-  display: flex;
-  align-content: flex-start;
-  justify-content: flex-start;
-  flex-direction: row;
-  padding: 5px;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 5px;
 }
 
 .onecixan-blcok3 {
-  border-radius: 5px;
-  padding: 10px;
-  width: 90%;
-  height: 216px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    height: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
 
 }
 
 .onecixan-blcok4{
-  border-radius: 5px;
-  padding: 10px;
-  width:90%;
-  height: 216px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
+    border-radius: 5px;
+    padding: 10px;
+    width: 50%;
+    height: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
 
 }
 
 .onecixan-content2 {
-  border-radius: 5px;
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
+    border-radius: 5px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
 
 .onecixan-content2 {
-  border-radius: 5px;
-  background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
-  width: 100%;
-  height: 216px;
+    border-radius: 5px;
+    background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
+    width: 100%;
+    height: 30vh;
 
 }
 
 .onecixan-content3 {
-  border-radius: 5px;
-  background: url(../img/silder2.png)center/cover;
-  width: 100%;
+    border-radius: 5px;
+    background: url(../img/silder2.png)center/cover;
+    width: 100%;
 }
 .onecixan-content4{
-  border-radius: 5px;
-  background: url(../img/silder2.png)center/cover;
-  width: 100%;
-  height: 216px;
+    border-radius: 5px;
+    background: url(../img/silder2.png)center/cover;
+    width: 100%;
+    height: 30vh;
 }
 .olcu{
-  width: 95%;
+    width: 95%;
 }
 .one-cixanmain2 {
-  overflow: hidden;
-  background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
 
-  width: 100%;
+    width: 100%;
 }
 .one-cixanmain4 {
-  overflow: hidden;
-  background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(223, 33, 39, 0.8) 0%, rgba(79, 79, 79, 0.8) 100%);
 
-  width: 100%;
+    width: 100%;
 }
 
 .one-text2 {
-  width: 100%;
+    width: 100%;
 }
 
 .one-text2 h3 {
-  margin: 25px;
-  font-weight: 600;
-  font-size: 20px;
-  color: #FFFFFF;
+    margin: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
 
 }
 
 .one-cixanmain2 p {
-  font-size: 15px;
-  line-height: 19px;
-  color: #FFFFFF;
-  margin: 25px;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin: 25px;
 }
 
 .one-cixanmain2 a {
-  margin: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 40px;
-  background: #000000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 40px;
+    background: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 
 }
 #mehsular {
