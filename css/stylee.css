@@ -11,7 +11,7 @@ body {
     background: #fff;
 
 }
-
+#leftbtn,#rghtbtn{display: none;}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -1613,7 +1613,7 @@ font-weight: 500;
 
     .header-filtr select,
     option {
-        width: 17%;
+        width: 25%;
         height: 45px;
         border: 1px solid #DADADA;
         border-radius: 3px;
@@ -1629,7 +1629,7 @@ font-weight: 500;
 
     .header-filtr button {
         margin-left: 15px;
-        width: 15%;
+        width: 20%;
         height: 45px;
         background: #DF2127;
         border-radius: 3px;
@@ -2140,8 +2140,8 @@ font-weight: 500;
     }
 
     .service-main h5 {
-        font-weight: 700;
-        font-size: 15px;
+        font-weight: 750;
+        font-size: 16px;
         color: #333333;
     }
 
@@ -3007,6 +3007,11 @@ font-weight: 500;
     color: #333333;
     font-weight: 500;
    }
+   .ftbtm-rght{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+   }
     .ftbtm-rght .visa{
         width: 64px;
         height: 21px;
@@ -3018,4 +3023,17 @@ font-weight: 500;
         object-fit: cover;
 
     }
+    .hovers:hover{
+        background: #DF2127;
+p{
+    color: #fff;
+}
+        
+    }
+    .hovers:hover{
+        path{
+            fill: white;
+        }
+    }
+    #leftbtn,#rghtbtn{display: block!important;}
 }

@@ -2832,6 +2832,8 @@ font-size: 30px;
     font-weight: 500;
     
     }
-      
+      .hovers:hover{
+        background: #DF2127;
+      }
 }
     

@@ -46,7 +46,15 @@ function dblgo(){
     colorkabinet.style.color = '#FF0000';
     colorkabicon.style.color = '#FF0000';
 }
-
+const slider=document.getElementById('slider')
+const leftbtn=document.getElementById('leftbtn')
+const rghtbtn=document.getElementById('rghtbtn')
+leftbtn.addEventListener('click', () => {
+    slider.scrollLeft -= 100; 
+  });
+  rghtbtn.addEventListener('click', () => {
+    slider.scrollLeft += 100; 
+  });
 // Şəxsi kabinetə yönləndirmək üçün funksiya
 function kabinetgo() {
     const storedEmail = localStorage.getItem('userEmail');

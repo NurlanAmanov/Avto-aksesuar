@@ -132,14 +132,14 @@
 
             </div>
             <div class="single-silder py-8 ">
-                <div class="silder-main  w-[95%] lg:w-[1110px]  mx-auto flex ">
+                <div class="gap-0 w-[95%] lg:w-[84%] lg:h-[70px] rounded-md mx-auto flex items-center">
+                    <button id="leftbtn" class="h-[70px] w-[25px] border rounded-s-md flex items-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                      </button>
+                      <div id="slider" class="silders-content lg:h-[70px] overflow-x-auto overflow-y-hidden flex gap-2 w-full items-center px-2">
 
-                    <div
-                        class="silders-content  flex-row gap-3 w-full border overflow-x-auto items-center justify-start p-1">
-
-                        <div class="silder-mains flex flex-row w-[full]  px-1  items-center justify-center   ">
-
-                            <svg viewBox="0 0 20 17" class="w-[30px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="silder-mains flex items-center gap-3 text-center">
+                            <svg viewBox="0 0 20 17" class="w-[21px]" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.319611 2.76187C0.850601 3.30051 1.37905 3.84217 1.91385 4.37719C2.53578 4.99916 2.89507 5.01245 3.55515 4.4412C3.93098 4.11632 4.30235 3.78661 4.67055 3.45389C5.33444 2.85305 5.34207 2.5004 4.70361 1.84279C4.18026 1.30234 3.65117 0.766114 3.124 0.22868C3.1558 0.157425 3.18759 0.0867732 3.21939 0.0155179C3.54498 0.0155179 3.87692 -0.0231291 4.19552 0.0215565C6.1853 0.302351 7.55125 1.95149 7.32104 3.87901C7.20467 4.85182 7.53471 5.568 8.27238 6.2105C10.9623 8.55529 13.6363 10.9158 16.3046 13.2823C17.3138 14.1772 17.3145 15.5764 16.3421 16.4338C15.3965 17.2678 13.9556 17.1699 13.0748 16.2098C12.9839 16.1108 12.8993 16.0057 12.8122 15.903C10.6253 13.3215 8.42118 10.7527 6.26288 8.1501C5.57609 7.3216 4.78565 6.9297 3.65626 6.95506C1.5889 7.00156 -0.0466766 5.3802 0.0010171 3.43457C0.00737626 3.22986 0.0646087 3.02575 0.0976763 2.82165C0.172078 2.80172 0.245845 2.78179 0.319611 2.76187ZM14.7975 13.7769C14.1934 13.766 13.6827 14.2153 13.6573 14.7811C13.6312 15.3578 14.1673 15.8849 14.7784 15.8837C15.3635 15.8825 15.8697 15.397 15.8754 14.8318C15.8805 14.2545 15.4042 13.7883 14.7975 13.7769Z"
                                     fill="#404040"></path>
@@ -153,16 +153,16 @@
                                     d="M12.6885 4.25C13.2699 4.63878 13.7959 4.99008 14.3718 5.37523C13.4363 6.4273 12.5405 7.43523 11.5941 8.5C11.012 8.02354 10.4757 7.58458 9.88062 7.09724C10.8264 6.13889 11.7448 5.20775 12.6885 4.25Z"
                                     fill="#404040"></path>
                             </svg>
-                            <p class="text-[#404040] text-[20px]  mx-3 font-bold">Aksesuarlar </p>
+                            <p class="text-[#404040] text-[15px] mx-3 font-bold">Aksesuarlar </p>
                         </div>
                         <div
                             class="silder-mains flex flex-row w-[full] h-[70px] px-2  text-center items-center justify-center   ">
-                            <svg class="w-[30px]" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-[21px]" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0 6.90821V14.0918H5.11111L11.5 20.0781V0.921893L5.11111 6.90821H0ZM17.25 10.5C17.25 8.38084 15.9467 6.561 14.0556 5.67503V15.313C15.9467 14.439 17.25 12.6192 17.25 10.5ZM14.0556 0V2.46636C17.7483 3.49601 20.4444 6.70468 20.4444 10.5C20.4444 14.2953 17.7483 17.504 14.0556 18.5336V21C19.1794 19.9105 23 15.6243 23 10.5C23 5.37571 19.1794 1.08951 14.0556 0Z"
                                     fill="#404040" />
                             </svg>
-                            <p class="text-[#404040] text-[20px] mx-3  font-bold">Audio </p>
+                            <p class="text-[#404040] text-[15px] mx-3  font-bold">Audio </p>
                         </div>
                         <div class="silder-mains flex flex-row w-[full] h-[70px] px-2  items-center justify-center   ">
                             <svg class="w-[20px]" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,7 +173,7 @@
                                     d="M16.9286 3.97213C15.8082 3.97213 14.8182 3.97177 13.8286 3.9732C13.7527 3.9732 13.6246 3.96536 13.6093 3.99885C13.3239 4.61565 12.6847 4.59284 12.1717 4.83906C11.6737 5.07779 11.4358 5.81074 11.0248 6.41328C11.3611 6.49132 11.5273 6.48847 11.6312 6.56401C11.7709 6.66556 11.9618 6.83802 11.9468 6.96024C11.9315 7.08887 11.7044 7.28769 11.562 7.29411C10.7992 7.32796 10.0326 7.33295 9.27048 7.29375C9.11395 7.28556 8.97049 7.04718 8.82106 6.91463C9.01906 6.74217 9.21669 6.56935 9.56188 6.26862C9.48417 6.11219 9.35865 5.82856 9.20436 5.55954C9.04708 5.28517 8.86178 5.02506 8.59355 4.87932C8.26106 4.63489 7.93156 4.38653 7.59458 4.14815C7.48363 4.06976 7.35362 3.96251 7.23071 3.96073C6.19178 3.94576 5.15284 3.95218 4.02462 3.95218C4.02462 4.46848 4.01528 4.92315 4.02686 5.37746C4.04218 5.97643 3.75788 6.28964 3.11905 6.28964C2.3801 6.28964 1.64078 6.28715 0.901834 6.29035C0.311945 6.2932 -0.00111775 6.03665 2.99865e-06 5.45549C0.00336525 3.92403 0.00149733 2.39292 0.000376582 0.861451C2.99864e-06 0.288131 0.320164 0.0137635 0.899219 0.00699345C1.71475 -0.00262721 2.53029 -0.00191457 3.34582 0.00663713C3.90582 0.0123383 4.18115 0.303809 4.18489 0.83152C4.18825 1.31184 4.18563 1.79216 4.18563 2.35051C5.30414 2.35051 6.34121 2.35408 7.37865 2.34517C7.49148 2.3441 7.67976 2.29422 7.70442 2.22509C7.97863 1.46328 8.64174 1.60937 9.2391 1.60723C10.3094 1.60367 11.3805 1.58763 12.4497 1.61899C12.7273 1.62718 13.1628 1.72161 13.2443 1.89621C13.4823 2.40503 13.8775 2.36014 14.3109 2.35515C15.1473 2.34588 15.9838 2.3523 16.9263 2.3523C16.9263 1.84347 16.9252 1.39094 16.9267 0.938772C16.9286 0.321981 17.2151 -0.0136732 17.9006 0.000935997C18.6138 0.0162578 19.3277 0.00877505 20.0413 0.00307392C20.6696 -0.00191457 20.9932 0.293475 20.9958 0.886393C21.0021 2.41786 21.0006 3.94897 20.9958 5.48044C20.9939 6.04342 20.6928 6.32884 20.0943 6.32598C19.3554 6.32206 18.6161 6.31387 17.8771 6.32955C17.2316 6.34309 16.9398 6.03558 16.9297 5.44801C16.9222 4.98836 16.9286 4.52942 16.9286 3.97213ZM9.65527 4.64629C10.228 4.64629 10.7297 4.64629 11.2602 4.64629C11.3166 4.40257 11.3674 4.182 11.4149 3.97712C11.8407 3.95075 12.2098 3.92759 12.5621 3.90585C12.5621 3.36068 12.5621 2.885 12.5621 2.40218C11.1616 2.40218 9.8062 2.40218 8.46018 2.40218C8.46018 2.93381 8.46018 3.41021 8.46018 3.93935C8.82368 3.93935 9.1457 3.93935 9.49911 3.93935C9.55441 4.18877 9.59924 4.3933 9.65527 4.64629Z"
                                     fill="#404040" />
                             </svg>
-                            <p class="text-[#404040] text-[20px]  mx-3 font-bold">Sürücü qatarı
+                            <p class="text-[#404040] text-[15px]  mx-3 font-bold">Sürücü qatarı
                             </p>
                         </div>
                         <div class="silder-mains flex flex-row w-[full] h-[70px] px-2  items-center justify-center   ">
@@ -182,7 +182,7 @@
                                     d="M20.3422 1.19938C20.0867 0.49875 19.3711 0 18.5278 0H4.47222C3.62889 0 2.92611 0.49875 2.65778 1.19938L0 8.3125V17.8125C0 18.4656 0.575 19 1.27778 19H2.55556C3.25833 19 3.83333 18.4656 3.83333 17.8125V16.625H19.1667V17.8125C19.1667 18.4656 19.7417 19 20.4444 19H21.7222C22.425 19 23 18.4656 23 17.8125V8.3125L20.3422 1.19938ZM4.47222 13.0625C3.41167 13.0625 2.55556 12.2669 2.55556 11.2812C2.55556 10.2956 3.41167 9.5 4.47222 9.5C5.53278 9.5 6.38889 10.2956 6.38889 11.2812C6.38889 12.2669 5.53278 13.0625 4.47222 13.0625ZM18.5278 13.0625C17.4672 13.0625 16.6111 12.2669 16.6111 11.2812C16.6111 10.2956 17.4672 9.5 18.5278 9.5C19.5883 9.5 20.4444 10.2956 20.4444 11.2812C20.4444 12.2669 19.5883 13.0625 18.5278 13.0625ZM2.55556 7.125L4.47222 1.78125H18.5278L20.4444 7.125H2.55556Z"
                                     fill="#404040" />
                             </svg>
-                            <p class="text-[#404040] text-[20px] mx-3 font-bold">Bədən </p>
+                            <p class="text-[#404040] text-[15px] mx-3 font-bold">Bədən </p>
                         </div>
                         <div class="silder-mains flex flex-row w-[full] h-[70px] px-2  items-center justify-center   ">
                             <svg class="w-[25px]" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +196,7 @@
                                     d="M18.5002 11.9829C18.5033 15.0991 15.8124 17.6069 12.4653 17.6064C9.11675 17.6059 6.42383 15.101 6.42383 11.9862C6.42332 8.87009 9.10562 6.37312 12.4618 6.36416C15.8038 6.3552 18.4972 8.86113 18.5002 11.9829ZM12.438 9.53548C10.9723 9.54349 9.82505 10.6338 9.83365 12.0089C9.84226 13.3736 11.0179 14.4459 12.4901 14.4327C13.9584 14.4195 15.1193 13.3194 15.0995 11.9603C15.0803 10.5909 13.9123 9.52699 12.438 9.53548ZM8.2829 11.6774C8.65097 11.6731 8.97196 11.3694 8.97499 11.0233C8.97803 10.655 8.63123 10.3423 8.24139 10.3617C7.87281 10.3796 7.56499 10.6927 7.57563 11.0388C7.58524 11.3831 7.91585 11.6816 8.2829 11.6774ZM12.4759 8.59658C12.8506 8.59045 13.166 8.29383 13.167 7.94628C13.168 7.60109 12.8496 7.29834 12.478 7.29174C12.0907 7.28467 11.7413 7.61335 11.7575 7.96892C11.7742 8.31458 12.1038 8.60271 12.4759 8.59658ZM10.5384 15.3127C10.5374 14.959 10.2311 14.6765 9.8453 14.6728C9.45698 14.669 9.14916 14.9406 9.13701 15.2967C9.12435 15.6654 9.45293 15.9705 9.8539 15.962C10.2356 15.9545 10.5399 15.6659 10.5384 15.3127ZM17.3469 10.9426C17.3368 10.5847 17.0325 10.314 16.6447 10.3173C16.2528 10.3211 15.9632 10.5918 15.9607 10.9568C15.9582 11.3378 16.2787 11.6255 16.6862 11.608C17.069 11.592 17.3575 11.301 17.3469 10.9426ZM15.0828 16.0257C15.4534 16.0304 15.7754 15.739 15.7865 15.3891C15.7982 15.0194 15.4661 14.7044 15.0742 14.7124C14.7006 14.7199 14.3993 15.0156 14.3998 15.3731C14.4003 15.7286 14.7061 16.0205 15.0828 16.0257Z"
                                     fill="#404040" />
                             </svg>
-                            <p class="text-[#404040] text-[20px] mx-3 font-bold">Əyləclər </p>
+                            <p class="text-[#404040] text-[15px] mx-3 font-bold">Əyləclər </p>
                         </div>
                         <div class="silder-mains flex flex-row w-[full] h-[70px] px-2  items-center justify-center   ">
                             <svg class="w-[20px]" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,7 +205,7 @@
                                     fill="#404040" />
                             </svg>
 
-                            <p class="text-[#404040] text-[20px] mx-3 font-bold">Debriyaj </p>
+                            <p class="text-[#404040] text-[15px] mx-3 font-bold">Debriyaj </p>
                         </div>
                         <div class="silder-mains flex flex-row w-[full] h-[70px] px-2  items-center justify-center   ">
                             <svg class="w-[20px]" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -217,11 +217,14 @@
                                     fill="#404040" />
                             </svg>
 
-                            <p class="text-[#404040] text-[20px] mx-3 font-bold">Təkərlər </p>
+                            <p class="text-[#404040] text-[15px] mx-3 font-bold">Təkərlər </p>
                         </div>
 
 
                     </div>
+                    <button id="rghtbtn" class="h-[70px] w-[25px] border rounded-tl rounded-tr flex items-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </button>
                 </div>
             </div>
     </header>
@@ -374,63 +377,64 @@
             </div>
         </div>
     </main>
+   
     <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-
-                <div class="footer-left">
-                    <div class="footer-left-content">
-                        <div class="footer-logo">
-                            <img src="../img/logo.png" alt="">
-                        </div>
-                        <div class="footer-text">
-                            <h2>Bizimlə əlaqə saxlayın</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, curabitur suspendisse
-                                faucibus consequat.</p>
-                            <div class="footer-contat">
-                                <div class="cont1">
-                                    <p class="p1">Telefon nömrəsi</p>
-                                    <p>+99455 255 9650</p>
-                                </div>
-                                <div class="cont2">
-                                    <p class="p1">E-poçt ünvanı</p>
-                                    <p>example@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="cont3">
-                                <p class="p1">Məkanımız</p>
-                                <p>Yasamal,A,M,Şərifzadə 239,AZ1138</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="footer-main">
+          <div class="footer-contents">
+            <div class="footer-left">
+              <img src="../img/logo.png" alt="">
+              <div class="footer-text-left">
+                <h2>Bizimlə əlaqə saxlayın</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, curabitur suspendisse
+                  faucibus consequat.</p>
+                <div class="contantsf">
+                  <div class="cont1">
+                    <p class="p1">Telefon nömrəsi</p>
+                    <p>+99455 255 9650</p>
+                  </div>
+                  <div class="cont2">
+                    <p class="p1">E-poçt ünvanı</p>
+                    <p>example@gmail.com</p>
+                  </div>
+    
                 </div>
-                <div class="footer-rght">
-                    <div class="footer-text">
-                        <h2>Bizi sosial şəbəkələrdə izləyin</h2>
-                        <div class="footer-contat">
-                            <p><i class="fa-brands fa-facebook"></i></p>
-
-                            <p><i class="fa-brands fa-instagram"></i></p>
-
-                            <p><i class="fa-brands fa-youtube"></i></p>
-                        </div>
-                    </div>
+                <div class="cont3">
+                  <p class="p1">Məkanımız</p>
+                  <p>Yasamal,A,M,Şərifzadə 239,AZ1138</p>
                 </div>
+              </div>
             </div>
+            <div class="footer-right mobile">
+              <h2>Bizi sosial şəbəkələrdə izləyin</h2>
+      
+              <div class="footer-socials">
+                <a href="#"> <img src="../img/logo-facebook.svg" alt=""></a>
+                <a href="#"><img src="../img/logo-instagram.svg" alt=""></a>
+                <a href="#"><img src="../img/logo-youtube.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right desktops">
+            <h2>Bizi sosial şəbəkələrdə izləyin</h2>
+    
+            <div class="footer-socials">
+              <a href="#"> <img src="../img/logo-facebook.svg" alt=""></a>
+              <a href="#"><img src="../img/logo-instagram.svg" alt=""></a>
+              <a href="#"><img src="../img/logo-youtube.svg" alt=""></a>
+            </div>
+          </div>
         </div>
-        <div class="footer-copy">
-            <div class="copy-text">
-                <p>©2021 All Rights Reserved.</p>
-
-            </div>
-            <div class="copy-img">
-                <img src="../img/visa.png" width="67" height="29" alt="Visa">
-                <img src="../img/master.png" width="67" height="29" alt="Master">
-
-            </div>
         </div>
-
-    </footer>
+        <div class="footer-bottom">
+          <div class="ftbtm-left">
+            <p>©2021 All Rights Reserved.</p>
+          </div>
+          <div class="ftbtm-rght">
+            <img src="../img/visa.png" class="visa" alt="Visa">
+            <img src="../img/master.png" class="master" alt="Master">
+          </div>
+        </div>
+      </footer>
 
     <script src="../js/app.js"></script>
     <script src="../js/kabinet.js"></script>

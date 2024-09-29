@@ -1,6 +1,20 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
 import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js";
 
+
+
+
+const slider=document.getElementById('slider')
+const leftbtn=document.getElementById('leftbtn')
+const rghtbtn=document.getElementById('rghtbtn')
+leftbtn.addEventListener('click', () => {
+    slider.scrollLeft -= 100; 
+  });
+  rghtbtn.addEventListener('click', () => {
+    slider.scrollLeft += 100; 
+  });
+
+
 const firebaseConfig = {
     apiKey: "AIzaSyAjQ6R90jV1Zz1TjeyNpVqEXn47iHBWOPY",
     authDomain: "avto-aks.firebaseapp.com",
@@ -76,3 +90,4 @@ function logout() {
         console.error("Çıxış zamanı xəta:", error);
     });
 }
+

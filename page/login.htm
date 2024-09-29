@@ -40,7 +40,7 @@
             </div>
             <div class="header-text">
 
-                <a class="kabinet" onclick="kabinetgo()"><i class="fa-solid fa-user"></i>Şəxsi kabinet</a>
+                <a class="kabinet" class="hover-masin"><i class="fa-solid fa-user"></i>Şəxsi kabinet</a>
                 <img src="../img/lang1.png" alt="">
                 <Select id="lang">
                     <option>ENGLISH</option>
@@ -111,10 +111,10 @@
             </div>
 
             <div class="header-main">
-                <a id="logo" class="w-[90%]" href="../index.htm"><img src="../img/logo.png" class="w-[80%]" alt=""></a>
+                <a id="logo" class="lg:w-[20%] w-[80%]" href="../index.htm"><img src="../img/logo.png" class="w-[80%]" alt=""></a>
 
-                <div class="header-filtr mobilefiltir">
-                    <select id="markalar2">
+                <div class="header-filtr mobilefiltir " >
+                    <select id="markalar2" class="">
                         <option>Marka seçin</option>
                     </select>
                     <select>
@@ -125,25 +125,25 @@
                     </select>
                     <button>Axtar</button>
                 </div>
-                <div class="header-text2 mobilefiltir">
-                    <span class="headet-hover"><i class="fa-solid fa-car"></i> Maşınım</span>
+                <div class="header-text2 lg:gap-3 mobilefiltir">
+                    <span class="hover-masin"><i class="fa-solid fa-car"></i> Maşınım</span>
                     <hr class="aramesafe">
-                    <span class="headet-hover"><i class="fa-solid fa-heart"></i>Bəyəndim</span>
+                    <span class="hover-masin"><i class="fa-solid fa-heart"></i>Bəyəndim</span>
                     <hr class="aramesafe">
-                    <span class="headet-hover"><i class="fa-solid fa-cart-shopping"></i>Səbət</span>
+                    <span class="hover-masin"><i class="fa-solid fa-cart-shopping"></i>Səbət</span>
                 </div>
                 <i onclick="toggleMenu()" id="menu-bars" class="fa-solid fa-bars"></i>
 
             </div>
             <div class="single-silder py-8 ">
-                <div class="silder-main  w-[95%] lg:w-[1110px]  mx-auto flex ">
+                <div class="gap-0 w-[95%] lg:w-[84%] lg:h-[70px] rounded-md mx-auto flex items-center">
+                    <button id="leftbtn" class="h-[70px] w-[25px] border rounded-s-md flex items-center justify-center">
+                        <i class="fa-solid fa-chevron-left"></i>
+                      </button>
+                      <div id="slider" class="silders-content lg:h-[70px] overflow-x-auto overflow-y-hidden flex gap-2 w-full items-center px-2">
 
-                    <div
-                        class="silders-content  flex-row gap-3 w-full border overflow-x-auto items-center justify-start p-1">
-
-                        <div class="silder-mains flex flex-row w-[full]  px-1  items-center justify-center   ">
-
-                            <svg viewBox="0 0 20 17" class="w-[30px]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="silder-mains flex items-center gap-3 text-center">
+                            <svg viewBox="0 0 20 17" class="w-[21px]" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0.319611 2.76187C0.850601 3.30051 1.37905 3.84217 1.91385 4.37719C2.53578 4.99916 2.89507 5.01245 3.55515 4.4412C3.93098 4.11632 4.30235 3.78661 4.67055 3.45389C5.33444 2.85305 5.34207 2.5004 4.70361 1.84279C4.18026 1.30234 3.65117 0.766114 3.124 0.22868C3.1558 0.157425 3.18759 0.0867732 3.21939 0.0155179C3.54498 0.0155179 3.87692 -0.0231291 4.19552 0.0215565C6.1853 0.302351 7.55125 1.95149 7.32104 3.87901C7.20467 4.85182 7.53471 5.568 8.27238 6.2105C10.9623 8.55529 13.6363 10.9158 16.3046 13.2823C17.3138 14.1772 17.3145 15.5764 16.3421 16.4338C15.3965 17.2678 13.9556 17.1699 13.0748 16.2098C12.9839 16.1108 12.8993 16.0057 12.8122 15.903C10.6253 13.3215 8.42118 10.7527 6.26288 8.1501C5.57609 7.3216 4.78565 6.9297 3.65626 6.95506C1.5889 7.00156 -0.0466766 5.3802 0.0010171 3.43457C0.00737626 3.22986 0.0646087 3.02575 0.0976763 2.82165C0.172078 2.80172 0.245845 2.78179 0.319611 2.76187ZM14.7975 13.7769C14.1934 13.766 13.6827 14.2153 13.6573 14.7811C13.6312 15.3578 14.1673 15.8849 14.7784 15.8837C15.3635 15.8825 15.8697 15.397 15.8754 14.8318C15.8805 14.2545 15.4042 13.7883 14.7975 13.7769Z"
                                     fill="#404040"></path>
@@ -161,7 +161,7 @@
                         </div>
                         <div
                             class="silder-mains flex flex-row w-[full] h-[70px] px-2  text-center items-center justify-center   ">
-                            <svg class="w-[30px]" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-[21px]" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M0 6.90821V14.0918H5.11111L11.5 20.0781V0.921893L5.11111 6.90821H0ZM17.25 10.5C17.25 8.38084 15.9467 6.561 14.0556 5.67503V15.313C15.9467 14.439 17.25 12.6192 17.25 10.5ZM14.0556 0V2.46636C17.7483 3.49601 20.4444 6.70468 20.4444 10.5C20.4444 14.2953 17.7483 17.504 14.0556 18.5336V21C19.1794 19.9105 23 15.6243 23 10.5C23 5.37571 19.1794 1.08951 14.0556 0Z"
                                     fill="#404040" />
@@ -226,6 +226,9 @@
 
 
                     </div>
+                    <button id="rghtbtn" class="h-[70px] w-[25px] border rounded-tl rounded-tr flex items-center justify-center">
+                        <i class="fa-solid fa-chevron-right"></i>
+                      </button>
                 </div>
             </div>
     </header>
@@ -257,7 +260,7 @@
                                 class="w-[20px] absolute left-[90%] top-[-65px] cursor-pointer"
                                 src="../img/password-hide.svg" alt="Gizle/Göster">
                             <span
-                                class="flex lg:items-center lg:justify-start items-center justify-center relative w-full lg:w-[90%] flex-row">
+                                class="flex lg:items-center lg:justify-start items-center justify-center relative w-full lg:w-[55%] flex-row">
 
                                 <input
                                     class="border mx-2 w-[18px] h-[18px] rounded-[3px] outline-none p-3 focus:bg-[#FAFAFA]"
@@ -285,63 +288,64 @@
             </div>
         </div>
     </main>
+ 
     <footer>
-        <div class="footer-container">
-            <div class="footer-content">
-
-                <div class="footer-left">
-                    <div class="footer-left-content">
-                        <div class="footer-logo">
-                            <img src="../img/logo.png" alt="">
-                        </div>
-                        <div class="footer-text">
-                            <h2>Bizimlə əlaqə saxlayın</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, curabitur suspendisse
-                                faucibus consequat.</p>
-                            <div class="footer-contat">
-                                <div class="cont1">
-                                    <p class="p1">Telefon nömrəsi</p>
-                                    <p>+99455 255 9650</p>
-                                </div>
-                                <div class="cont2">
-                                    <p class="p1">E-poçt ünvanı</p>
-                                    <p>example@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="cont3">
-                                <p class="p1">Məkanımız</p>
-                                <p>Yasamal,A,M,Şərifzadə 239,AZ1138</p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="footer-main">
+          <div class="footer-contents">
+            <div class="footer-left">
+              <img src="../img/logo.png" alt="">
+              <div class="footer-text-left">
+                <h2>Bizimlə əlaqə saxlayın</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, curabitur suspendisse
+                  faucibus consequat.</p>
+                <div class="contantsf">
+                  <div class="cont1">
+                    <p class="p1">Telefon nömrəsi</p>
+                    <p>+99455 255 9650</p>
+                  </div>
+                  <div class="cont2">
+                    <p class="p1">E-poçt ünvanı</p>
+                    <p>example@gmail.com</p>
+                  </div>
+    
                 </div>
-                <div class="footer-rght">
-                    <div class="footer-text">
-                        <h2>Bizi sosial şəbəkələrdə izləyin</h2>
-                        <div class="footer-contat">
-                            <p><i class="fa-brands fa-facebook"></i></p>
-
-                            <p><i class="fa-brands fa-instagram"></i></p>
-
-                            <p><i class="fa-brands fa-youtube"></i></p>
-                        </div>
-                    </div>
+                <div class="cont3">
+                  <p class="p1">Məkanımız</p>
+                  <p>Yasamal,A,M,Şərifzadə 239,AZ1138</p>
                 </div>
+              </div>
             </div>
+            <div class="footer-right mobile">
+              <h2>Bizi sosial şəbəkələrdə izləyin</h2>
+      
+              <div class="footer-socials">
+                <a href="#"> <img src="../img/logo-facebook.svg" alt=""></a>
+                <a href="#"><img src="../img/logo-instagram.svg" alt=""></a>
+                <a href="#"><img src="../img/logo-youtube.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right desktops">
+            <h2>Bizi sosial şəbəkələrdə izləyin</h2>
+    
+            <div class="footer-socials">
+              <a href="#"> <img src="../img/logo-facebook.svg" alt=""></a>
+              <a href="#"><img src="../img/logo-instagram.svg" alt=""></a>
+              <a href="#"><img src="../img/logo-youtube.svg" alt=""></a>
+            </div>
+          </div>
         </div>
-        <div class="footer-copy">
-            <div class="copy-text">
-                <p>©2021 All Rights Reserved.</p>
-
-            </div>
-            <div class="copy-img">
-                <img src="../img/visa.png" width="67" height="29" alt="Visa">
-                <img src="../img/master.png" width="67" height="29" alt="Master">
-
-            </div>
         </div>
-
-    </footer>
+        <div class="footer-bottom">
+          <div class="ftbtm-left">
+            <p>©2021 All Rights Reserved.</p>
+          </div>
+          <div class="ftbtm-rght">
+            <img src="../img/visa.png" class="visa" alt="Visa">
+            <img src="../img/master.png" class="master" alt="Master">
+          </div>
+        </div>
+      </footer>
 
     <script src="../js/function.js"></script>
 
