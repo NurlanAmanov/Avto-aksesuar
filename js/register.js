@@ -25,3 +25,12 @@ function showpas2(){
     hideshow2.src="../img/password-hide.svg"
  }
 }
+const slider=document.getElementById('slider')
+const leftbtn=document.getElementById('leftbtn')
+const rghtbtn=document.getElementById('rghtbtn')
+leftbtn.addEventListener('click', () => {
+    slider.scrollLeft -= 100; 
+  });
+  rghtbtn.addEventListener('click', () => {
+    slider.scrollLeft += 100; 
+  });
