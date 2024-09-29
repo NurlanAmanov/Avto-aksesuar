@@ -836,19 +836,18 @@ i {
     border-radius: 10px;
 }
 
-.onecixan-content {
+.onecixan-content2 {
     border-radius: 5px;
     background: url(../img/1bb5ced63bd89626a58e4f3f87e3795b.png)center/cover;
     width: 100%;
+    height: 216px;
 
 }
 
-.onecixan-content2 {
+.onecixan-content4 {
     border-radius: 5px;
     background: url(../img/silder2.png)center/cover;
     width: 100%;
-
-
 }
 
 .one-cixanmain {
@@ -2340,7 +2339,7 @@ font-weight: 500;
         border-radius: 5px;
         background: url(../img/silder2.png)center/cover;
         width: 100%;
-        height: 216px;
+      
     }
 
     .olcu {
