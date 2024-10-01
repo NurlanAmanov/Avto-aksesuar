@@ -1928,10 +1928,10 @@ font-weight: 500;
         align-items: center;
         justify-content: center;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
         padding: 5px;
-        width: 50px;
-        height: 60px;
+        width: 39px;
+        height: 39px;
         background: #F4F4F4;
         border-radius: 5px;
     }
@@ -2423,18 +2423,20 @@ font-weight: 500;
     }
     #mehsularcontainer {
         display: grid;
-        grid-template-columns: repeat(5, 15%); 
-        gap: 5px; 
-        width: 100%;
-    
-       
+        grid-template-columns: repeat(5, 280px); /* Her satırda 5 sütun */
+        gap: 10px;
+        width: 97%;
         margin: auto;
+        padding: 5px;
     }
+    
+
+    
     #mehsularcontainer2 {
         display: grid;
-        grid-template-columns: repeat(5, 15%); 
-        gap: 5px; 
-        width: 100%;
+        grid-template-columns: repeat(5, 305px); /* Her satırda 5 sütun */
+        gap: 10px;
+        width: 95%;
         margin: auto;
     }
     
@@ -3059,14 +3061,14 @@ p{
 
 
     .buttons-sldier{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: flex-end;
         width: 75%;
         gap: 15px;
     }
     .buttons-sldier2{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: flex-end;
         width: 60%;
