@@ -131,7 +131,31 @@ const mehsul = [
         name: "Cigarette Lighter",
         price: 18.29,
         currency: "AZN",
-        stock: "Stokda yoxdu",
+
+        stock: "Yoldadır"
+    },
+    {
+        images: [
+            "img/mehsul1.png",
+            "img/mehsul2.png",
+        ],
+        model: "SKU: 61346969134",
+        name: "Cigarette Lighter",
+        price: 18.29,
+        currency: "AZN",
+
+        stock: "Yoldadır"
+    },
+    {
+        images: [
+            "img/mehsul1.png",
+            "img/mehsul2.png",
+        ],
+        model: "SKU: 61346969134",
+        name: "Cigarette Lighter",
+        price: 18.29,
+        currency: "AZN",
+
         stock: "Yoldadır"
     },
     {
@@ -144,7 +168,7 @@ const mehsul = [
         price: 18.29,
         currency: "AZN",
         stock: "Stokda yoxdu",
-        stock: "Yoldadır"
+
     },
     {
         images: [
@@ -156,31 +180,7 @@ const mehsul = [
         price: 18.29,
         currency: "AZN",
         stock: "Stokda yoxdu",
-        stock: "Yoldadır"
-    },
-    {
-        images: [
-            "img/mehsul1.png",
-            "img/mehsul2.png",
-        ],
-        model: "SKU: 61346969134",
-        name: "Cigarette Lighter",
-        price: 18.29,
-        currency: "AZN",
-        stock: "Stokda yoxdu",
-        stock: "Yoldadır"
-    },
-    {
-        images: [
-            "img/mehsul1.png",
-            "img/mehsul2.png",
-        ],
-        model: "SKU: 61346969134",
-        name: "Cigarette Lighter",
-        price: 18.29,
-        currency: "AZN",
-        stock: "Stokda yoxdu",
-        stock: "Yoldadır"
+
     },
     {
         images: [
@@ -206,13 +206,14 @@ let like = document.getElementById("like")
 const markalar = document.getElementById("markalar")
 const markalar2 = document.getElementById("markalar2")
 const kabinet = document.getElementById('kabinet')
+const stok = document.getElementById('stok')
 
 
-function kabinetgo(){
-    if(kabinet.style.display==="none"||kabinet.style.display==="" ){
-        kabinet.style.display="flex"
-    }else{
-       kabinet.style.display="none"
+function kabinetgo() {
+    if (kabinet.style.display === "none" || kabinet.style.display === "") {
+        kabinet.style.display = "flex"
+    } else {
+        kabinet.style.display = "none"
     }
 }
 
@@ -239,55 +240,124 @@ function markaadd() {
 }
 markaadd()
 
-
-for (let i = 0; i < mehsul.length; i++) {
-    const borderrengim = mehsul[i].stock === "Stokda var" ? "#5BC904" : '#DF2127';
-    const stockcolor = mehsul[i].stock === "Yoldadır" ? "#FFA115" : "#DF2127";
-    const stockIcon = mehsul[i].stock === "Stokda var"
-        ? '<i class="fa-solid fa-circle-check"></i>'
-        : '<i style="color:#DF2127" class="fa-solid fa-circle-xmark stokyox"></i>';
-
-    mehsularcontainer.innerHTML += `
-
-         <div  class="mehsulcard">
-          <div  class="mehsul-img">
-            <div class="like">
-              <div class="like-content">
-                <i class="fa-solid fa-heart"></i>
+function mehsulad() {
+    mehsul.map(item => {
+        const borderrengim = item.stock === "Stokda var" ? "#5BC904" : item.stock === "Yoldadır" ? "#FFA115" : '#FF0000';
+        const stockcolor = item.stock === "Stokda var" ? "#5BC904" : item.stock === "Yoldadır" ? "#FFA115" : '#FF0000';
+        const stockIcon = item.stock === "Stokda var"
+            ? '<i class="fa-solid fa-circle-check" style="color:#5BC904"></i>'
+            : item.stock === "Yoldadır"
+            ? '<i class="fa-solid fa-truck" style="color:#FFA115"></i>'
+            : '<i style="color:#FF0000" class="fa-solid fa-circle-xmark stokyox"></i>';
+        
+       
+        mehsularcontainer.innerHTML += `
+           <div class="mehsulcard">
+               <div class="mehsul-img">
+                 <div class="like">
+                   <div class="like-content">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              <img src="${item.images[0]}" alt="mehsul">
               </div>
-            </div>
-            <img   src="${mehsul[i].images[0]}" alt="mehsul">
-          </div>
-          <div onclick="gopage()"  class="mehsular-text">
-            <h6>${mehsul[i].model}</h6>
-            <h5>${mehsul[i].name}</h5>
-            <div class="stok">${stockIcon} <span style="color: ${borderrengim}">${mehsul[i].stock}</span></div>
-            <p class="line-through">${mehsul[i].price} ${mehsul[i].currency}  </p>
-            <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
-            <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
-          </div>
-        </div>`;
-    mehsularcontainer2.innerHTML += `
-        <div onclick="gopage()"   class="mehsulcard">
-          <div class="mehsul-img">
-            <div class="like ">
-              <div class="like-content">
-                <i class="fa-solid fa-heart"></i>
+            <div onclick="gopage()" class="mehsular-text">
+               <h6>${item.model}</h6>
+               <h5>${item.name}</h5>
+                  <div class="stok" style="border: 1px solid ${borderrengim}; color: ${stockcolor};">
+                    ${stockIcon} <span>${item.stock}</span>
+                  </div>
+                <p class="line-through">${item.price} ${item.currency}</p>
+                <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
+                <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
               </div>
-            </div>
-            <img src="${mehsul[i].images[0]}" alt="mehsul">
-          </div>
-          <div onclick="gopage()"  class="mehsular-text">
-            <h6>${mehsul[i].model}</h6>
-            <h5>${mehsul[i].name}</h5>
-            <div class="stok">${stockIcon} <span style="color: ${borderrengim}">${mehsul[i].stock}</span></div>
-            <p class="line-through">${mehsul[i].price} ${mehsul[i].currency} </p>
-            <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
-            <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
-          </div>
-        </div>`;
+           </div>`;
 
+     
+        mehsularcontainer2.innerHTML += `
+           <div class="mehsulcard">
+               <div class="mehsul-img">
+                 <div class="like">
+                   <div class="like-content">
+                    <i class="fa-solid fa-heart"></i>
+                  </div>
+                </div>
+              <img src="${item.images[0]}" alt="mehsul">
+              </div>
+            <div onclick="gopage()" class="mehsular-text">
+               <h6>${item.model}</h6>
+               <h5>${item.name}</h5>
+                  <div class="stok" style="border: 1px solid ${borderrengim}; color: ${stockcolor};">
+                    ${stockIcon} <span>${item.stock}</span>
+                  </div>
+                <p class="line-through">${item.price} ${item.currency}</p>
+                <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
+                <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+           </div>`;
+    });
 }
+
+mehsulad()
+
+// for (let i = 0; i < mehsul.length; i++) {
+
+
+
+//     const borderrengim = mehsul[i].stock === "Stokda var" ? "#5BC904" : '#FF0000'; 
+//     const stockcolor = mehsul[i].stock === "Stokda var" ? "#5BC904" : '#FF0000';
+//     const stockIcon = mehsul[i].stock === "Stokda var"
+//         ? '<i class="fa-solid fa-circle-check" style="color:#5BC904"></i>'
+//         : '<i style="color:#FF0000" class="fa-solid fa-circle-xmark stokyox"></i>';
+
+
+
+
+
+
+
+
+//     mehsularcontainer.innerHTML += `
+
+//          <div  class="mehsulcard">
+//           <div  class="mehsul-img">
+//             <div class="like">
+//               <div class="like-content">
+//                 <i class="fa-solid fa-heart"></i>
+//               </div>
+//             </div>
+//             <img   src="${mehsul[i].images[0]}" alt="mehsul">
+//           </div>
+//           <div onclick="gopage()"  class="mehsular-text">
+//             <h6>${mehsul[i].model}</h6>
+//             <h5>${mehsul[i].name}</h5>
+//             <div id="stok" class="stok" >${stockIcon} <span style="color: ${borderrengim}">${mehsul[i].stock}</span></div>
+//             <p class="line-through">${mehsul[i].price} ${mehsul[i].currency}  </p>
+//             <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
+//             <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
+//           </div>
+//         </div>`;
+//     mehsularcontainer2.innerHTML += `
+//         <div onclick="gopage()"   class="mehsulcard">
+//           <div class="mehsul-img">
+//             <div class="like ">
+//               <div class="like-content">
+//                 <i class="fa-solid fa-heart"></i>
+//               </div>
+//             </div>
+//             <img src="${mehsul[i].images[0]}" alt="mehsul">
+//           </div>
+//           <div onclick="gopage()"  class="mehsular-text">
+//             <h6>${mehsul[i].model}</h6>
+//             <h5>${mehsul[i].name}</h5>
+//             <div class="stok">${stockIcon} <span style="color: ${borderrengim}">${mehsul[i].stock}</span></div>
+//             <p class="line-through">${mehsul[i].price} ${mehsul[i].currency} </p>
+//             <button class="sebetat2deskt"> <i class="fa-solid fa-cart-shopping"></i>Səbətə əlavə et</button>
+//             <button class="sebetat2mobile"> <i class="fa-solid fa-cart-shopping"></i></button>
+//           </div>
+//         </div>`;
+
+// }
 
 const likeIcons = document.querySelectorAll('.like-content i');
 
@@ -326,23 +396,23 @@ function gopage() {
     window.location.href = '../page/single.htm'
 }
 
-function dblgo(){
-    window.location.href="../page/login.htm"
-    let colorkabinet=document.getElementById('colorkabinet')
-    let colorkabicon=document.getElementById('colorkabicon')
+function dblgo() {
+    window.location.href = "../page/login.htm"
+    let colorkabinet = document.getElementById('colorkabinet')
+    let colorkabicon = document.getElementById('colorkabicon')
 
-    colorkabinet.style.color='#FF0000'
-    colorkabicon.style.color='#FF0000'
+    colorkabinet.style.color = '#FF0000'
+    colorkabicon.style.color = '#FF0000'
 
 }
-function kabinetimgo(){
-    window.location.href="../page/login.htm"
+function kabinetimgo() {
+    window.location.href = "../page/login.htm"
 }
 
-function regstrgo(){
- window.location.href = "../page/register.htm";
+function regstrgo() {
+    window.location.href = "../page/register.htm";
 }
-function loginkabinet(){
-    window.location.href="../page/sexsikabinet.htm"
+function loginkabinet() {
+    window.location.href = "../page/sexsikabinet.htm"
 }
 

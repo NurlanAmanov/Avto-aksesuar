@@ -583,14 +583,19 @@ i {
     width: 80%;
 
 }
-
+.saatlar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:45%;
+    gap:10px;
+}
 .saat {
     text-align: center;
     font-weight: 550;
-    margin: 0 5px;
     font-size: 13px;
-    padding: 5px;
-    width: 50px;
+ padding: 5px 0;
+    width: 80px;
     height: 39px;
     background: #F4F4F4;
     border-radius: 3px;
@@ -902,7 +907,10 @@ i {
 
 
 .sebetat {
-    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px -5px;
     width: 100%;
     height: 40px;
     background: #FF0000;
@@ -1026,8 +1034,8 @@ i {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 10px;
-    border: 1px solid #5BC904;
+    border-radius: 3px;
+ 
     color: #5BC904;
 
 
@@ -1753,15 +1761,14 @@ font-weight: 500;
         transition: .2s ease;
         width: 100%;
         font-family: Arial, Helvetica, sans-serif;
-        margin: auto 5px;
+        padding: 8px 5px; 
         gap: 13px;
         border-top: 1px solid #DADADA;
         padding-top: 10px;
-      
         border-right: none;
         text-align: left;
         height: 50px;
-
+        box-sizing: border-box;
         svg {
             margin-left: 10px;
            
@@ -1774,9 +1781,7 @@ font-weight: 500;
         background: #DF2127;
         color: #fff;
         width: 100%;
-
-   
-
+    
         path {
             fill: #fff;
         }
@@ -1929,13 +1934,17 @@ font-weight: 500;
         justify-content: center;
         font-weight: 600;
         font-size: 14px;
-        padding: 5px;
-        width: 39px;
+        padding:0 10px 0 10px ;
+        width: 40px;
         height: 39px;
         background: #F4F4F4;
         border-radius: 5px;
     }
-
+.saatlar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
     .teklif-desc {
         width: 100%;
@@ -1962,6 +1971,9 @@ font-weight: 500;
         align-items: center;
         justify-content: center;
         flex-direction: row;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-left: 5px;
     }
 
     .teklif-desctext {
@@ -1970,8 +1982,8 @@ font-weight: 500;
         justify-content: start;
         flex-direction: column;
         width: 100%;
-        padding: 5px;
-        margin-left: 15px;
+   
+  
     }
 
     .teklif-desctext h4 {
@@ -1979,6 +1991,7 @@ font-weight: 500;
         font-size: 18px;
         color: #000000;
         line-height: 20px;
+        margin-left: 5px;
     }
 
     .teklif-desctext .div1 {
@@ -2012,6 +2025,7 @@ font-weight: 500;
     }
 
     .qiymetler {
+        margin:10px 5px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -2038,9 +2052,12 @@ font-weight: 500;
     }
 
     .sebetat {
-        margin: 5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto 15px;
         width: 90%;
-        height: 50px;
+        height: 40px;
         background: #FF0000;
         border-radius: 5px;
         border: none;
@@ -2060,7 +2077,7 @@ font-weight: 500;
         text-decoration: none;
         width: 100%;
         height: 50px;
-        background: #DADADA;
+        background: #f0efef;
         border-radius: 0px 0px 10px 10px;
         font-family: 'TT Interfaces';
         font-style: normal;
@@ -2451,11 +2468,11 @@ font-weight: 500;
         padding: 5px;
         background: transparent;
         border: 1px solid #FF0000;
-        color: #ffff;
-        background: #FF0000;
+        color: #FF0000;
+        background: #fff;
         border-radius: 5px;
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 500!important;
 
 
     }
@@ -2475,8 +2492,8 @@ font-weight: 500;
         margin-bottom: 10px;
         align-items: center;
         justify-content: center;
-        border-radius: 10px;
-        border: 1px solid #5BC904;
+        border-radius: 3px;
+     
         color: #5BC904;
         font-family: "TT Interfaces 2";
         box-sizing: border-box;
@@ -2501,9 +2518,9 @@ font-weight: 500;
     }
 
     .sebetat2deskt:hover {
-        background: transparent;
-        border-color: 1px solid #DF2127;
-        color: #DF2127;
+        background: #FF0000;
+      
+        color: #fff;
     }
 
     .sebetat2mobile:hover {
@@ -2810,17 +2827,20 @@ font-weight: 500;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        width: 100%;
+        width: 80%;
         padding: 10px;
         border-radius: 50%;
         margin: -5px auto;
+        
 
         i {
 
-            color: #C4C4C4;
+           color: #DFDFDF;
             font-size: 20px;
         }
     }
+   
+    
 
     .mehsulcard {
         width: 269px;
@@ -2845,6 +2865,8 @@ font-weight: 500;
 
     .mehsulcard p {
         font-size: 22px;
+        font-family: "TT Interfaces bold";
+        font-weight: 600;
     }
 
 
@@ -3083,4 +3105,11 @@ p{
         border-radius: 50%;
         border: none;
     }
+
+    .mehsulcard:hover{
+        transition: .2s ease;
+        border-color:#DF2127;
+    }
+
+   
 }
