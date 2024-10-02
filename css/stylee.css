@@ -17,10 +17,22 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+.buttons-sldier,.buttons-sldier2{
+    display: none;
+}
 
+.sebetat2mobile:hover {
+    background: #FF0000;
+  
+    color: #fff;
+}
 /* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
+}
+.mehsulcard:hover{
+    transition: .2s ease;
+    border-color:#DF2127;
 }
 
 html,
@@ -556,6 +568,8 @@ i {
 }
 
 .teklif {
+    margin-bottom: 10px;
+    margin-top: 10px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -794,10 +808,10 @@ i {
 .onecixan-mob {
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 5px;
+    
 }
 
 .onecixan {
@@ -929,7 +943,7 @@ i {
 
 
 #mehsular {
-    padding: 15px;
+    padding: 5px;
 
 }
 
@@ -1000,8 +1014,8 @@ i {
 
 .mehsular-text {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 5px;
     margin: 10px;
@@ -1013,7 +1027,7 @@ i {
 .mehsulcard h5 {
     font-size: 18px;
     font-weight: 520;
-    text-align: left;
+   
 }
 
 .mehsulcard p {
@@ -2823,23 +2837,44 @@ font-weight: 500;
 
 @media screen and (min-width: 700px) {
     .like {
-        transform: translate(40px, 25px);
+        position: relative;
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        width: 80%;
-        padding: 10px;
         border-radius: 50%;
-        margin: -5px auto;
+        margin: 0 auto;
         
-
         i {
-
-           color: #DFDFDF;
-            font-size: 20px;
+            color: #DFDFDF;
+            font-size: 22px;
+            transition: background 0.3s ease, 
         }
     }
+    
+    .like-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 34px!important;
+width: 34px;
+
+        position: fixed;
+        top:15px;
+        right: 0;
+        left: 100%;
+    }
+    
+    i:hover {
+  padding: 5px;
+  border-radius: 50%;
+        box-shadow: 0px 0px 3px 0px #00000026;
+        background: #fff;
    
+      
+
+   
+    }
+    
     
 
     .mehsulcard {
@@ -2854,7 +2889,15 @@ font-weight: 500;
     .mehsul-img {
         width: 120px;
     }
-
+    .mehsular-text {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        padding: 5px;
+        margin: 10px;
+        width: 100%;
+    }
     .mehsular-text {
         padding: 10px;
     }
